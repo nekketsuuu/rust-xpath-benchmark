@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="technology">
+    <title lang="en">Hidden Silent 1</title>
+    <author>Henry Clark</author>
+    <year>1975</year>
+    <price>33.37</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Life 2</title>
+    <author>Bob Clark</author>
+    <year>1934</year>
+    <price>28.80</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea The 3</title>
+    <author>David Clark</author>
+    <year>2002</year>
+    <price>36.84</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Life 4</title>
+    <author>Jack Smith</author>
+    <year>1987</year>
+    <price>26.81</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Life 5</title>
+    <author>Frank Smith</author>
+    <year>1959</year>
+    <price>33.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden The 6</title>
+    <author>David Hall</author>
+    <year>1907</year>
+    <price>47.16</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Silent 7</title>
+    <author>Frank Wilson</author>
+    <year>1915</year>
+    <price>25.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Lost 8</title>
+    <author>Bob Wilson</author>
+    <year>1920</year>
+    <price>16.95</price>
+  </book>
+  <book category="history">
+    <title lang="es">A The 9</title>
+    <author>David Hall</author>
+    <year>2010</year>
+    <price>47.21</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 10</title>
+    <author>Henry Hall</author>
+    <year>2018</year>
+    <price>20.06</price>
+  </book>
+</bookstore>

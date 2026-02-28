@@ -1,0 +1,8 @@
+[package]
+name = "runner-amxml"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+common.workspace = true
+amxml.workspace = true

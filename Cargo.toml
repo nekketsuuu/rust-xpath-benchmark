@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "common",
+    "runner-sxd-xpath",
+    "runner-xee-xpath",
+    "runner-xrust",
+    "runner-amxml",
+    "benchmarks",
+    "fixtures/generate",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+
+[workspace.dependencies]
+common = { path = "common" }
+runner-sxd-xpath = { path = "runner-sxd-xpath" }
+runner-xee-xpath = { path = "runner-xee-xpath" }
+runner-xrust = { path = "runner-xrust" }
+runner-amxml = { path = "runner-amxml" }
+criterion = { version = "0.5", features = ["html_reports"] }
+
+# xpath libraries
+sxd-document = "0.3.2"
+sxd-xpath = "0.4.2"
+xee-xpath = "0.1.5"
+xrust = "2.0.3"
+amxml = "0.5.3"

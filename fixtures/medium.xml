@@ -1,0 +1,6003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="technology">
+    <title lang="en">Hidden Silent 1</title>
+    <author>Henry Clark</author>
+    <year>1975</year>
+    <price>33.37</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Life 2</title>
+    <author>Bob Clark</author>
+    <year>1934</year>
+    <price>28.80</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea The 3</title>
+    <author>David Clark</author>
+    <year>2002</year>
+    <price>36.84</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Life 4</title>
+    <author>Jack Smith</author>
+    <year>1987</year>
+    <price>26.81</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Life 5</title>
+    <author>Frank Smith</author>
+    <year>1959</year>
+    <price>33.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden The 6</title>
+    <author>David Hall</author>
+    <year>1907</year>
+    <price>47.16</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Silent 7</title>
+    <author>Frank Wilson</author>
+    <year>1915</year>
+    <price>25.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Lost 8</title>
+    <author>Bob Wilson</author>
+    <year>1920</year>
+    <price>16.95</price>
+  </book>
+  <book category="history">
+    <title lang="es">A The 9</title>
+    <author>David Hall</author>
+    <year>2010</year>
+    <price>47.21</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 10</title>
+    <author>Henry Hall</author>
+    <year>2018</year>
+    <price>20.06</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Land 11</title>
+    <author>Jack Wilson</author>
+    <year>1976</year>
+    <price>21.03</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Land 12</title>
+    <author>Bob Brown</author>
+    <year>1970</year>
+    <price>34.60</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Silent 13</title>
+    <author>Jack Brown</author>
+    <year>1959</year>
+    <price>15.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Land 14</title>
+    <author>David Clark</author>
+    <year>2024</year>
+    <price>23.97</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea The 15</title>
+    <author>Henry Wilson</author>
+    <year>1934</year>
+    <price>38.82</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Life 16</title>
+    <author>Jack Clark</author>
+    <year>2021</year>
+    <price>10.20</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 17</title>
+    <author>Bob Brown</author>
+    <year>2007</year>
+    <price>29.49</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Life 18</title>
+    <author>Jack Clark</author>
+    <year>1936</year>
+    <price>8.16</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden The 19</title>
+    <author>Bob Brown</author>
+    <year>1958</year>
+    <price>38.26</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A The 20</title>
+    <author>Frank Hall</author>
+    <year>1990</year>
+    <price>32.28</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Land 21</title>
+    <author>Frank Wilson</author>
+    <year>2021</year>
+    <price>10.96</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind Life 22</title>
+    <author>Henry Hall</author>
+    <year>2019</year>
+    <price>6.72</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Land 23</title>
+    <author>Henry Brown</author>
+    <year>2006</year>
+    <price>6.25</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Land 24</title>
+    <author>Frank Clark</author>
+    <year>1969</year>
+    <price>41.35</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A The 25</title>
+    <author>David Clark</author>
+    <year>1970</year>
+    <price>27.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 26</title>
+    <author>Henry Smith</author>
+    <year>1922</year>
+    <price>44.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Silent 27</title>
+    <author>Frank Hall</author>
+    <year>2007</year>
+    <price>22.59</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Lost 28</title>
+    <author>Bob Hall</author>
+    <year>1911</year>
+    <price>23.68</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Silent 29</title>
+    <author>Bob Wilson</author>
+    <year>1938</year>
+    <price>9.64</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Life 30</title>
+    <author>Frank Brown</author>
+    <year>1987</year>
+    <price>28.35</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep The 31</title>
+    <author>David Hall</author>
+    <year>1949</year>
+    <price>48.34</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Land 32</title>
+    <author>Jack Clark</author>
+    <year>1936</year>
+    <price>25.27</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Silent 33</title>
+    <author>Henry Hall</author>
+    <year>1929</year>
+    <price>29.87</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden The 34</title>
+    <author>David Clark</author>
+    <year>1993</year>
+    <price>44.16</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 35</title>
+    <author>Frank Hall</author>
+    <year>2007</year>
+    <price>32.55</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Lost 36</title>
+    <author>Frank Brown</author>
+    <year>1953</year>
+    <price>44.14</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind The 37</title>
+    <author>Frank Hall</author>
+    <year>1939</year>
+    <price>44.43</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 38</title>
+    <author>Frank Clark</author>
+    <year>1907</year>
+    <price>25.65</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 39</title>
+    <author>Frank Wilson</author>
+    <year>1973</year>
+    <price>15.98</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep The 40</title>
+    <author>Bob Brown</author>
+    <year>2021</year>
+    <price>41.13</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Life 41</title>
+    <author>Frank Wilson</author>
+    <year>1924</year>
+    <price>45.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Land 42</title>
+    <author>Jack Brown</author>
+    <year>1905</year>
+    <price>34.93</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Land 43</title>
+    <author>David Clark</author>
+    <year>1988</year>
+    <price>12.07</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Life 44</title>
+    <author>Jack Wilson</author>
+    <year>1918</year>
+    <price>24.05</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A The 45</title>
+    <author>Jack Wilson</author>
+    <year>1940</year>
+    <price>42.22</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Life 46</title>
+    <author>Frank Clark</author>
+    <year>1976</year>
+    <price>6.39</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Silent 47</title>
+    <author>Henry Smith</author>
+    <year>1922</year>
+    <price>24.96</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep The 48</title>
+    <author>David Wilson</author>
+    <year>1900</year>
+    <price>37.88</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Land 49</title>
+    <author>Bob Hall</author>
+    <year>1906</year>
+    <price>43.21</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Silent 50</title>
+    <author>David Brown</author>
+    <year>2008</year>
+    <price>27.32</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A The 51</title>
+    <author>Bob Wilson</author>
+    <year>1996</year>
+    <price>47.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Lost 52</title>
+    <author>Jack Brown</author>
+    <year>1957</year>
+    <price>24.62</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A The 53</title>
+    <author>Henry Hall</author>
+    <year>1901</year>
+    <price>42.85</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Life 54</title>
+    <author>Jack Smith</author>
+    <year>1925</year>
+    <price>7.66</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 55</title>
+    <author>Bob Clark</author>
+    <year>1973</year>
+    <price>19.79</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Lost 56</title>
+    <author>David Clark</author>
+    <year>1961</year>
+    <price>35.67</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Lost 57</title>
+    <author>David Brown</author>
+    <year>2022</year>
+    <price>16.59</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Lost 58</title>
+    <author>Bob Brown</author>
+    <year>1940</year>
+    <price>37.56</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Land 59</title>
+    <author>Bob Wilson</author>
+    <year>1933</year>
+    <price>44.04</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Life 60</title>
+    <author>David Hall</author>
+    <year>2024</year>
+    <price>26.88</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Silent 61</title>
+    <author>Henry Clark</author>
+    <year>1943</year>
+    <price>41.49</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Life 62</title>
+    <author>David Wilson</author>
+    <year>1950</year>
+    <price>29.92</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea Life 63</title>
+    <author>Henry Smith</author>
+    <year>2014</year>
+    <price>21.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Lost 64</title>
+    <author>Jack Clark</author>
+    <year>2004</year>
+    <price>31.60</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden The 65</title>
+    <author>Bob Clark</author>
+    <year>2015</year>
+    <price>39.42</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 66</title>
+    <author>Bob Hall</author>
+    <year>1970</year>
+    <price>17.37</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Silent 67</title>
+    <author>David Brown</author>
+    <year>1909</year>
+    <price>17.48</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 68</title>
+    <author>Henry Smith</author>
+    <year>2011</year>
+    <price>40.74</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Lost 69</title>
+    <author>Bob Wilson</author>
+    <year>1995</year>
+    <price>25.99</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 70</title>
+    <author>Bob Brown</author>
+    <year>1913</year>
+    <price>8.02</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Life 71</title>
+    <author>Bob Brown</author>
+    <year>2016</year>
+    <price>22.16</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 72</title>
+    <author>David Clark</author>
+    <year>1978</year>
+    <price>45.38</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 73</title>
+    <author>Jack Clark</author>
+    <year>1926</year>
+    <price>13.93</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Lost 74</title>
+    <author>Frank Hall</author>
+    <year>2024</year>
+    <price>7.53</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Lost 75</title>
+    <author>Jack Smith</author>
+    <year>1934</year>
+    <price>25.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Lost 76</title>
+    <author>Bob Smith</author>
+    <year>1946</year>
+    <price>7.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 77</title>
+    <author>David Hall</author>
+    <year>1969</year>
+    <price>26.84</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 78</title>
+    <author>David Hall</author>
+    <year>1906</year>
+    <price>26.34</price>
+  </book>
+  <book category="history">
+    <title lang="es">A The 79</title>
+    <author>Bob Clark</author>
+    <year>1911</year>
+    <price>41.11</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 80</title>
+    <author>Bob Clark</author>
+    <year>1903</year>
+    <price>30.84</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Land 81</title>
+    <author>David Brown</author>
+    <year>2002</year>
+    <price>36.32</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Silent 82</title>
+    <author>Henry Wilson</author>
+    <year>1977</year>
+    <price>30.46</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Life 83</title>
+    <author>Henry Hall</author>
+    <year>1968</year>
+    <price>20.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind The 84</title>
+    <author>Henry Clark</author>
+    <year>1923</year>
+    <price>14.33</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Lost 85</title>
+    <author>Bob Clark</author>
+    <year>1960</year>
+    <price>8.87</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Land 86</title>
+    <author>David Hall</author>
+    <year>1900</year>
+    <price>6.63</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Life 87</title>
+    <author>Bob Brown</author>
+    <year>1920</year>
+    <price>37.47</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea The 88</title>
+    <author>David Clark</author>
+    <year>1954</year>
+    <price>21.17</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Lost 89</title>
+    <author>Jack Brown</author>
+    <year>1939</year>
+    <price>22.11</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Lost 90</title>
+    <author>Henry Hall</author>
+    <year>1954</year>
+    <price>13.36</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden The 91</title>
+    <author>Henry Wilson</author>
+    <year>1957</year>
+    <price>16.02</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Life 92</title>
+    <author>Jack Hall</author>
+    <year>2016</year>
+    <price>49.40</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Silent 93</title>
+    <author>Jack Brown</author>
+    <year>1929</year>
+    <price>29.88</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 94</title>
+    <author>Bob Smith</author>
+    <year>1917</year>
+    <price>43.41</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden The 95</title>
+    <author>Henry Smith</author>
+    <year>1901</year>
+    <price>41.72</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Land 96</title>
+    <author>Jack Wilson</author>
+    <year>1938</year>
+    <price>31.62</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Silent 97</title>
+    <author>Henry Wilson</author>
+    <year>1976</year>
+    <price>34.69</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 98</title>
+    <author>David Smith</author>
+    <year>1968</year>
+    <price>44.79</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep The 99</title>
+    <author>David Clark</author>
+    <year>1923</year>
+    <price>24.24</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Lost 100</title>
+    <author>Henry Brown</author>
+    <year>1949</year>
+    <price>14.67</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 101</title>
+    <author>Jack Clark</author>
+    <year>1987</year>
+    <price>22.75</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind Life 102</title>
+    <author>Jack Wilson</author>
+    <year>1940</year>
+    <price>7.85</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Life 103</title>
+    <author>Jack Hall</author>
+    <year>1979</year>
+    <price>48.87</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 104</title>
+    <author>David Brown</author>
+    <year>2004</year>
+    <price>19.80</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 105</title>
+    <author>David Brown</author>
+    <year>1965</year>
+    <price>26.64</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Land 106</title>
+    <author>Frank Clark</author>
+    <year>2002</year>
+    <price>18.94</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Land 107</title>
+    <author>Henry Brown</author>
+    <year>1989</year>
+    <price>34.05</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Silent 108</title>
+    <author>Jack Brown</author>
+    <year>2001</year>
+    <price>14.57</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Silent 109</title>
+    <author>Frank Hall</author>
+    <year>2010</year>
+    <price>8.74</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 110</title>
+    <author>Henry Hall</author>
+    <year>1996</year>
+    <price>22.51</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea Lost 111</title>
+    <author>Bob Wilson</author>
+    <year>1960</year>
+    <price>47.68</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Lost 112</title>
+    <author>David Brown</author>
+    <year>1920</year>
+    <price>34.87</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Silent 113</title>
+    <author>Frank Smith</author>
+    <year>1954</year>
+    <price>9.78</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Land 114</title>
+    <author>Henry Smith</author>
+    <year>1936</year>
+    <price>27.99</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Life 115</title>
+    <author>Jack Hall</author>
+    <year>1992</year>
+    <price>48.41</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep The 116</title>
+    <author>Henry Hall</author>
+    <year>1950</year>
+    <price>42.00</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Lost 117</title>
+    <author>Bob Smith</author>
+    <year>2011</year>
+    <price>31.01</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep The 118</title>
+    <author>Jack Wilson</author>
+    <year>1981</year>
+    <price>45.41</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Life 119</title>
+    <author>Bob Smith</author>
+    <year>1965</year>
+    <price>28.63</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 120</title>
+    <author>Jack Smith</author>
+    <year>1912</year>
+    <price>23.39</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden The 121</title>
+    <author>Frank Wilson</author>
+    <year>1976</year>
+    <price>16.01</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Life 122</title>
+    <author>Bob Brown</author>
+    <year>1932</year>
+    <price>39.13</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Land 123</title>
+    <author>Bob Smith</author>
+    <year>2017</year>
+    <price>40.07</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Lost 124</title>
+    <author>Bob Hall</author>
+    <year>1986</year>
+    <price>43.43</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A The 125</title>
+    <author>Henry Clark</author>
+    <year>1914</year>
+    <price>8.67</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Silent 126</title>
+    <author>David Wilson</author>
+    <year>1967</year>
+    <price>8.33</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Life 127</title>
+    <author>Jack Smith</author>
+    <year>1988</year>
+    <price>5.06</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Life 128</title>
+    <author>Frank Hall</author>
+    <year>2011</year>
+    <price>30.42</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 129</title>
+    <author>Bob Smith</author>
+    <year>1925</year>
+    <price>32.41</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 130</title>
+    <author>Jack Smith</author>
+    <year>1915</year>
+    <price>14.31</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Life 131</title>
+    <author>David Wilson</author>
+    <year>1982</year>
+    <price>26.46</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A The 132</title>
+    <author>Henry Smith</author>
+    <year>1945</year>
+    <price>49.95</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep The 133</title>
+    <author>Henry Smith</author>
+    <year>1965</year>
+    <price>37.79</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Lost 134</title>
+    <author>Frank Wilson</author>
+    <year>1915</year>
+    <price>30.24</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Land 135</title>
+    <author>Frank Smith</author>
+    <year>2023</year>
+    <price>47.89</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Lost 136</title>
+    <author>Bob Clark</author>
+    <year>1917</year>
+    <price>16.20</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Life 137</title>
+    <author>David Wilson</author>
+    <year>1929</year>
+    <price>15.11</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Life 138</title>
+    <author>Frank Wilson</author>
+    <year>2016</year>
+    <price>21.74</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 139</title>
+    <author>David Hall</author>
+    <year>1968</year>
+    <price>22.21</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Silent 140</title>
+    <author>David Brown</author>
+    <year>2014</year>
+    <price>27.38</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 141</title>
+    <author>Frank Smith</author>
+    <year>2017</year>
+    <price>12.14</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Silent 142</title>
+    <author>Henry Brown</author>
+    <year>1931</year>
+    <price>13.26</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Land 143</title>
+    <author>Henry Hall</author>
+    <year>1950</year>
+    <price>30.84</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Lost 144</title>
+    <author>Jack Hall</author>
+    <year>2018</year>
+    <price>49.71</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep The 145</title>
+    <author>Frank Wilson</author>
+    <year>1947</year>
+    <price>7.90</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Land 146</title>
+    <author>Jack Wilson</author>
+    <year>1942</year>
+    <price>34.66</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A The 147</title>
+    <author>Jack Smith</author>
+    <year>1974</year>
+    <price>44.16</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Land 148</title>
+    <author>Jack Brown</author>
+    <year>1995</year>
+    <price>10.07</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Lost 149</title>
+    <author>David Clark</author>
+    <year>1966</year>
+    <price>12.77</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Silent 150</title>
+    <author>Bob Hall</author>
+    <year>1930</year>
+    <price>9.65</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind The 151</title>
+    <author>Frank Clark</author>
+    <year>1992</year>
+    <price>9.23</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Silent 152</title>
+    <author>David Smith</author>
+    <year>1951</year>
+    <price>31.62</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Life 153</title>
+    <author>Henry Clark</author>
+    <year>1950</year>
+    <price>42.81</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Lost 154</title>
+    <author>David Wilson</author>
+    <year>1992</year>
+    <price>23.99</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Lost 155</title>
+    <author>Henry Brown</author>
+    <year>1956</year>
+    <price>39.94</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A The 156</title>
+    <author>Jack Smith</author>
+    <year>1952</year>
+    <price>14.06</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 157</title>
+    <author>Henry Wilson</author>
+    <year>1998</year>
+    <price>46.48</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Land 158</title>
+    <author>David Smith</author>
+    <year>2002</year>
+    <price>14.57</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Land 159</title>
+    <author>Bob Brown</author>
+    <year>1927</year>
+    <price>6.62</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind Silent 160</title>
+    <author>Henry Smith</author>
+    <year>1992</year>
+    <price>45.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Silent 161</title>
+    <author>Henry Brown</author>
+    <year>1943</year>
+    <price>5.72</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Life 162</title>
+    <author>Bob Wilson</author>
+    <year>1946</year>
+    <price>17.79</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Lost 163</title>
+    <author>David Smith</author>
+    <year>1977</year>
+    <price>27.85</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Silent 164</title>
+    <author>Frank Clark</author>
+    <year>1977</year>
+    <price>46.49</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Silent 165</title>
+    <author>Bob Clark</author>
+    <year>2018</year>
+    <price>19.98</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Life 166</title>
+    <author>Henry Wilson</author>
+    <year>2001</year>
+    <price>10.77</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 167</title>
+    <author>David Wilson</author>
+    <year>1916</year>
+    <price>19.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Life 168</title>
+    <author>Frank Wilson</author>
+    <year>1916</year>
+    <price>17.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Life 169</title>
+    <author>David Hall</author>
+    <year>1989</year>
+    <price>22.07</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Silent 170</title>
+    <author>Bob Hall</author>
+    <year>1953</year>
+    <price>36.67</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Lost 171</title>
+    <author>Bob Clark</author>
+    <year>1921</year>
+    <price>26.40</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 172</title>
+    <author>Henry Clark</author>
+    <year>1938</year>
+    <price>44.64</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Lost 173</title>
+    <author>Bob Smith</author>
+    <year>1917</year>
+    <price>37.20</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Silent 174</title>
+    <author>Jack Wilson</author>
+    <year>1951</year>
+    <price>22.38</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Life 175</title>
+    <author>Frank Wilson</author>
+    <year>1923</year>
+    <price>29.69</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Land 176</title>
+    <author>Frank Smith</author>
+    <year>1948</year>
+    <price>31.68</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Land 177</title>
+    <author>Frank Wilson</author>
+    <year>2014</year>
+    <price>38.19</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Silent 178</title>
+    <author>Bob Wilson</author>
+    <year>1963</year>
+    <price>5.61</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Lost 179</title>
+    <author>Bob Brown</author>
+    <year>1924</year>
+    <price>38.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind The 180</title>
+    <author>Frank Clark</author>
+    <year>2013</year>
+    <price>38.95</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Silent 181</title>
+    <author>David Wilson</author>
+    <year>1962</year>
+    <price>38.95</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden The 182</title>
+    <author>David Clark</author>
+    <year>1971</year>
+    <price>36.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Silent 183</title>
+    <author>Frank Hall</author>
+    <year>1956</year>
+    <price>38.98</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Land 184</title>
+    <author>Henry Hall</author>
+    <year>1934</year>
+    <price>44.60</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Silent 185</title>
+    <author>Bob Brown</author>
+    <year>2021</year>
+    <price>30.55</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Silent 186</title>
+    <author>Jack Smith</author>
+    <year>1992</year>
+    <price>23.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Silent 187</title>
+    <author>Jack Clark</author>
+    <year>1961</year>
+    <price>8.04</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Silent 188</title>
+    <author>Jack Wilson</author>
+    <year>1922</year>
+    <price>35.84</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Silent 189</title>
+    <author>David Wilson</author>
+    <year>1962</year>
+    <price>20.16</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Lost 190</title>
+    <author>David Clark</author>
+    <year>1998</year>
+    <price>21.80</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep The 191</title>
+    <author>Henry Wilson</author>
+    <year>1915</year>
+    <price>39.56</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Life 192</title>
+    <author>Frank Smith</author>
+    <year>1963</year>
+    <price>15.79</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Land 193</title>
+    <author>David Hall</author>
+    <year>1981</year>
+    <price>36.33</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden The 194</title>
+    <author>David Clark</author>
+    <year>1950</year>
+    <price>35.76</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Silent 195</title>
+    <author>David Wilson</author>
+    <year>1926</year>
+    <price>31.11</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Life 196</title>
+    <author>Jack Clark</author>
+    <year>1924</year>
+    <price>27.24</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Lost 197</title>
+    <author>Jack Smith</author>
+    <year>1954</year>
+    <price>46.16</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Life 198</title>
+    <author>Frank Smith</author>
+    <year>2014</year>
+    <price>16.72</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Silent 199</title>
+    <author>Henry Wilson</author>
+    <year>1905</year>
+    <price>41.56</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A The 200</title>
+    <author>David Clark</author>
+    <year>1977</year>
+    <price>25.82</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 201</title>
+    <author>Bob Hall</author>
+    <year>2023</year>
+    <price>19.85</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Silent 202</title>
+    <author>Bob Wilson</author>
+    <year>2003</year>
+    <price>26.71</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Life 203</title>
+    <author>Frank Hall</author>
+    <year>1987</year>
+    <price>49.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Land 204</title>
+    <author>Bob Hall</author>
+    <year>1924</year>
+    <price>5.07</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Lost 205</title>
+    <author>David Smith</author>
+    <year>1977</year>
+    <price>20.75</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Life 206</title>
+    <author>Jack Smith</author>
+    <year>1970</year>
+    <price>42.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Land 207</title>
+    <author>Jack Wilson</author>
+    <year>1991</year>
+    <price>43.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Life 208</title>
+    <author>David Smith</author>
+    <year>1978</year>
+    <price>23.56</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Life 209</title>
+    <author>Henry Hall</author>
+    <year>1910</year>
+    <price>5.83</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea Lost 210</title>
+    <author>Bob Clark</author>
+    <year>1909</year>
+    <price>34.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 211</title>
+    <author>Bob Smith</author>
+    <year>1977</year>
+    <price>47.02</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden The 212</title>
+    <author>Bob Brown</author>
+    <year>1967</year>
+    <price>5.23</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea The 213</title>
+    <author>Henry Smith</author>
+    <year>1960</year>
+    <price>25.13</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 214</title>
+    <author>David Brown</author>
+    <year>1914</year>
+    <price>14.12</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep The 215</title>
+    <author>David Brown</author>
+    <year>1964</year>
+    <price>8.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden Life 216</title>
+    <author>Frank Clark</author>
+    <year>1999</year>
+    <price>18.52</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A The 217</title>
+    <author>Jack Clark</author>
+    <year>1982</year>
+    <price>21.58</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Lost 218</title>
+    <author>Henry Clark</author>
+    <year>1902</year>
+    <price>44.08</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Silent 219</title>
+    <author>Frank Clark</author>
+    <year>1930</year>
+    <price>41.60</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Silent 220</title>
+    <author>David Brown</author>
+    <year>1978</year>
+    <price>36.66</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Life 221</title>
+    <author>Henry Smith</author>
+    <year>2001</year>
+    <price>32.97</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Silent 222</title>
+    <author>Frank Brown</author>
+    <year>1992</year>
+    <price>21.14</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 223</title>
+    <author>Bob Clark</author>
+    <year>2001</year>
+    <price>21.43</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 224</title>
+    <author>Bob Brown</author>
+    <year>1962</year>
+    <price>17.25</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 225</title>
+    <author>Henry Wilson</author>
+    <year>2011</year>
+    <price>31.48</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea The 226</title>
+    <author>Jack Brown</author>
+    <year>1916</year>
+    <price>19.33</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Land 227</title>
+    <author>Bob Clark</author>
+    <year>1910</year>
+    <price>21.51</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Land 228</title>
+    <author>Henry Hall</author>
+    <year>1921</year>
+    <price>32.61</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Silent 229</title>
+    <author>Jack Clark</author>
+    <year>1916</year>
+    <price>22.99</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden The 230</title>
+    <author>Jack Wilson</author>
+    <year>1924</year>
+    <price>35.58</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Life 231</title>
+    <author>Bob Smith</author>
+    <year>1935</year>
+    <price>37.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Life 232</title>
+    <author>Henry Hall</author>
+    <year>1986</year>
+    <price>48.95</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 233</title>
+    <author>Jack Wilson</author>
+    <year>2021</year>
+    <price>13.40</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 234</title>
+    <author>David Smith</author>
+    <year>1925</year>
+    <price>33.33</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Life 235</title>
+    <author>David Smith</author>
+    <year>2006</year>
+    <price>36.93</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Life 236</title>
+    <author>Bob Hall</author>
+    <year>1920</year>
+    <price>17.29</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Land 237</title>
+    <author>David Brown</author>
+    <year>1974</year>
+    <price>36.94</price>
+  </book>
+  <book category="history">
+    <title lang="en">A The 238</title>
+    <author>Frank Hall</author>
+    <year>1958</year>
+    <price>33.38</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Life 239</title>
+    <author>Bob Clark</author>
+    <year>1915</year>
+    <price>41.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 240</title>
+    <author>David Hall</author>
+    <year>1997</year>
+    <price>6.79</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Lost 241</title>
+    <author>Frank Smith</author>
+    <year>1951</year>
+    <price>23.01</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Land 242</title>
+    <author>Jack Clark</author>
+    <year>1971</year>
+    <price>5.16</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Land 243</title>
+    <author>David Wilson</author>
+    <year>2012</year>
+    <price>35.54</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea The 244</title>
+    <author>Henry Smith</author>
+    <year>1975</year>
+    <price>17.35</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Silent 245</title>
+    <author>Jack Brown</author>
+    <year>2013</year>
+    <price>11.96</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Lost 246</title>
+    <author>Henry Smith</author>
+    <year>1944</year>
+    <price>19.49</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Lost 247</title>
+    <author>Frank Clark</author>
+    <year>1981</year>
+    <price>24.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Land 248</title>
+    <author>Jack Smith</author>
+    <year>1930</year>
+    <price>32.23</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Life 249</title>
+    <author>Henry Clark</author>
+    <year>1932</year>
+    <price>12.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Land 250</title>
+    <author>Jack Hall</author>
+    <year>1938</year>
+    <price>14.36</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Silent 251</title>
+    <author>Frank Smith</author>
+    <year>1999</year>
+    <price>33.65</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Lost 252</title>
+    <author>Henry Wilson</author>
+    <year>2007</year>
+    <price>23.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Life 253</title>
+    <author>Frank Hall</author>
+    <year>1974</year>
+    <price>37.54</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Lost 254</title>
+    <author>Bob Smith</author>
+    <year>1903</year>
+    <price>9.11</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 255</title>
+    <author>Henry Wilson</author>
+    <year>2008</year>
+    <price>15.74</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Lost 256</title>
+    <author>Henry Brown</author>
+    <year>2004</year>
+    <price>21.56</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Life 257</title>
+    <author>Bob Hall</author>
+    <year>1909</year>
+    <price>40.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Lost 258</title>
+    <author>Jack Clark</author>
+    <year>1961</year>
+    <price>9.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Lost 259</title>
+    <author>Jack Smith</author>
+    <year>1919</year>
+    <price>10.33</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Lost 260</title>
+    <author>David Brown</author>
+    <year>2013</year>
+    <price>7.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Land 261</title>
+    <author>Frank Wilson</author>
+    <year>1936</year>
+    <price>33.61</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Lost 262</title>
+    <author>David Brown</author>
+    <year>1950</year>
+    <price>25.77</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Lost 263</title>
+    <author>Jack Smith</author>
+    <year>1904</year>
+    <price>14.95</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Land 264</title>
+    <author>Frank Wilson</author>
+    <year>2000</year>
+    <price>39.40</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Silent 265</title>
+    <author>Bob Smith</author>
+    <year>1964</year>
+    <price>23.26</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Lost 266</title>
+    <author>Henry Smith</author>
+    <year>1996</year>
+    <price>35.00</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Lost 267</title>
+    <author>Bob Brown</author>
+    <year>2015</year>
+    <price>48.24</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 268</title>
+    <author>Jack Clark</author>
+    <year>1900</year>
+    <price>42.07</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Lost 269</title>
+    <author>David Brown</author>
+    <year>1918</year>
+    <price>17.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Lost 270</title>
+    <author>David Smith</author>
+    <year>2023</year>
+    <price>8.58</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Life 271</title>
+    <author>Henry Hall</author>
+    <year>1960</year>
+    <price>38.03</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Life 272</title>
+    <author>Henry Brown</author>
+    <year>1972</year>
+    <price>15.88</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep The 273</title>
+    <author>Frank Wilson</author>
+    <year>1932</year>
+    <price>13.01</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 274</title>
+    <author>Bob Brown</author>
+    <year>1919</year>
+    <price>42.29</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep The 275</title>
+    <author>Bob Clark</author>
+    <year>1931</year>
+    <price>41.05</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind The 276</title>
+    <author>Henry Hall</author>
+    <year>2024</year>
+    <price>28.36</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Lost 277</title>
+    <author>David Smith</author>
+    <year>1989</year>
+    <price>24.20</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Life 278</title>
+    <author>Frank Hall</author>
+    <year>1968</year>
+    <price>27.12</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Lost 279</title>
+    <author>David Smith</author>
+    <year>2000</year>
+    <price>47.69</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Lost 280</title>
+    <author>Frank Brown</author>
+    <year>1907</year>
+    <price>39.74</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Lost 281</title>
+    <author>Bob Brown</author>
+    <year>1922</year>
+    <price>36.88</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden The 282</title>
+    <author>Henry Hall</author>
+    <year>1960</year>
+    <price>25.90</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep The 283</title>
+    <author>Frank Smith</author>
+    <year>1944</year>
+    <price>8.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Silent 284</title>
+    <author>Jack Clark</author>
+    <year>1945</year>
+    <price>32.90</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Lost 285</title>
+    <author>Frank Hall</author>
+    <year>1975</year>
+    <price>13.61</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind The 286</title>
+    <author>Jack Brown</author>
+    <year>1929</year>
+    <price>43.80</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Life 287</title>
+    <author>Frank Hall</author>
+    <year>1955</year>
+    <price>18.32</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea The 288</title>
+    <author>Frank Brown</author>
+    <year>1911</year>
+    <price>6.51</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Land 289</title>
+    <author>Jack Wilson</author>
+    <year>1900</year>
+    <price>46.75</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Life 290</title>
+    <author>Frank Hall</author>
+    <year>1943</year>
+    <price>23.43</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden The 291</title>
+    <author>Henry Wilson</author>
+    <year>1993</year>
+    <price>47.99</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Silent 292</title>
+    <author>David Smith</author>
+    <year>1947</year>
+    <price>38.90</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Land 293</title>
+    <author>Bob Hall</author>
+    <year>2006</year>
+    <price>24.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Land 294</title>
+    <author>David Brown</author>
+    <year>1980</year>
+    <price>49.68</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Silent 295</title>
+    <author>Bob Brown</author>
+    <year>1971</year>
+    <price>48.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 296</title>
+    <author>Frank Clark</author>
+    <year>1995</year>
+    <price>46.64</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Lost 297</title>
+    <author>Frank Smith</author>
+    <year>2005</year>
+    <price>38.15</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Silent 298</title>
+    <author>Jack Clark</author>
+    <year>2009</year>
+    <price>23.02</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Lost 299</title>
+    <author>Bob Wilson</author>
+    <year>1904</year>
+    <price>36.96</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea The 300</title>
+    <author>Jack Wilson</author>
+    <year>1900</year>
+    <price>16.88</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 301</title>
+    <author>Frank Smith</author>
+    <year>1909</year>
+    <price>27.26</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A The 302</title>
+    <author>Jack Smith</author>
+    <year>1935</year>
+    <price>16.20</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Land 303</title>
+    <author>Jack Smith</author>
+    <year>1991</year>
+    <price>40.15</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 304</title>
+    <author>Jack Wilson</author>
+    <year>1989</year>
+    <price>20.11</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind The 305</title>
+    <author>David Wilson</author>
+    <year>1956</year>
+    <price>49.02</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Lost 306</title>
+    <author>Frank Clark</author>
+    <year>1958</year>
+    <price>13.74</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Land 307</title>
+    <author>Jack Hall</author>
+    <year>1929</year>
+    <price>33.39</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Land 308</title>
+    <author>David Hall</author>
+    <year>1947</year>
+    <price>26.10</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Lost 309</title>
+    <author>David Wilson</author>
+    <year>2017</year>
+    <price>34.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Life 310</title>
+    <author>Frank Smith</author>
+    <year>1930</year>
+    <price>16.05</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Life 311</title>
+    <author>Bob Wilson</author>
+    <year>1925</year>
+    <price>39.70</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Silent 312</title>
+    <author>Frank Hall</author>
+    <year>1939</year>
+    <price>19.98</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind The 313</title>
+    <author>David Hall</author>
+    <year>1913</year>
+    <price>30.46</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Life 314</title>
+    <author>Henry Clark</author>
+    <year>1989</year>
+    <price>20.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Lost 315</title>
+    <author>Jack Wilson</author>
+    <year>2020</year>
+    <price>23.29</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind The 316</title>
+    <author>David Wilson</author>
+    <year>1918</year>
+    <price>22.47</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea The 317</title>
+    <author>Bob Brown</author>
+    <year>1931</year>
+    <price>25.58</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Life 318</title>
+    <author>Bob Hall</author>
+    <year>1966</year>
+    <price>23.38</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Silent 319</title>
+    <author>David Clark</author>
+    <year>2023</year>
+    <price>28.31</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Life 320</title>
+    <author>Jack Smith</author>
+    <year>2002</year>
+    <price>13.87</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Life 321</title>
+    <author>Jack Wilson</author>
+    <year>1922</year>
+    <price>42.92</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Life 322</title>
+    <author>David Smith</author>
+    <year>1908</year>
+    <price>23.58</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 323</title>
+    <author>Bob Wilson</author>
+    <year>1969</year>
+    <price>26.97</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 324</title>
+    <author>Bob Wilson</author>
+    <year>1914</year>
+    <price>49.81</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Land 325</title>
+    <author>Jack Wilson</author>
+    <year>1952</year>
+    <price>44.66</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Life 326</title>
+    <author>Henry Wilson</author>
+    <year>1915</year>
+    <price>38.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Silent 327</title>
+    <author>Henry Hall</author>
+    <year>1908</year>
+    <price>49.02</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind The 328</title>
+    <author>Frank Clark</author>
+    <year>1957</year>
+    <price>48.31</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Land 329</title>
+    <author>Frank Smith</author>
+    <year>1936</year>
+    <price>27.42</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Lost 330</title>
+    <author>Frank Smith</author>
+    <year>1962</year>
+    <price>24.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Land 331</title>
+    <author>Frank Clark</author>
+    <year>1902</year>
+    <price>6.31</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Life 332</title>
+    <author>Jack Hall</author>
+    <year>1960</year>
+    <price>17.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Land 333</title>
+    <author>Bob Hall</author>
+    <year>1975</year>
+    <price>13.20</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Life 334</title>
+    <author>Bob Hall</author>
+    <year>1913</year>
+    <price>27.99</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden The 335</title>
+    <author>Bob Wilson</author>
+    <year>1943</year>
+    <price>15.26</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Silent 336</title>
+    <author>Frank Clark</author>
+    <year>1959</year>
+    <price>22.49</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Silent 337</title>
+    <author>Frank Smith</author>
+    <year>1914</year>
+    <price>32.77</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Silent 338</title>
+    <author>Bob Wilson</author>
+    <year>1945</year>
+    <price>11.83</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Silent 339</title>
+    <author>Henry Wilson</author>
+    <year>1915</year>
+    <price>18.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 340</title>
+    <author>Jack Smith</author>
+    <year>2020</year>
+    <price>35.50</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea The 341</title>
+    <author>Bob Wilson</author>
+    <year>1977</year>
+    <price>32.16</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Life 342</title>
+    <author>David Smith</author>
+    <year>1969</year>
+    <price>23.68</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea The 343</title>
+    <author>Henry Wilson</author>
+    <year>1937</year>
+    <price>31.26</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Life 344</title>
+    <author>Jack Clark</author>
+    <year>2015</year>
+    <price>28.83</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 345</title>
+    <author>Jack Hall</author>
+    <year>1984</year>
+    <price>35.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 346</title>
+    <author>David Hall</author>
+    <year>1979</year>
+    <price>14.08</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Lost 347</title>
+    <author>Henry Brown</author>
+    <year>1951</year>
+    <price>36.15</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 348</title>
+    <author>Jack Hall</author>
+    <year>1940</year>
+    <price>33.00</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep The 349</title>
+    <author>Jack Hall</author>
+    <year>2020</year>
+    <price>24.68</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Lost 350</title>
+    <author>Frank Smith</author>
+    <year>1950</year>
+    <price>41.83</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden The 351</title>
+    <author>Henry Brown</author>
+    <year>1976</year>
+    <price>44.10</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 352</title>
+    <author>Bob Hall</author>
+    <year>2002</year>
+    <price>19.46</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Silent 353</title>
+    <author>David Clark</author>
+    <year>2008</year>
+    <price>32.90</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Land 354</title>
+    <author>David Hall</author>
+    <year>1943</year>
+    <price>13.34</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Silent 355</title>
+    <author>Jack Hall</author>
+    <year>1951</year>
+    <price>39.51</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Silent 356</title>
+    <author>Henry Wilson</author>
+    <year>2010</year>
+    <price>20.05</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Lost 357</title>
+    <author>Bob Smith</author>
+    <year>1924</year>
+    <price>10.52</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Land 358</title>
+    <author>Henry Hall</author>
+    <year>1963</year>
+    <price>47.10</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Lost 359</title>
+    <author>Frank Wilson</author>
+    <year>1907</year>
+    <price>42.82</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Lost 360</title>
+    <author>Bob Hall</author>
+    <year>1986</year>
+    <price>43.37</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Land 361</title>
+    <author>Bob Wilson</author>
+    <year>1967</year>
+    <price>13.19</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Life 362</title>
+    <author>Jack Smith</author>
+    <year>1912</year>
+    <price>28.14</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Lost 363</title>
+    <author>Henry Wilson</author>
+    <year>2009</year>
+    <price>44.32</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 364</title>
+    <author>Henry Clark</author>
+    <year>1927</year>
+    <price>8.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 365</title>
+    <author>Jack Wilson</author>
+    <year>1928</year>
+    <price>19.94</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind The 366</title>
+    <author>Frank Brown</author>
+    <year>1987</year>
+    <price>43.39</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Life 367</title>
+    <author>David Wilson</author>
+    <year>1907</year>
+    <price>6.57</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Lost 368</title>
+    <author>David Clark</author>
+    <year>1917</year>
+    <price>15.99</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 369</title>
+    <author>Henry Hall</author>
+    <year>2018</year>
+    <price>17.85</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden The 370</title>
+    <author>Frank Clark</author>
+    <year>1967</year>
+    <price>18.17</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Life 371</title>
+    <author>Frank Smith</author>
+    <year>1924</year>
+    <price>20.27</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Lost 372</title>
+    <author>Jack Clark</author>
+    <year>1920</year>
+    <price>23.27</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Land 373</title>
+    <author>David Brown</author>
+    <year>1927</year>
+    <price>16.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind The 374</title>
+    <author>David Wilson</author>
+    <year>1948</year>
+    <price>11.97</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Land 375</title>
+    <author>Bob Smith</author>
+    <year>2019</year>
+    <price>29.81</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Silent 376</title>
+    <author>Henry Hall</author>
+    <year>1902</year>
+    <price>18.44</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Silent 377</title>
+    <author>Henry Clark</author>
+    <year>2003</year>
+    <price>9.23</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Life 378</title>
+    <author>Jack Smith</author>
+    <year>1905</year>
+    <price>36.97</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Silent 379</title>
+    <author>Bob Wilson</author>
+    <year>1920</year>
+    <price>18.28</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 380</title>
+    <author>Frank Brown</author>
+    <year>2018</year>
+    <price>21.56</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea Lost 381</title>
+    <author>Bob Wilson</author>
+    <year>2009</year>
+    <price>26.09</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Land 382</title>
+    <author>Henry Brown</author>
+    <year>1918</year>
+    <price>16.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Land 383</title>
+    <author>Jack Wilson</author>
+    <year>1939</year>
+    <price>28.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Life 384</title>
+    <author>David Brown</author>
+    <year>1928</year>
+    <price>20.53</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Land 385</title>
+    <author>Henry Clark</author>
+    <year>2015</year>
+    <price>47.14</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Lost 386</title>
+    <author>David Wilson</author>
+    <year>1917</year>
+    <price>35.52</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Lost 387</title>
+    <author>Bob Wilson</author>
+    <year>1923</year>
+    <price>30.10</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 388</title>
+    <author>Jack Hall</author>
+    <year>1977</year>
+    <price>23.41</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A The 389</title>
+    <author>Bob Brown</author>
+    <year>1948</year>
+    <price>17.75</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Lost 390</title>
+    <author>Jack Brown</author>
+    <year>1929</year>
+    <price>44.12</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Land 391</title>
+    <author>Jack Smith</author>
+    <year>2012</year>
+    <price>20.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Lost 392</title>
+    <author>Jack Wilson</author>
+    <year>2002</year>
+    <price>47.53</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Land 393</title>
+    <author>Frank Wilson</author>
+    <year>2013</year>
+    <price>22.32</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind The 394</title>
+    <author>Jack Smith</author>
+    <year>1949</year>
+    <price>35.93</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep The 395</title>
+    <author>David Brown</author>
+    <year>1901</year>
+    <price>13.68</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 396</title>
+    <author>Bob Hall</author>
+    <year>1959</year>
+    <price>30.54</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea The 397</title>
+    <author>Jack Wilson</author>
+    <year>1916</year>
+    <price>13.72</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Silent 398</title>
+    <author>Bob Clark</author>
+    <year>1918</year>
+    <price>6.08</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Lost 399</title>
+    <author>David Hall</author>
+    <year>1966</year>
+    <price>38.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Lost 400</title>
+    <author>Frank Clark</author>
+    <year>2013</year>
+    <price>22.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Silent 401</title>
+    <author>Frank Clark</author>
+    <year>1995</year>
+    <price>7.90</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Lost 402</title>
+    <author>Bob Hall</author>
+    <year>2013</year>
+    <price>10.66</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Life 403</title>
+    <author>Jack Smith</author>
+    <year>1930</year>
+    <price>34.30</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Lost 404</title>
+    <author>Frank Hall</author>
+    <year>2000</year>
+    <price>19.77</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Land 405</title>
+    <author>Henry Smith</author>
+    <year>1905</year>
+    <price>48.20</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Silent 406</title>
+    <author>David Clark</author>
+    <year>2022</year>
+    <price>40.88</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 407</title>
+    <author>Bob Brown</author>
+    <year>1937</year>
+    <price>29.49</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Silent 408</title>
+    <author>David Brown</author>
+    <year>1920</year>
+    <price>8.74</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Silent 409</title>
+    <author>David Wilson</author>
+    <year>1977</year>
+    <price>6.08</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Life 410</title>
+    <author>David Hall</author>
+    <year>1980</year>
+    <price>28.85</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Lost 411</title>
+    <author>Bob Hall</author>
+    <year>1996</year>
+    <price>32.71</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Land 412</title>
+    <author>Bob Smith</author>
+    <year>1974</year>
+    <price>49.42</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden The 413</title>
+    <author>David Smith</author>
+    <year>2020</year>
+    <price>30.69</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Land 414</title>
+    <author>David Hall</author>
+    <year>1921</year>
+    <price>30.46</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Lost 415</title>
+    <author>David Smith</author>
+    <year>1925</year>
+    <price>25.97</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Silent 416</title>
+    <author>Jack Hall</author>
+    <year>1979</year>
+    <price>25.38</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind The 417</title>
+    <author>Henry Clark</author>
+    <year>1934</year>
+    <price>38.20</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Lost 418</title>
+    <author>Henry Smith</author>
+    <year>1958</year>
+    <price>27.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Life 419</title>
+    <author>Henry Wilson</author>
+    <year>1905</year>
+    <price>47.64</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Lost 420</title>
+    <author>Frank Brown</author>
+    <year>1967</year>
+    <price>30.39</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Life 421</title>
+    <author>Frank Clark</author>
+    <year>1906</year>
+    <price>43.66</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden The 422</title>
+    <author>Jack Hall</author>
+    <year>2008</year>
+    <price>18.84</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind The 423</title>
+    <author>Henry Clark</author>
+    <year>2014</year>
+    <price>19.84</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Land 424</title>
+    <author>Jack Brown</author>
+    <year>1947</year>
+    <price>35.91</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Land 425</title>
+    <author>Frank Wilson</author>
+    <year>2017</year>
+    <price>8.12</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 426</title>
+    <author>Henry Wilson</author>
+    <year>1969</year>
+    <price>18.92</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind The 427</title>
+    <author>David Wilson</author>
+    <year>1959</year>
+    <price>21.40</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Silent 428</title>
+    <author>Henry Wilson</author>
+    <year>1943</year>
+    <price>30.00</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Silent 429</title>
+    <author>Henry Smith</author>
+    <year>1992</year>
+    <price>36.70</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Life 430</title>
+    <author>Jack Brown</author>
+    <year>2024</year>
+    <price>27.91</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Silent 431</title>
+    <author>Bob Hall</author>
+    <year>1985</year>
+    <price>37.34</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Silent 432</title>
+    <author>David Clark</author>
+    <year>1980</year>
+    <price>31.33</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden The 433</title>
+    <author>Bob Hall</author>
+    <year>1994</year>
+    <price>39.49</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Silent 434</title>
+    <author>Henry Wilson</author>
+    <year>1908</year>
+    <price>17.57</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Land 435</title>
+    <author>Bob Hall</author>
+    <year>1900</year>
+    <price>38.60</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Life 436</title>
+    <author>Jack Brown</author>
+    <year>1907</year>
+    <price>8.19</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Life 437</title>
+    <author>Bob Wilson</author>
+    <year>2007</year>
+    <price>6.34</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden Land 438</title>
+    <author>Henry Hall</author>
+    <year>1978</year>
+    <price>29.11</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Lost 439</title>
+    <author>Bob Wilson</author>
+    <year>1979</year>
+    <price>36.29</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea The 440</title>
+    <author>David Clark</author>
+    <year>1963</year>
+    <price>26.31</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 441</title>
+    <author>Jack Hall</author>
+    <year>1946</year>
+    <price>19.32</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep The 442</title>
+    <author>Frank Brown</author>
+    <year>1966</year>
+    <price>35.35</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Land 443</title>
+    <author>Bob Clark</author>
+    <year>1989</year>
+    <price>14.07</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Land 444</title>
+    <author>Frank Clark</author>
+    <year>2022</year>
+    <price>11.74</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Silent 445</title>
+    <author>Jack Clark</author>
+    <year>1974</year>
+    <price>6.64</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Land 446</title>
+    <author>Frank Wilson</author>
+    <year>1932</year>
+    <price>30.91</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 447</title>
+    <author>Frank Hall</author>
+    <year>1987</year>
+    <price>19.14</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea The 448</title>
+    <author>Bob Brown</author>
+    <year>1993</year>
+    <price>35.26</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A The 449</title>
+    <author>David Hall</author>
+    <year>1993</year>
+    <price>16.05</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Silent 450</title>
+    <author>Henry Clark</author>
+    <year>1979</year>
+    <price>30.82</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Silent 451</title>
+    <author>Bob Wilson</author>
+    <year>1976</year>
+    <price>17.46</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden The 452</title>
+    <author>Bob Hall</author>
+    <year>1907</year>
+    <price>18.48</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Silent 453</title>
+    <author>Jack Hall</author>
+    <year>1989</year>
+    <price>22.12</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea The 454</title>
+    <author>Bob Clark</author>
+    <year>1904</year>
+    <price>28.09</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Life 455</title>
+    <author>Jack Wilson</author>
+    <year>1936</year>
+    <price>47.57</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea The 456</title>
+    <author>Henry Hall</author>
+    <year>1963</year>
+    <price>13.07</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Land 457</title>
+    <author>Henry Hall</author>
+    <year>1915</year>
+    <price>11.81</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Life 458</title>
+    <author>Henry Smith</author>
+    <year>1924</year>
+    <price>43.88</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Lost 459</title>
+    <author>Frank Wilson</author>
+    <year>1986</year>
+    <price>48.26</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep The 460</title>
+    <author>Bob Brown</author>
+    <year>2016</year>
+    <price>29.84</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Life 461</title>
+    <author>Henry Brown</author>
+    <year>1933</year>
+    <price>15.88</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Land 462</title>
+    <author>Jack Hall</author>
+    <year>1929</year>
+    <price>20.10</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Life 463</title>
+    <author>Bob Hall</author>
+    <year>1955</year>
+    <price>35.45</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Land 464</title>
+    <author>Henry Brown</author>
+    <year>1954</year>
+    <price>26.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Lost 465</title>
+    <author>Frank Smith</author>
+    <year>1984</year>
+    <price>9.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Silent 466</title>
+    <author>Bob Brown</author>
+    <year>1975</year>
+    <price>29.08</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Silent 467</title>
+    <author>Henry Smith</author>
+    <year>1901</year>
+    <price>21.14</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Life 468</title>
+    <author>Henry Wilson</author>
+    <year>1972</year>
+    <price>31.01</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep The 469</title>
+    <author>Jack Brown</author>
+    <year>1911</year>
+    <price>26.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 470</title>
+    <author>Henry Brown</author>
+    <year>1901</year>
+    <price>47.04</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Silent 471</title>
+    <author>Jack Brown</author>
+    <year>1979</year>
+    <price>18.08</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 472</title>
+    <author>Frank Brown</author>
+    <year>1978</year>
+    <price>35.46</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Life 473</title>
+    <author>David Hall</author>
+    <year>2010</year>
+    <price>13.69</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 474</title>
+    <author>Bob Clark</author>
+    <year>2006</year>
+    <price>39.25</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep The 475</title>
+    <author>Bob Clark</author>
+    <year>2001</year>
+    <price>12.86</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 476</title>
+    <author>Henry Clark</author>
+    <year>1929</year>
+    <price>34.60</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Silent 477</title>
+    <author>Frank Wilson</author>
+    <year>1972</year>
+    <price>20.69</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Silent 478</title>
+    <author>Henry Hall</author>
+    <year>1919</year>
+    <price>23.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden Land 479</title>
+    <author>Jack Wilson</author>
+    <year>1941</year>
+    <price>32.31</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Life 480</title>
+    <author>David Hall</author>
+    <year>1943</year>
+    <price>18.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 481</title>
+    <author>Bob Smith</author>
+    <year>1948</year>
+    <price>18.14</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep The 482</title>
+    <author>Henry Smith</author>
+    <year>1922</year>
+    <price>27.69</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Silent 483</title>
+    <author>Frank Clark</author>
+    <year>1903</year>
+    <price>23.10</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 484</title>
+    <author>David Smith</author>
+    <year>2012</year>
+    <price>29.77</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden The 485</title>
+    <author>Frank Smith</author>
+    <year>1917</year>
+    <price>23.55</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden Lost 486</title>
+    <author>David Hall</author>
+    <year>1998</year>
+    <price>13.38</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Life 487</title>
+    <author>Frank Hall</author>
+    <year>1954</year>
+    <price>12.89</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Land 488</title>
+    <author>David Clark</author>
+    <year>1941</year>
+    <price>30.16</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Lost 489</title>
+    <author>David Clark</author>
+    <year>1940</year>
+    <price>23.77</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Hidden The 490</title>
+    <author>Frank Smith</author>
+    <year>1942</year>
+    <price>32.83</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Silent 491</title>
+    <author>David Clark</author>
+    <year>2003</year>
+    <price>43.01</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea The 492</title>
+    <author>Frank Wilson</author>
+    <year>1920</year>
+    <price>29.93</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Life 493</title>
+    <author>Jack Wilson</author>
+    <year>1978</year>
+    <price>36.80</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 494</title>
+    <author>Frank Smith</author>
+    <year>1933</year>
+    <price>36.62</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Lost 495</title>
+    <author>David Smith</author>
+    <year>1961</year>
+    <price>31.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind The 496</title>
+    <author>Frank Smith</author>
+    <year>2022</year>
+    <price>43.60</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Life 497</title>
+    <author>Henry Clark</author>
+    <year>1911</year>
+    <price>13.90</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Land 498</title>
+    <author>Frank Hall</author>
+    <year>1933</year>
+    <price>35.93</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 499</title>
+    <author>Bob Brown</author>
+    <year>2019</year>
+    <price>21.36</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Lost 500</title>
+    <author>Frank Wilson</author>
+    <year>1961</year>
+    <price>18.62</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Lost 501</title>
+    <author>Jack Brown</author>
+    <year>2008</year>
+    <price>16.38</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A The 502</title>
+    <author>Frank Wilson</author>
+    <year>2004</year>
+    <price>17.02</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Lost 503</title>
+    <author>Frank Brown</author>
+    <year>1904</year>
+    <price>49.29</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Land 504</title>
+    <author>Henry Hall</author>
+    <year>2012</year>
+    <price>41.59</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 505</title>
+    <author>Frank Hall</author>
+    <year>1901</year>
+    <price>19.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Silent 506</title>
+    <author>Frank Clark</author>
+    <year>1907</year>
+    <price>8.45</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind The 507</title>
+    <author>Frank Wilson</author>
+    <year>1959</year>
+    <price>49.54</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Silent 508</title>
+    <author>David Hall</author>
+    <year>1966</year>
+    <price>9.28</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Silent 509</title>
+    <author>David Clark</author>
+    <year>1908</year>
+    <price>24.31</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Lost 510</title>
+    <author>Jack Brown</author>
+    <year>1922</year>
+    <price>25.30</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Life 511</title>
+    <author>Frank Hall</author>
+    <year>1901</year>
+    <price>19.37</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Land 512</title>
+    <author>Frank Smith</author>
+    <year>2018</year>
+    <price>12.07</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea The 513</title>
+    <author>Henry Clark</author>
+    <year>1918</year>
+    <price>49.17</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Lost 514</title>
+    <author>David Brown</author>
+    <year>1917</year>
+    <price>46.93</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep The 515</title>
+    <author>Bob Clark</author>
+    <year>1939</year>
+    <price>17.77</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Life 516</title>
+    <author>Bob Brown</author>
+    <year>1989</year>
+    <price>40.77</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Silent 517</title>
+    <author>Henry Clark</author>
+    <year>1972</year>
+    <price>44.72</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Silent 518</title>
+    <author>David Wilson</author>
+    <year>1930</year>
+    <price>14.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Silent 519</title>
+    <author>David Wilson</author>
+    <year>1961</year>
+    <price>37.71</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Silent 520</title>
+    <author>Jack Smith</author>
+    <year>1958</year>
+    <price>14.46</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Life 521</title>
+    <author>David Wilson</author>
+    <year>2006</year>
+    <price>39.55</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Silent 522</title>
+    <author>Frank Hall</author>
+    <year>1996</year>
+    <price>9.65</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Land 523</title>
+    <author>David Wilson</author>
+    <year>1956</year>
+    <price>31.31</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Lost 524</title>
+    <author>David Smith</author>
+    <year>1995</year>
+    <price>32.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Land 525</title>
+    <author>Jack Brown</author>
+    <year>1914</year>
+    <price>47.05</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Life 526</title>
+    <author>Frank Clark</author>
+    <year>1912</year>
+    <price>24.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden The 527</title>
+    <author>Bob Smith</author>
+    <year>1918</year>
+    <price>46.47</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Lost 528</title>
+    <author>Jack Brown</author>
+    <year>1907</year>
+    <price>42.53</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Land 529</title>
+    <author>Bob Smith</author>
+    <year>1925</year>
+    <price>22.32</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Land 530</title>
+    <author>Bob Smith</author>
+    <year>1942</year>
+    <price>15.45</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden The 531</title>
+    <author>Bob Clark</author>
+    <year>2001</year>
+    <price>6.59</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Lost 532</title>
+    <author>Frank Hall</author>
+    <year>1902</year>
+    <price>15.39</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 533</title>
+    <author>David Clark</author>
+    <year>1934</year>
+    <price>35.42</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Land 534</title>
+    <author>Bob Wilson</author>
+    <year>1954</year>
+    <price>35.86</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 535</title>
+    <author>Bob Smith</author>
+    <year>2020</year>
+    <price>20.44</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Lost 536</title>
+    <author>David Smith</author>
+    <year>2012</year>
+    <price>6.77</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea The 537</title>
+    <author>Bob Smith</author>
+    <year>1938</year>
+    <price>14.68</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Land 538</title>
+    <author>Henry Clark</author>
+    <year>1945</year>
+    <price>26.32</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 539</title>
+    <author>Bob Clark</author>
+    <year>1951</year>
+    <price>28.41</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Lost 540</title>
+    <author>David Brown</author>
+    <year>1934</year>
+    <price>18.73</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Silent 541</title>
+    <author>Frank Brown</author>
+    <year>1903</year>
+    <price>14.51</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 542</title>
+    <author>Bob Wilson</author>
+    <year>1982</year>
+    <price>18.60</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Silent 543</title>
+    <author>Jack Smith</author>
+    <year>2010</year>
+    <price>38.52</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea The 544</title>
+    <author>Jack Wilson</author>
+    <year>1949</year>
+    <price>34.98</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Silent 545</title>
+    <author>Henry Hall</author>
+    <year>2005</year>
+    <price>35.75</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Lost 546</title>
+    <author>Frank Wilson</author>
+    <year>1936</year>
+    <price>31.77</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Lost 547</title>
+    <author>Bob Clark</author>
+    <year>1907</year>
+    <price>45.68</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea The 548</title>
+    <author>Frank Clark</author>
+    <year>1977</year>
+    <price>49.46</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Lost 549</title>
+    <author>Frank Wilson</author>
+    <year>1958</year>
+    <price>38.27</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 550</title>
+    <author>Jack Brown</author>
+    <year>1918</year>
+    <price>16.99</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Life 551</title>
+    <author>David Clark</author>
+    <year>1970</year>
+    <price>15.97</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Lost 552</title>
+    <author>David Smith</author>
+    <year>2021</year>
+    <price>41.11</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Silent 553</title>
+    <author>Bob Clark</author>
+    <year>1993</year>
+    <price>40.63</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Life 554</title>
+    <author>Henry Smith</author>
+    <year>1934</year>
+    <price>24.06</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind The 555</title>
+    <author>Frank Smith</author>
+    <year>1940</year>
+    <price>14.47</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Silent 556</title>
+    <author>Jack Wilson</author>
+    <year>1917</year>
+    <price>12.58</price>
+  </book>
+  <book category="history">
+    <title lang="en">A The 557</title>
+    <author>Jack Smith</author>
+    <year>1965</year>
+    <price>24.48</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep The 558</title>
+    <author>Jack Hall</author>
+    <year>1946</year>
+    <price>18.83</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Land 559</title>
+    <author>Henry Hall</author>
+    <year>1922</year>
+    <price>9.37</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 560</title>
+    <author>Bob Smith</author>
+    <year>1926</year>
+    <price>43.91</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Land 561</title>
+    <author>David Brown</author>
+    <year>1956</year>
+    <price>22.61</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Silent 562</title>
+    <author>Jack Wilson</author>
+    <year>1955</year>
+    <price>44.74</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep The 563</title>
+    <author>David Clark</author>
+    <year>1923</year>
+    <price>33.18</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Land 564</title>
+    <author>Bob Brown</author>
+    <year>1951</year>
+    <price>37.82</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Silent 565</title>
+    <author>Jack Brown</author>
+    <year>1968</year>
+    <price>18.90</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Lost 566</title>
+    <author>David Clark</author>
+    <year>1933</year>
+    <price>14.60</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Silent 567</title>
+    <author>Jack Wilson</author>
+    <year>1924</year>
+    <price>37.39</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep The 568</title>
+    <author>Bob Hall</author>
+    <year>1924</year>
+    <price>27.72</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Life 569</title>
+    <author>Henry Wilson</author>
+    <year>1937</year>
+    <price>5.65</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Silent 570</title>
+    <author>Bob Wilson</author>
+    <year>2004</year>
+    <price>9.21</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Life 571</title>
+    <author>David Clark</author>
+    <year>1963</year>
+    <price>26.15</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 572</title>
+    <author>Henry Wilson</author>
+    <year>1918</year>
+    <price>36.45</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea The 573</title>
+    <author>Frank Wilson</author>
+    <year>2024</year>
+    <price>29.49</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Lost 574</title>
+    <author>Jack Smith</author>
+    <year>2003</year>
+    <price>23.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Life 575</title>
+    <author>Jack Wilson</author>
+    <year>1965</year>
+    <price>36.54</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 576</title>
+    <author>David Hall</author>
+    <year>1946</year>
+    <price>39.51</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Land 577</title>
+    <author>David Wilson</author>
+    <year>2021</year>
+    <price>20.64</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Lost 578</title>
+    <author>Bob Smith</author>
+    <year>1969</year>
+    <price>17.11</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Lost 579</title>
+    <author>Jack Wilson</author>
+    <year>1944</year>
+    <price>28.07</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Land 580</title>
+    <author>Bob Brown</author>
+    <year>1965</year>
+    <price>19.74</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 581</title>
+    <author>David Wilson</author>
+    <year>1956</year>
+    <price>47.07</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A The 582</title>
+    <author>Jack Smith</author>
+    <year>1973</year>
+    <price>12.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Silent 583</title>
+    <author>David Smith</author>
+    <year>1918</year>
+    <price>42.71</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Silent 584</title>
+    <author>Henry Smith</author>
+    <year>2003</year>
+    <price>12.14</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Land 585</title>
+    <author>David Wilson</author>
+    <year>1934</year>
+    <price>34.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 586</title>
+    <author>Henry Hall</author>
+    <year>1924</year>
+    <price>22.78</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 587</title>
+    <author>Jack Wilson</author>
+    <year>2012</year>
+    <price>17.93</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Lost 588</title>
+    <author>Bob Brown</author>
+    <year>2003</year>
+    <price>22.37</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Land 589</title>
+    <author>Henry Smith</author>
+    <year>1993</year>
+    <price>25.23</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A The 590</title>
+    <author>Henry Clark</author>
+    <year>1995</year>
+    <price>8.91</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 591</title>
+    <author>Frank Wilson</author>
+    <year>1985</year>
+    <price>25.02</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Life 592</title>
+    <author>Frank Brown</author>
+    <year>1933</year>
+    <price>30.16</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep The 593</title>
+    <author>Jack Wilson</author>
+    <year>1940</year>
+    <price>41.27</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Land 594</title>
+    <author>Henry Brown</author>
+    <year>1959</year>
+    <price>46.27</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind The 595</title>
+    <author>Frank Clark</author>
+    <year>2019</year>
+    <price>17.47</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Life 596</title>
+    <author>Henry Clark</author>
+    <year>1995</year>
+    <price>15.06</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind The 597</title>
+    <author>Henry Smith</author>
+    <year>2001</year>
+    <price>8.50</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Life 598</title>
+    <author>Bob Hall</author>
+    <year>2008</year>
+    <price>30.56</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea The 599</title>
+    <author>Frank Brown</author>
+    <year>1951</year>
+    <price>25.36</price>
+  </book>
+  <book category="technology">
+    <title lang="en">A Life 600</title>
+    <author>David Clark</author>
+    <year>1975</year>
+    <price>10.86</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Land 601</title>
+    <author>David Clark</author>
+    <year>1969</year>
+    <price>27.52</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 602</title>
+    <author>Henry Wilson</author>
+    <year>2005</year>
+    <price>46.33</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Silent 603</title>
+    <author>David Brown</author>
+    <year>1911</year>
+    <price>10.29</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A The 604</title>
+    <author>David Wilson</author>
+    <year>1946</year>
+    <price>22.47</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Life 605</title>
+    <author>Bob Clark</author>
+    <year>1967</year>
+    <price>24.02</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Land 606</title>
+    <author>Bob Clark</author>
+    <year>1948</year>
+    <price>33.60</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 607</title>
+    <author>Henry Hall</author>
+    <year>1944</year>
+    <price>7.74</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep The 608</title>
+    <author>David Clark</author>
+    <year>1934</year>
+    <price>34.34</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Lost 609</title>
+    <author>David Brown</author>
+    <year>1911</year>
+    <price>11.96</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Land 610</title>
+    <author>Jack Smith</author>
+    <year>1936</year>
+    <price>28.63</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Life 611</title>
+    <author>Jack Hall</author>
+    <year>1985</year>
+    <price>14.04</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Land 612</title>
+    <author>David Hall</author>
+    <year>1990</year>
+    <price>42.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Land 613</title>
+    <author>Frank Smith</author>
+    <year>2016</year>
+    <price>38.27</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 614</title>
+    <author>Jack Smith</author>
+    <year>2021</year>
+    <price>14.16</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 615</title>
+    <author>David Brown</author>
+    <year>1925</year>
+    <price>48.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Life 616</title>
+    <author>Jack Brown</author>
+    <year>1949</year>
+    <price>47.76</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden The 617</title>
+    <author>David Brown</author>
+    <year>1960</year>
+    <price>22.31</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Life 618</title>
+    <author>David Brown</author>
+    <year>1938</year>
+    <price>28.01</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Life 619</title>
+    <author>Bob Hall</author>
+    <year>1968</year>
+    <price>19.53</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Life 620</title>
+    <author>Henry Hall</author>
+    <year>1966</year>
+    <price>8.98</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 621</title>
+    <author>David Wilson</author>
+    <year>1922</year>
+    <price>21.50</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea The 622</title>
+    <author>Jack Smith</author>
+    <year>1919</year>
+    <price>29.82</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep The 623</title>
+    <author>Jack Hall</author>
+    <year>1957</year>
+    <price>21.00</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 624</title>
+    <author>David Clark</author>
+    <year>1910</year>
+    <price>20.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep The 625</title>
+    <author>Frank Clark</author>
+    <year>1912</year>
+    <price>45.22</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Silent 626</title>
+    <author>David Wilson</author>
+    <year>1987</year>
+    <price>20.56</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Silent 627</title>
+    <author>Bob Hall</author>
+    <year>1964</year>
+    <price>16.46</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 628</title>
+    <author>Jack Hall</author>
+    <year>1910</year>
+    <price>36.70</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep The 629</title>
+    <author>Jack Smith</author>
+    <year>2022</year>
+    <price>39.04</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Silent 630</title>
+    <author>Frank Smith</author>
+    <year>1995</year>
+    <price>41.69</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Lost 631</title>
+    <author>Jack Brown</author>
+    <year>1928</year>
+    <price>22.76</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Land 632</title>
+    <author>David Hall</author>
+    <year>2003</year>
+    <price>14.81</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Life 633</title>
+    <author>Henry Hall</author>
+    <year>1930</year>
+    <price>28.14</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 634</title>
+    <author>David Hall</author>
+    <year>1982</year>
+    <price>11.80</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 635</title>
+    <author>Frank Wilson</author>
+    <year>1922</year>
+    <price>22.24</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Land 636</title>
+    <author>Frank Clark</author>
+    <year>1983</year>
+    <price>11.74</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 637</title>
+    <author>Bob Brown</author>
+    <year>1972</year>
+    <price>29.61</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Silent 638</title>
+    <author>David Clark</author>
+    <year>1977</year>
+    <price>32.09</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind The 639</title>
+    <author>David Clark</author>
+    <year>1907</year>
+    <price>32.69</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A The 640</title>
+    <author>Henry Wilson</author>
+    <year>1971</year>
+    <price>20.00</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Silent 641</title>
+    <author>Henry Brown</author>
+    <year>1997</year>
+    <price>27.00</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Life 642</title>
+    <author>Frank Hall</author>
+    <year>2005</year>
+    <price>19.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Land 643</title>
+    <author>Henry Wilson</author>
+    <year>1989</year>
+    <price>41.13</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea The 644</title>
+    <author>David Smith</author>
+    <year>1902</year>
+    <price>41.96</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Life 645</title>
+    <author>Frank Hall</author>
+    <year>2009</year>
+    <price>22.15</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Silent 646</title>
+    <author>David Wilson</author>
+    <year>1974</year>
+    <price>9.10</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Silent 647</title>
+    <author>Henry Clark</author>
+    <year>1910</year>
+    <price>30.76</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Silent 648</title>
+    <author>Frank Wilson</author>
+    <year>1922</year>
+    <price>14.90</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Land 649</title>
+    <author>Bob Smith</author>
+    <year>1977</year>
+    <price>19.22</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 650</title>
+    <author>Bob Hall</author>
+    <year>1911</year>
+    <price>38.14</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Lost 651</title>
+    <author>David Wilson</author>
+    <year>1941</year>
+    <price>27.53</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Land 652</title>
+    <author>Henry Hall</author>
+    <year>1987</year>
+    <price>36.13</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Silent 653</title>
+    <author>Henry Hall</author>
+    <year>1965</year>
+    <price>24.07</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep The 654</title>
+    <author>Henry Hall</author>
+    <year>1921</year>
+    <price>15.14</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea The 655</title>
+    <author>Bob Smith</author>
+    <year>1983</year>
+    <price>41.74</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Silent 656</title>
+    <author>Henry Smith</author>
+    <year>1972</year>
+    <price>45.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Life 657</title>
+    <author>David Brown</author>
+    <year>1937</year>
+    <price>38.04</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Land 658</title>
+    <author>David Smith</author>
+    <year>1965</year>
+    <price>46.29</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Life 659</title>
+    <author>Bob Clark</author>
+    <year>1934</year>
+    <price>28.29</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Lost 660</title>
+    <author>Frank Hall</author>
+    <year>1940</year>
+    <price>7.73</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A The 661</title>
+    <author>Jack Wilson</author>
+    <year>1970</year>
+    <price>39.70</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Lost 662</title>
+    <author>David Smith</author>
+    <year>1908</year>
+    <price>43.07</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Land 663</title>
+    <author>Henry Wilson</author>
+    <year>1946</year>
+    <price>39.69</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Silent 664</title>
+    <author>Henry Hall</author>
+    <year>1997</year>
+    <price>45.05</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Land 665</title>
+    <author>Bob Clark</author>
+    <year>2021</year>
+    <price>35.28</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Life 666</title>
+    <author>Henry Smith</author>
+    <year>2010</year>
+    <price>24.02</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Silent 667</title>
+    <author>Bob Brown</author>
+    <year>1909</year>
+    <price>15.28</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Land 668</title>
+    <author>Jack Hall</author>
+    <year>1938</year>
+    <price>14.69</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Land 669</title>
+    <author>Henry Hall</author>
+    <year>2005</year>
+    <price>14.40</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Life 670</title>
+    <author>Frank Brown</author>
+    <year>1937</year>
+    <price>44.75</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Land 671</title>
+    <author>Frank Wilson</author>
+    <year>1968</year>
+    <price>16.72</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Silent 672</title>
+    <author>Jack Smith</author>
+    <year>1930</year>
+    <price>6.67</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Lost 673</title>
+    <author>David Hall</author>
+    <year>2016</year>
+    <price>15.90</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Life 674</title>
+    <author>Frank Brown</author>
+    <year>1923</year>
+    <price>22.69</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Life 675</title>
+    <author>Bob Smith</author>
+    <year>1949</year>
+    <price>10.62</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind The 676</title>
+    <author>Bob Clark</author>
+    <year>2017</year>
+    <price>7.00</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Lost 677</title>
+    <author>Henry Wilson</author>
+    <year>1943</year>
+    <price>5.78</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 678</title>
+    <author>Frank Clark</author>
+    <year>2012</year>
+    <price>48.04</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Lost 679</title>
+    <author>Bob Brown</author>
+    <year>1983</year>
+    <price>36.88</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Silent 680</title>
+    <author>Bob Smith</author>
+    <year>1924</year>
+    <price>38.05</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep The 681</title>
+    <author>Bob Hall</author>
+    <year>1985</year>
+    <price>8.97</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden The 682</title>
+    <author>Bob Smith</author>
+    <year>2001</year>
+    <price>10.73</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Life 683</title>
+    <author>Bob Brown</author>
+    <year>1998</year>
+    <price>38.38</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 684</title>
+    <author>Frank Hall</author>
+    <year>1942</year>
+    <price>45.45</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea The 685</title>
+    <author>Bob Hall</author>
+    <year>1949</year>
+    <price>39.65</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 686</title>
+    <author>Frank Smith</author>
+    <year>1968</year>
+    <price>49.38</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Land 687</title>
+    <author>Bob Wilson</author>
+    <year>1987</year>
+    <price>16.81</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Lost 688</title>
+    <author>Bob Clark</author>
+    <year>1930</year>
+    <price>29.64</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Life 689</title>
+    <author>Jack Wilson</author>
+    <year>1996</year>
+    <price>36.04</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Lost 690</title>
+    <author>Frank Wilson</author>
+    <year>2018</year>
+    <price>47.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Life 691</title>
+    <author>Bob Wilson</author>
+    <year>2005</year>
+    <price>32.46</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Life 692</title>
+    <author>Jack Hall</author>
+    <year>1981</year>
+    <price>15.93</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Lost 693</title>
+    <author>Bob Smith</author>
+    <year>1934</year>
+    <price>19.99</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Lost 694</title>
+    <author>Henry Clark</author>
+    <year>2010</year>
+    <price>35.81</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Land 695</title>
+    <author>Bob Brown</author>
+    <year>1953</year>
+    <price>21.32</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Silent 696</title>
+    <author>Bob Hall</author>
+    <year>2007</year>
+    <price>20.83</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Silent 697</title>
+    <author>Jack Hall</author>
+    <year>1996</year>
+    <price>23.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Life 698</title>
+    <author>Frank Wilson</author>
+    <year>2021</year>
+    <price>42.30</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Life 699</title>
+    <author>Henry Hall</author>
+    <year>1986</year>
+    <price>22.19</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Land 700</title>
+    <author>Henry Hall</author>
+    <year>1960</year>
+    <price>45.12</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Silent 701</title>
+    <author>Henry Brown</author>
+    <year>1922</year>
+    <price>27.91</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Lost 702</title>
+    <author>David Brown</author>
+    <year>1954</year>
+    <price>5.86</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind Silent 703</title>
+    <author>Frank Wilson</author>
+    <year>1910</year>
+    <price>28.20</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Life 704</title>
+    <author>Bob Clark</author>
+    <year>1934</year>
+    <price>24.15</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Silent 705</title>
+    <author>David Brown</author>
+    <year>1908</year>
+    <price>25.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Silent 706</title>
+    <author>Frank Smith</author>
+    <year>1967</year>
+    <price>29.62</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Lost 707</title>
+    <author>Jack Clark</author>
+    <year>1938</year>
+    <price>27.74</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Lost 708</title>
+    <author>Frank Clark</author>
+    <year>1997</year>
+    <price>44.42</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 709</title>
+    <author>David Wilson</author>
+    <year>2002</year>
+    <price>6.31</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Land 710</title>
+    <author>Frank Smith</author>
+    <year>1966</year>
+    <price>5.65</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Silent 711</title>
+    <author>Bob Wilson</author>
+    <year>1953</year>
+    <price>17.77</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A Life 712</title>
+    <author>Bob Brown</author>
+    <year>1982</year>
+    <price>12.33</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Silent 713</title>
+    <author>Henry Brown</author>
+    <year>1951</year>
+    <price>41.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Life 714</title>
+    <author>Bob Wilson</author>
+    <year>1925</year>
+    <price>17.82</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Lost 715</title>
+    <author>David Wilson</author>
+    <year>1961</year>
+    <price>9.30</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea The 716</title>
+    <author>David Clark</author>
+    <year>1920</year>
+    <price>15.41</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Silent 717</title>
+    <author>Bob Clark</author>
+    <year>1916</year>
+    <price>42.89</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea The 718</title>
+    <author>David Clark</author>
+    <year>2001</year>
+    <price>27.26</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Land 719</title>
+    <author>Henry Brown</author>
+    <year>1976</year>
+    <price>39.12</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden The 720</title>
+    <author>Henry Smith</author>
+    <year>1965</year>
+    <price>19.52</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Lost 721</title>
+    <author>Bob Hall</author>
+    <year>2015</year>
+    <price>13.96</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep The 722</title>
+    <author>Frank Clark</author>
+    <year>1932</year>
+    <price>48.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind The 723</title>
+    <author>Frank Smith</author>
+    <year>1917</year>
+    <price>44.85</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Lost 724</title>
+    <author>Jack Smith</author>
+    <year>1950</year>
+    <price>16.32</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden The 725</title>
+    <author>Bob Smith</author>
+    <year>1995</year>
+    <price>45.53</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Lost 726</title>
+    <author>Bob Hall</author>
+    <year>1904</year>
+    <price>33.13</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Life 727</title>
+    <author>Bob Hall</author>
+    <year>2007</year>
+    <price>5.97</price>
+  </book>
+  <book category="history">
+    <title lang="en">A The 728</title>
+    <author>Bob Hall</author>
+    <year>1977</year>
+    <price>49.45</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Lost 729</title>
+    <author>Frank Brown</author>
+    <year>1909</year>
+    <price>22.87</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 730</title>
+    <author>Henry Brown</author>
+    <year>1946</year>
+    <price>40.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 731</title>
+    <author>Henry Smith</author>
+    <year>1997</year>
+    <price>22.71</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Land 732</title>
+    <author>Henry Wilson</author>
+    <year>1900</year>
+    <price>5.28</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep The 733</title>
+    <author>Bob Brown</author>
+    <year>1954</year>
+    <price>45.42</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Life 734</title>
+    <author>David Brown</author>
+    <year>1985</year>
+    <price>21.00</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Life 735</title>
+    <author>Henry Hall</author>
+    <year>1931</year>
+    <price>21.56</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A The 736</title>
+    <author>David Hall</author>
+    <year>1983</year>
+    <price>34.21</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 737</title>
+    <author>Frank Hall</author>
+    <year>1996</year>
+    <price>15.20</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Lost 738</title>
+    <author>Jack Clark</author>
+    <year>1917</year>
+    <price>35.66</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Life 739</title>
+    <author>Bob Brown</author>
+    <year>1967</year>
+    <price>36.45</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 740</title>
+    <author>Henry Smith</author>
+    <year>1913</year>
+    <price>12.20</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 741</title>
+    <author>David Hall</author>
+    <year>1995</year>
+    <price>34.22</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Lost 742</title>
+    <author>David Wilson</author>
+    <year>2018</year>
+    <price>10.78</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Life 743</title>
+    <author>Frank Clark</author>
+    <year>1987</year>
+    <price>18.14</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Life 744</title>
+    <author>Jack Wilson</author>
+    <year>2015</year>
+    <price>8.82</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Life 745</title>
+    <author>Jack Hall</author>
+    <year>2002</year>
+    <price>30.78</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A Life 746</title>
+    <author>Jack Clark</author>
+    <year>1969</year>
+    <price>33.39</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Lost 747</title>
+    <author>Henry Hall</author>
+    <year>2003</year>
+    <price>25.60</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Land 748</title>
+    <author>Henry Wilson</author>
+    <year>1967</year>
+    <price>22.64</price>
+  </book>
+  <book category="history">
+    <title lang="de">A Silent 749</title>
+    <author>Jack Hall</author>
+    <year>1983</year>
+    <price>8.26</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Silent 750</title>
+    <author>Frank Clark</author>
+    <year>1998</year>
+    <price>25.31</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden The 751</title>
+    <author>Henry Clark</author>
+    <year>1943</year>
+    <price>27.82</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Silent 752</title>
+    <author>Frank Brown</author>
+    <year>1967</year>
+    <price>48.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Lost 753</title>
+    <author>Henry Clark</author>
+    <year>2018</year>
+    <price>45.64</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Lost 754</title>
+    <author>Bob Brown</author>
+    <year>1906</year>
+    <price>15.30</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Land 755</title>
+    <author>David Hall</author>
+    <year>1972</year>
+    <price>7.43</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Land 756</title>
+    <author>Bob Hall</author>
+    <year>1979</year>
+    <price>48.07</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Silent 757</title>
+    <author>Henry Smith</author>
+    <year>1925</year>
+    <price>48.59</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Silent 758</title>
+    <author>David Smith</author>
+    <year>1967</year>
+    <price>13.74</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Silent 759</title>
+    <author>Frank Brown</author>
+    <year>1984</year>
+    <price>27.93</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Life 760</title>
+    <author>Jack Smith</author>
+    <year>2003</year>
+    <price>17.72</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Land 761</title>
+    <author>Henry Smith</author>
+    <year>2004</year>
+    <price>12.23</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Silent 762</title>
+    <author>Frank Brown</author>
+    <year>2003</year>
+    <price>39.46</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Lost 763</title>
+    <author>Bob Brown</author>
+    <year>1957</year>
+    <price>5.73</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Silent 764</title>
+    <author>Henry Brown</author>
+    <year>1999</year>
+    <price>13.29</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind The 765</title>
+    <author>Bob Clark</author>
+    <year>1995</year>
+    <price>7.22</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Lost 766</title>
+    <author>Jack Clark</author>
+    <year>1954</year>
+    <price>37.30</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Lost 767</title>
+    <author>Henry Brown</author>
+    <year>1926</year>
+    <price>25.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Lost 768</title>
+    <author>Bob Smith</author>
+    <year>2005</year>
+    <price>15.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Lost 769</title>
+    <author>Jack Brown</author>
+    <year>1907</year>
+    <price>9.57</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea The 770</title>
+    <author>Henry Smith</author>
+    <year>2015</year>
+    <price>36.95</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Land 771</title>
+    <author>Frank Wilson</author>
+    <year>2003</year>
+    <price>9.13</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Land 772</title>
+    <author>Bob Brown</author>
+    <year>1990</year>
+    <price>47.95</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Silent 773</title>
+    <author>Bob Smith</author>
+    <year>2019</year>
+    <price>46.14</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Lost 774</title>
+    <author>Frank Brown</author>
+    <year>1959</year>
+    <price>13.43</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Life 775</title>
+    <author>Bob Clark</author>
+    <year>2010</year>
+    <price>18.79</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Life 776</title>
+    <author>Bob Clark</author>
+    <year>1928</year>
+    <price>42.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A The 777</title>
+    <author>David Clark</author>
+    <year>1913</year>
+    <price>23.00</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Land 778</title>
+    <author>David Brown</author>
+    <year>1930</year>
+    <price>28.19</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Land 779</title>
+    <author>Henry Hall</author>
+    <year>1941</year>
+    <price>32.73</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Land 780</title>
+    <author>Henry Smith</author>
+    <year>1969</year>
+    <price>25.44</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Lost 781</title>
+    <author>Bob Clark</author>
+    <year>1951</year>
+    <price>46.66</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Hidden Silent 782</title>
+    <author>David Brown</author>
+    <year>1942</year>
+    <price>35.62</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Lost 783</title>
+    <author>Bob Wilson</author>
+    <year>1974</year>
+    <price>36.00</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep The 784</title>
+    <author>Jack Smith</author>
+    <year>1958</year>
+    <price>35.29</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Land 785</title>
+    <author>Henry Brown</author>
+    <year>2012</year>
+    <price>9.25</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep The 786</title>
+    <author>Jack Hall</author>
+    <year>1968</year>
+    <price>49.67</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Life 787</title>
+    <author>Bob Brown</author>
+    <year>2003</year>
+    <price>7.86</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Land 788</title>
+    <author>David Smith</author>
+    <year>1971</year>
+    <price>38.56</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Life 789</title>
+    <author>Bob Smith</author>
+    <year>1912</year>
+    <price>13.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Life 790</title>
+    <author>Frank Hall</author>
+    <year>1958</year>
+    <price>47.48</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea The 791</title>
+    <author>Henry Hall</author>
+    <year>1911</year>
+    <price>35.12</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Life 792</title>
+    <author>Frank Wilson</author>
+    <year>1942</year>
+    <price>30.69</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind The 793</title>
+    <author>David Wilson</author>
+    <year>1970</year>
+    <price>14.18</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Life 794</title>
+    <author>David Clark</author>
+    <year>1972</year>
+    <price>37.82</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep Life 795</title>
+    <author>Bob Brown</author>
+    <year>2018</year>
+    <price>46.24</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Life 796</title>
+    <author>Bob Smith</author>
+    <year>1929</year>
+    <price>47.81</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden The 797</title>
+    <author>Frank Clark</author>
+    <year>1988</year>
+    <price>7.64</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Lost 798</title>
+    <author>Frank Brown</author>
+    <year>1901</year>
+    <price>45.87</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Silent 799</title>
+    <author>Jack Smith</author>
+    <year>2018</year>
+    <price>28.51</price>
+  </book>
+  <book category="history">
+    <title lang="de">Mind Life 800</title>
+    <author>David Hall</author>
+    <year>1973</year>
+    <price>38.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep The 801</title>
+    <author>Bob Brown</author>
+    <year>2019</year>
+    <price>31.37</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Life 802</title>
+    <author>Jack Hall</author>
+    <year>1955</year>
+    <price>17.84</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea The 803</title>
+    <author>David Brown</author>
+    <year>1996</year>
+    <price>16.00</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 804</title>
+    <author>Bob Brown</author>
+    <year>1964</year>
+    <price>9.15</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden Land 805</title>
+    <author>Frank Hall</author>
+    <year>1943</year>
+    <price>47.57</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Lost 806</title>
+    <author>Henry Wilson</author>
+    <year>1977</year>
+    <price>19.00</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Lost 807</title>
+    <author>Jack Clark</author>
+    <year>1908</year>
+    <price>19.11</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Land 808</title>
+    <author>Henry Clark</author>
+    <year>1987</year>
+    <price>10.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Lost 809</title>
+    <author>Bob Hall</author>
+    <year>2005</year>
+    <price>21.39</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Land 810</title>
+    <author>David Smith</author>
+    <year>1991</year>
+    <price>11.75</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Life 811</title>
+    <author>Jack Clark</author>
+    <year>1930</year>
+    <price>33.18</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Land 812</title>
+    <author>Henry Clark</author>
+    <year>1940</year>
+    <price>44.53</price>
+  </book>
+  <book category="history">
+    <title lang="es">Sea Lost 813</title>
+    <author>Bob Wilson</author>
+    <year>1941</year>
+    <price>16.73</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Land 814</title>
+    <author>Frank Clark</author>
+    <year>1937</year>
+    <price>6.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Life 815</title>
+    <author>Jack Hall</author>
+    <year>1962</year>
+    <price>33.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep The 816</title>
+    <author>Jack Brown</author>
+    <year>1948</year>
+    <price>41.49</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Land 817</title>
+    <author>David Wilson</author>
+    <year>2023</year>
+    <price>27.44</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden The 818</title>
+    <author>Frank Brown</author>
+    <year>1932</year>
+    <price>36.00</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Lost 819</title>
+    <author>Bob Hall</author>
+    <year>2012</year>
+    <price>18.70</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Lost 820</title>
+    <author>Bob Brown</author>
+    <year>1998</year>
+    <price>49.71</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Land 821</title>
+    <author>Frank Brown</author>
+    <year>1964</year>
+    <price>41.02</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Life 822</title>
+    <author>Henry Brown</author>
+    <year>1987</year>
+    <price>8.23</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep The 823</title>
+    <author>Jack Wilson</author>
+    <year>1914</year>
+    <price>46.50</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Land 824</title>
+    <author>Henry Wilson</author>
+    <year>1999</year>
+    <price>32.67</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Silent 825</title>
+    <author>Henry Wilson</author>
+    <year>1982</year>
+    <price>19.66</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Land 826</title>
+    <author>David Brown</author>
+    <year>1911</year>
+    <price>30.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A The 827</title>
+    <author>Frank Hall</author>
+    <year>1980</year>
+    <price>37.11</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Life 828</title>
+    <author>Frank Hall</author>
+    <year>1972</year>
+    <price>34.91</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Land 829</title>
+    <author>Jack Smith</author>
+    <year>1989</year>
+    <price>48.71</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind Land 830</title>
+    <author>David Brown</author>
+    <year>2010</year>
+    <price>6.52</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Lost 831</title>
+    <author>Henry Wilson</author>
+    <year>1919</year>
+    <price>20.31</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Land 832</title>
+    <author>Jack Smith</author>
+    <year>1928</year>
+    <price>22.62</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A The 833</title>
+    <author>David Wilson</author>
+    <year>1944</year>
+    <price>11.36</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Life 834</title>
+    <author>Frank Hall</author>
+    <year>1904</year>
+    <price>20.98</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden The 835</title>
+    <author>David Hall</author>
+    <year>2012</year>
+    <price>39.28</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 836</title>
+    <author>Frank Smith</author>
+    <year>1978</year>
+    <price>30.58</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Silent 837</title>
+    <author>Frank Brown</author>
+    <year>1972</year>
+    <price>30.33</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Sea Silent 838</title>
+    <author>Bob Smith</author>
+    <year>1941</year>
+    <price>44.86</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Land 839</title>
+    <author>Henry Wilson</author>
+    <year>1927</year>
+    <price>44.38</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 840</title>
+    <author>Henry Hall</author>
+    <year>1957</year>
+    <price>33.06</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Mind The 841</title>
+    <author>Frank Wilson</author>
+    <year>1971</year>
+    <price>11.92</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Silent 842</title>
+    <author>Bob Wilson</author>
+    <year>1975</year>
+    <price>21.77</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea Life 843</title>
+    <author>David Clark</author>
+    <year>1960</year>
+    <price>28.04</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Land 844</title>
+    <author>Jack Wilson</author>
+    <year>1922</year>
+    <price>21.16</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Land 845</title>
+    <author>Frank Wilson</author>
+    <year>1904</year>
+    <price>6.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea The 846</title>
+    <author>David Brown</author>
+    <year>1925</year>
+    <price>13.23</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden The 847</title>
+    <author>Jack Brown</author>
+    <year>1937</year>
+    <price>17.13</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 848</title>
+    <author>Henry Clark</author>
+    <year>1911</year>
+    <price>17.08</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Silent 849</title>
+    <author>Frank Wilson</author>
+    <year>1954</year>
+    <price>22.15</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 850</title>
+    <author>David Wilson</author>
+    <year>1929</year>
+    <price>44.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind The 851</title>
+    <author>Henry Smith</author>
+    <year>2013</year>
+    <price>11.55</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Life 852</title>
+    <author>Henry Brown</author>
+    <year>2008</year>
+    <price>21.63</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Silent 853</title>
+    <author>Henry Smith</author>
+    <year>1990</year>
+    <price>24.56</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea The 854</title>
+    <author>Frank Clark</author>
+    <year>2006</year>
+    <price>44.03</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Life 855</title>
+    <author>Jack Brown</author>
+    <year>1925</year>
+    <price>9.14</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Sea Lost 856</title>
+    <author>Jack Hall</author>
+    <year>1907</year>
+    <price>5.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Silent 857</title>
+    <author>Henry Clark</author>
+    <year>2000</year>
+    <price>19.30</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Silent 858</title>
+    <author>Henry Smith</author>
+    <year>1930</year>
+    <price>14.56</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Silent 859</title>
+    <author>Frank Brown</author>
+    <year>1962</year>
+    <price>20.54</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A The 860</title>
+    <author>Henry Brown</author>
+    <year>1908</year>
+    <price>17.33</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Deep Lost 861</title>
+    <author>Frank Brown</author>
+    <year>1900</year>
+    <price>33.75</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 862</title>
+    <author>Frank Brown</author>
+    <year>1954</year>
+    <price>34.76</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind The 863</title>
+    <author>David Clark</author>
+    <year>1961</year>
+    <price>39.81</price>
+  </book>
+  <book category="history">
+    <title lang="fr">A Lost 864</title>
+    <author>Frank Brown</author>
+    <year>1935</year>
+    <price>20.83</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden The 865</title>
+    <author>Henry Wilson</author>
+    <year>1938</year>
+    <price>25.08</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Lost 866</title>
+    <author>Henry Hall</author>
+    <year>1973</year>
+    <price>29.47</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Land 867</title>
+    <author>Jack Hall</author>
+    <year>1947</year>
+    <price>27.11</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Silent 868</title>
+    <author>Bob Clark</author>
+    <year>1938</year>
+    <price>39.15</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep Land 869</title>
+    <author>Jack Smith</author>
+    <year>2023</year>
+    <price>14.75</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Lost 870</title>
+    <author>Frank Wilson</author>
+    <year>1983</year>
+    <price>24.13</price>
+  </book>
+  <book category="history">
+    <title lang="de">Deep Silent 871</title>
+    <author>David Clark</author>
+    <year>2000</year>
+    <price>32.74</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Land 872</title>
+    <author>Jack Wilson</author>
+    <year>1940</year>
+    <price>13.11</price>
+  </book>
+  <book category="history">
+    <title lang="de">Hidden Silent 873</title>
+    <author>Frank Wilson</author>
+    <year>1952</year>
+    <price>46.34</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind The 874</title>
+    <author>Jack Clark</author>
+    <year>1960</year>
+    <price>15.62</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">A The 875</title>
+    <author>Jack Hall</author>
+    <year>1978</year>
+    <price>18.46</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Silent 876</title>
+    <author>Jack Wilson</author>
+    <year>1924</year>
+    <price>27.39</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep The 877</title>
+    <author>Jack Clark</author>
+    <year>2015</year>
+    <price>17.01</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea Land 878</title>
+    <author>Jack Hall</author>
+    <year>1917</year>
+    <price>8.85</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Life 879</title>
+    <author>David Wilson</author>
+    <year>1904</year>
+    <price>6.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A Silent 880</title>
+    <author>Frank Brown</author>
+    <year>2015</year>
+    <price>40.25</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">A Life 881</title>
+    <author>Frank Smith</author>
+    <year>1950</year>
+    <price>49.26</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Land 882</title>
+    <author>Henry Clark</author>
+    <year>2006</year>
+    <price>7.42</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Lost 883</title>
+    <author>David Smith</author>
+    <year>1973</year>
+    <price>40.79</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea The 884</title>
+    <author>Henry Brown</author>
+    <year>1928</year>
+    <price>48.53</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Land 885</title>
+    <author>David Smith</author>
+    <year>1953</year>
+    <price>13.39</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 886</title>
+    <author>Frank Smith</author>
+    <year>1920</year>
+    <price>49.59</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Lost 887</title>
+    <author>David Clark</author>
+    <year>1951</year>
+    <price>30.24</price>
+  </book>
+  <book category="history">
+    <title lang="es">Mind The 888</title>
+    <author>Bob Wilson</author>
+    <year>2022</year>
+    <price>24.25</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Life 889</title>
+    <author>Henry Wilson</author>
+    <year>1907</year>
+    <price>49.24</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 890</title>
+    <author>Henry Brown</author>
+    <year>1951</year>
+    <price>36.18</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Hidden Lost 891</title>
+    <author>David Clark</author>
+    <year>1930</year>
+    <price>39.36</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Life 892</title>
+    <author>Bob Brown</author>
+    <year>1934</year>
+    <price>45.85</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Land 893</title>
+    <author>Bob Clark</author>
+    <year>2015</year>
+    <price>45.62</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Land 894</title>
+    <author>Jack Clark</author>
+    <year>1922</year>
+    <price>41.01</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Life 895</title>
+    <author>Jack Hall</author>
+    <year>1920</year>
+    <price>19.05</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Lost 896</title>
+    <author>Henry Wilson</author>
+    <year>1935</year>
+    <price>47.83</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Land 897</title>
+    <author>Jack Clark</author>
+    <year>1919</year>
+    <price>49.84</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Sea The 898</title>
+    <author>David Clark</author>
+    <year>2014</year>
+    <price>21.49</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Life 899</title>
+    <author>Jack Brown</author>
+    <year>1900</year>
+    <price>7.29</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Mind Silent 900</title>
+    <author>David Clark</author>
+    <year>1935</year>
+    <price>25.88</price>
+  </book>
+  <book category="history">
+    <title lang="en">Sea Life 901</title>
+    <author>David Brown</author>
+    <year>1913</year>
+    <price>16.64</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Mind Life 902</title>
+    <author>Henry Hall</author>
+    <year>2004</year>
+    <price>16.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Life 903</title>
+    <author>Henry Clark</author>
+    <year>1967</year>
+    <price>7.06</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Land 904</title>
+    <author>David Wilson</author>
+    <year>1959</year>
+    <price>6.39</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Land 905</title>
+    <author>Frank Smith</author>
+    <year>1969</year>
+    <price>25.33</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Lost 906</title>
+    <author>Jack Brown</author>
+    <year>1961</year>
+    <price>24.27</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A The 907</title>
+    <author>Frank Hall</author>
+    <year>1902</year>
+    <price>21.71</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Life 908</title>
+    <author>Jack Clark</author>
+    <year>1919</year>
+    <price>18.70</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Sea The 909</title>
+    <author>Bob Wilson</author>
+    <year>1950</year>
+    <price>27.45</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind Life 910</title>
+    <author>Frank Wilson</author>
+    <year>1924</year>
+    <price>26.86</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Deep The 911</title>
+    <author>David Hall</author>
+    <year>1913</year>
+    <price>47.73</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Life 912</title>
+    <author>Frank Hall</author>
+    <year>1972</year>
+    <price>6.66</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Lost 913</title>
+    <author>Frank Clark</author>
+    <year>2005</year>
+    <price>17.95</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A The 914</title>
+    <author>Frank Brown</author>
+    <year>1933</year>
+    <price>16.81</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Silent 915</title>
+    <author>Jack Smith</author>
+    <year>1931</year>
+    <price>27.25</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Lost 916</title>
+    <author>Henry Hall</author>
+    <year>1968</year>
+    <price>16.80</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 917</title>
+    <author>Frank Smith</author>
+    <year>2004</year>
+    <price>7.66</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Silent 918</title>
+    <author>Henry Wilson</author>
+    <year>1988</year>
+    <price>30.95</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Lost 919</title>
+    <author>Bob Clark</author>
+    <year>2012</year>
+    <price>38.73</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Mind Land 920</title>
+    <author>Henry Clark</author>
+    <year>2020</year>
+    <price>34.65</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">A The 921</title>
+    <author>David Clark</author>
+    <year>1995</year>
+    <price>26.74</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Mind The 922</title>
+    <author>Frank Clark</author>
+    <year>1963</year>
+    <price>46.65</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Life 923</title>
+    <author>David Smith</author>
+    <year>1965</year>
+    <price>48.05</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Lost 924</title>
+    <author>Frank Brown</author>
+    <year>2007</year>
+    <price>18.10</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Silent 925</title>
+    <author>Bob Hall</author>
+    <year>1957</year>
+    <price>9.78</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Mind The 926</title>
+    <author>Bob Smith</author>
+    <year>1945</year>
+    <price>37.18</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind Land 927</title>
+    <author>Frank Brown</author>
+    <year>2019</year>
+    <price>44.41</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Hidden Silent 928</title>
+    <author>Bob Clark</author>
+    <year>2022</year>
+    <price>36.76</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Life 929</title>
+    <author>David Clark</author>
+    <year>1930</year>
+    <price>6.50</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Life 930</title>
+    <author>Henry Hall</author>
+    <year>1992</year>
+    <price>17.06</price>
+  </book>
+  <book category="history">
+    <title lang="en">Hidden Life 931</title>
+    <author>Jack Wilson</author>
+    <year>1904</year>
+    <price>35.75</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Silent 932</title>
+    <author>Bob Brown</author>
+    <year>1984</year>
+    <price>40.18</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Lost 933</title>
+    <author>Frank Clark</author>
+    <year>2020</year>
+    <price>29.02</price>
+  </book>
+  <book category="history">
+    <title lang="es">Deep The 934</title>
+    <author>Henry Brown</author>
+    <year>1970</year>
+    <price>7.86</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Deep Lost 935</title>
+    <author>Frank Clark</author>
+    <year>1999</year>
+    <price>36.49</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Life 936</title>
+    <author>Bob Wilson</author>
+    <year>1938</year>
+    <price>39.10</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep The 937</title>
+    <author>Henry Wilson</author>
+    <year>1954</year>
+    <price>36.53</price>
+  </book>
+  <book category="history">
+    <title lang="es">A Land 938</title>
+    <author>Jack Hall</author>
+    <year>1910</year>
+    <price>28.34</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Life 939</title>
+    <author>Frank Brown</author>
+    <year>1983</year>
+    <price>12.16</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Land 940</title>
+    <author>Bob Hall</author>
+    <year>1988</year>
+    <price>28.81</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Deep Lost 941</title>
+    <author>Henry Clark</author>
+    <year>1949</year>
+    <price>21.13</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Land 942</title>
+    <author>David Clark</author>
+    <year>2017</year>
+    <price>8.97</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Life 943</title>
+    <author>Bob Smith</author>
+    <year>1959</year>
+    <price>9.90</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Life 944</title>
+    <author>Henry Wilson</author>
+    <year>1946</year>
+    <price>31.49</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Deep Lost 945</title>
+    <author>David Clark</author>
+    <year>1943</year>
+    <price>9.90</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden Land 946</title>
+    <author>Frank Smith</author>
+    <year>1944</year>
+    <price>30.33</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Life 947</title>
+    <author>Henry Clark</author>
+    <year>1902</year>
+    <price>6.51</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Deep Land 948</title>
+    <author>David Brown</author>
+    <year>1991</year>
+    <price>45.49</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Deep Silent 949</title>
+    <author>Jack Smith</author>
+    <year>1902</year>
+    <price>37.41</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Hidden The 950</title>
+    <author>Frank Smith</author>
+    <year>1942</year>
+    <price>12.42</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Sea Lost 951</title>
+    <author>David Clark</author>
+    <year>1909</year>
+    <price>46.78</price>
+  </book>
+  <book category="history">
+    <title lang="es">Hidden Life 952</title>
+    <author>Frank Hall</author>
+    <year>2000</year>
+    <price>28.58</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">A Land 953</title>
+    <author>Bob Smith</author>
+    <year>1968</year>
+    <price>5.45</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Life 954</title>
+    <author>Bob Brown</author>
+    <year>1942</year>
+    <price>22.88</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Life 955</title>
+    <author>Frank Smith</author>
+    <year>1987</year>
+    <price>18.51</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Mind The 956</title>
+    <author>Henry Brown</author>
+    <year>1994</year>
+    <price>49.46</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Silent 957</title>
+    <author>Henry Brown</author>
+    <year>2000</year>
+    <price>47.09</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Deep Land 958</title>
+    <author>Henry Clark</author>
+    <year>1976</year>
+    <price>30.40</price>
+  </book>
+  <book category="history">
+    <title lang="en">A Silent 959</title>
+    <author>David Smith</author>
+    <year>1993</year>
+    <price>48.00</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind Life 960</title>
+    <author>Jack Hall</author>
+    <year>1919</year>
+    <price>12.12</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A The 961</title>
+    <author>Bob Wilson</author>
+    <year>2013</year>
+    <price>40.99</price>
+  </book>
+  <book category="history">
+    <title lang="en">Deep Life 962</title>
+    <author>Henry Brown</author>
+    <year>1906</year>
+    <price>27.09</price>
+  </book>
+  <book category="technology">
+    <title lang="es">Hidden Lost 963</title>
+    <author>David Hall</author>
+    <year>1977</year>
+    <price>24.75</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Sea Silent 964</title>
+    <author>Jack Brown</author>
+    <year>2017</year>
+    <price>41.40</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Hidden Life 965</title>
+    <author>Henry Brown</author>
+    <year>2006</year>
+    <price>18.67</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Mind Silent 966</title>
+    <author>David Hall</author>
+    <year>1988</year>
+    <price>13.27</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Land 967</title>
+    <author>David Clark</author>
+    <year>1969</year>
+    <price>32.75</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Deep Life 968</title>
+    <author>Jack Brown</author>
+    <year>1910</year>
+    <price>9.30</price>
+  </book>
+  <book category="history">
+    <title lang="fr">Sea Lost 969</title>
+    <author>Frank Smith</author>
+    <year>1922</year>
+    <price>32.19</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Deep Land 970</title>
+    <author>Frank Smith</author>
+    <year>1962</year>
+    <price>6.52</price>
+  </book>
+  <book category="technology">
+    <title lang="de">A The 971</title>
+    <author>Bob Hall</author>
+    <year>2015</year>
+    <price>11.92</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea The 972</title>
+    <author>Henry Hall</author>
+    <year>1941</year>
+    <price>41.84</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind Silent 973</title>
+    <author>Jack Brown</author>
+    <year>1958</year>
+    <price>32.92</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Mind Lost 974</title>
+    <author>Jack Smith</author>
+    <year>1936</year>
+    <price>33.01</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">A Life 975</title>
+    <author>David Hall</author>
+    <year>2024</year>
+    <price>28.01</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden Lost 976</title>
+    <author>Frank Brown</author>
+    <year>1920</year>
+    <price>33.68</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="fr">Hidden Land 977</title>
+    <author>Jack Wilson</author>
+    <year>1961</year>
+    <price>28.12</price>
+  </book>
+  <book category="technology">
+    <title lang="es">A Lost 978</title>
+    <author>Frank Smith</author>
+    <year>1972</year>
+    <price>18.78</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Mind The 979</title>
+    <author>Frank Wilson</author>
+    <year>1960</year>
+    <price>32.03</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Hidden Silent 980</title>
+    <author>Henry Wilson</author>
+    <year>1959</year>
+    <price>18.98</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="de">Mind Land 981</title>
+    <author>Frank Smith</author>
+    <year>1906</year>
+    <price>31.45</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea Lost 982</title>
+    <author>Frank Wilson</author>
+    <year>1914</year>
+    <price>25.87</price>
+  </book>
+  <book category="history">
+    <title lang="ja">A Land 983</title>
+    <author>Bob Hall</author>
+    <year>1983</year>
+    <price>20.97</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">A Life 984</title>
+    <author>David Hall</author>
+    <year>1993</year>
+    <price>31.20</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">Sea Lost 985</title>
+    <author>David Brown</author>
+    <year>1981</year>
+    <price>40.60</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Life 986</title>
+    <author>David Smith</author>
+    <year>1909</year>
+    <price>34.27</price>
+  </book>
+  <book category="technology">
+    <title lang="de">Sea The 987</title>
+    <author>Bob Clark</author>
+    <year>1906</year>
+    <price>15.69</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Sea Lost 988</title>
+    <author>Henry Hall</author>
+    <year>2014</year>
+    <price>26.36</price>
+  </book>
+  <book category="technology">
+    <title lang="en">Sea Life 989</title>
+    <author>Jack Smith</author>
+    <year>1934</year>
+    <price>31.39</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">Deep Land 990</title>
+    <author>Henry Wilson</author>
+    <year>1992</year>
+    <price>44.09</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Deep Land 991</title>
+    <author>Henry Clark</author>
+    <year>1930</year>
+    <price>8.82</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Life 992</title>
+    <author>David Brown</author>
+    <year>2022</year>
+    <price>30.18</price>
+  </book>
+  <book category="technology">
+    <title lang="fr">Hidden Silent 993</title>
+    <author>Henry Clark</author>
+    <year>1948</year>
+    <price>10.63</price>
+  </book>
+  <book category="history">
+    <title lang="en">Mind Silent 994</title>
+    <author>Jack Smith</author>
+    <year>1973</year>
+    <price>39.76</price>
+  </book>
+  <book category="history">
+    <title lang="de">Sea Silent 995</title>
+    <author>Bob Brown</author>
+    <year>1941</year>
+    <price>35.94</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="es">A Land 996</title>
+    <author>Henry Smith</author>
+    <year>1951</year>
+    <price>12.66</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Mind The 997</title>
+    <author>Bob Brown</author>
+    <year>1986</year>
+    <price>27.36</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="ja">Sea Life 998</title>
+    <author>Jack Hall</author>
+    <year>1905</year>
+    <price>42.50</price>
+  </book>
+  <book category="history">
+    <title lang="ja">Hidden The 999</title>
+    <author>Henry Hall</author>
+    <year>1956</year>
+    <price>11.31</price>
+  </book>
+  <book category="technology">
+    <title lang="ja">Hidden Silent 1000</title>
+    <author>David Clark</author>
+    <year>2023</year>
+    <price>30.38</price>
+  </book>
+</bookstore>

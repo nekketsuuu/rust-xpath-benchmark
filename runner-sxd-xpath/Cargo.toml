@@ -1,0 +1,9 @@
+[package]
+name = "runner-sxd-xpath"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+common.workspace = true
+sxd-document.workspace = true
+sxd-xpath.workspace = true

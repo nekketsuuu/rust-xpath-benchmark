@@ -1,0 +1,36 @@
+[package]
+name = "benchmarks"
+version = "0.1.0"
+edition.workspace = true
+
+[dev-dependencies]
+common.workspace = true
+runner-sxd-xpath.workspace = true
+runner-xee-xpath.workspace = true
+runner-xrust.workspace = true
+runner-amxml.workspace = true
+criterion.workspace = true
+
+[[bench]]
+name = "small"
+harness = false
+
+[[bench]]
+name = "medium"
+harness = false
+
+[[bench]]
+name = "large"
+harness = false
+
+[[bench]]
+name = "deep"
+harness = false
+
+[[bench]]
+name = "wide"
+harness = false
+
+[[bench]]
+name = "realworld"
+harness = false
