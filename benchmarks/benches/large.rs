@@ -25,30 +25,41 @@ const QUERIES_TIER1: &[(&str, &str)] = &[
 /// NOTE: sxd-xpath supports XPath 1.0 only and will return Err for these.
 const QUERIES_TIER2: &[(&str, &str)] = &[("flwr_count", "count(for $b in //book return $b/title)")];
 
-macro_rules! bench_runner {
-    ($c:expr, $xml:expr, $runner_ty:ty, $name:literal, $queries:expr) => {
-        let runner = <$runner_ty>::new($xml);
-        let mut group = $c.benchmark_group(concat!("large/", $name));
-        for (query_name, xpath) in $queries {
-            group.bench_with_input(BenchmarkId::new(*query_name, ""), xpath, |b, xpath| {
-                b.iter(|| {
-                    let result = runner.evaluate(black_box(xpath));
-                    black_box(result)
-                })
-            });
-        }
-        group.finish();
+macro_rules! bench_one {
+    ($group:expr, $runner:expr, $name:literal, $xpath:expr) => {
+        $group.bench_with_input(BenchmarkId::from_parameter($name), $xpath, |b, xpath| {
+            b.iter(|| {
+                let result = $runner.evaluate(black_box(xpath));
+                black_box(result)
+            })
+        });
     };
 }
 
 fn bench_large(c: &mut Criterion) {
-    bench_runner!(c, XML, SxdXPathRunner, "sxd-xpath", QUERIES_TIER1);
-    bench_runner!(c, XML, XeeXPathRunner, "xee-xpath", QUERIES_TIER1);
-    bench_runner!(c, XML, XeeXPathRunner, "xee-xpath", QUERIES_TIER2);
-    bench_runner!(c, XML, XrustRunner, "xrust", QUERIES_TIER1);
-    bench_runner!(c, XML, XrustRunner, "xrust", QUERIES_TIER2);
-    bench_runner!(c, XML, AmxmlRunner, "amxml", QUERIES_TIER1);
-    bench_runner!(c, XML, AmxmlRunner, "amxml", QUERIES_TIER2);
+    let sxd_runner = SxdXPathRunner::new(XML);
+    let xee_runner = XeeXPathRunner::new(XML);
+    let xrust_runner = XrustRunner::new(XML);
+    let amxml_runner = AmxmlRunner::new(XML);
+
+    // TIER1: all runners support XPath 1.0
+    for (query_name, xpath) in QUERIES_TIER1 {
+        let mut group = c.benchmark_group(format!("large/{query_name}"));
+        bench_one!(group, &sxd_runner, "sxd-xpath", xpath);
+        bench_one!(group, &xee_runner, "xee-xpath", xpath);
+        bench_one!(group, &xrust_runner, "xrust", xpath);
+        bench_one!(group, &amxml_runner, "amxml", xpath);
+        group.finish();
+    }
+
+    // TIER2: XPath 2.0+ (xee, xrust, amxml)
+    for (query_name, xpath) in QUERIES_TIER2 {
+        let mut group = c.benchmark_group(format!("large/{query_name}"));
+        bench_one!(group, &xee_runner, "xee-xpath", xpath);
+        bench_one!(group, &xrust_runner, "xrust", xpath);
+        bench_one!(group, &amxml_runner, "amxml", xpath);
+        group.finish();
+    }
 }
 
 criterion_group!(benches, bench_large);

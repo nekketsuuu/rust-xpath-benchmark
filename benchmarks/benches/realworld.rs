@@ -52,7 +52,7 @@ const MAVEN_QUERIES_TIER1: &[(&str, &str)] = &[
 // ---------------------------------------------------------------------------
 
 /// XPath 1.0 queries for OSM XML.
-/// Data: © OpenStreetMap contributors, ODbL 1.0
+/// Data: (c) OpenStreetMap contributors, ODbL 1.0
 const OSM_QUERIES_TIER1: &[(&str, &str)] = &[
     ("count_nodes", "count(//node)"),
     ("count_ways", "count(//way)"),
@@ -64,116 +64,66 @@ const OSM_QUERIES_TIER1: &[(&str, &str)] = &[
 ];
 
 // ---------------------------------------------------------------------------
-// Benchmark groups
+// Benchmark helpers
 // ---------------------------------------------------------------------------
 
-macro_rules! bench_runner {
-    ($c:expr, $xml:expr, $runner_ty:ty, $group:literal, $queries:expr) => {
-        let runner = <$runner_ty>::new($xml);
-        let mut group = $c.benchmark_group($group);
-        for (query_name, xpath) in $queries {
-            group.bench_with_input(BenchmarkId::new(*query_name, ""), xpath, |b, xpath| {
-                b.iter(|| {
-                    let result = runner.evaluate(black_box(xpath));
-                    black_box(result)
-                })
-            });
-        }
-        group.finish();
+macro_rules! bench_one {
+    ($group:expr, $runner:expr, $name:literal, $xpath:expr) => {
+        $group.bench_with_input(BenchmarkId::from_parameter($name), $xpath, |b, xpath| {
+            b.iter(|| {
+                let result = $runner.evaluate(black_box(xpath));
+                black_box(result)
+            })
+        });
     };
 }
 
 fn bench_rss(c: &mut Criterion) {
-    bench_runner!(
-        c,
-        RSS_XML,
-        SxdXPathRunner,
-        "realworld/rss/sxd-xpath",
-        RSS_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        RSS_XML,
-        XeeXPathRunner,
-        "realworld/rss/xee-xpath",
-        RSS_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        RSS_XML,
-        XrustRunner,
-        "realworld/rss/xrust",
-        RSS_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        RSS_XML,
-        AmxmlRunner,
-        "realworld/rss/amxml",
-        RSS_QUERIES_TIER1
-    );
+    let sxd_runner = SxdXPathRunner::new(RSS_XML);
+    let xee_runner = XeeXPathRunner::new(RSS_XML);
+    let xrust_runner = XrustRunner::new(RSS_XML);
+    let amxml_runner = AmxmlRunner::new(RSS_XML);
+
+    for (query_name, xpath) in RSS_QUERIES_TIER1 {
+        let mut group = c.benchmark_group(format!("realworld/rss/{query_name}"));
+        bench_one!(group, &sxd_runner, "sxd-xpath", xpath);
+        bench_one!(group, &xee_runner, "xee-xpath", xpath);
+        bench_one!(group, &xrust_runner, "xrust", xpath);
+        bench_one!(group, &amxml_runner, "amxml", xpath);
+        group.finish();
+    }
 }
 
 fn bench_maven(c: &mut Criterion) {
-    bench_runner!(
-        c,
-        MAVEN_XML,
-        SxdXPathRunner,
-        "realworld/maven/sxd-xpath",
-        MAVEN_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        MAVEN_XML,
-        XeeXPathRunner,
-        "realworld/maven/xee-xpath",
-        MAVEN_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        MAVEN_XML,
-        XrustRunner,
-        "realworld/maven/xrust",
-        MAVEN_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        MAVEN_XML,
-        AmxmlRunner,
-        "realworld/maven/amxml",
-        MAVEN_QUERIES_TIER1
-    );
+    let sxd_runner = SxdXPathRunner::new(MAVEN_XML);
+    let xee_runner = XeeXPathRunner::new(MAVEN_XML);
+    let xrust_runner = XrustRunner::new(MAVEN_XML);
+    let amxml_runner = AmxmlRunner::new(MAVEN_XML);
+
+    for (query_name, xpath) in MAVEN_QUERIES_TIER1 {
+        let mut group = c.benchmark_group(format!("realworld/maven/{query_name}"));
+        bench_one!(group, &sxd_runner, "sxd-xpath", xpath);
+        bench_one!(group, &xee_runner, "xee-xpath", xpath);
+        bench_one!(group, &xrust_runner, "xrust", xpath);
+        bench_one!(group, &amxml_runner, "amxml", xpath);
+        group.finish();
+    }
 }
 
 fn bench_osm(c: &mut Criterion) {
-    bench_runner!(
-        c,
-        OSM_XML,
-        SxdXPathRunner,
-        "realworld/osm/sxd-xpath",
-        OSM_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        OSM_XML,
-        XeeXPathRunner,
-        "realworld/osm/xee-xpath",
-        OSM_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        OSM_XML,
-        XrustRunner,
-        "realworld/osm/xrust",
-        OSM_QUERIES_TIER1
-    );
-    bench_runner!(
-        c,
-        OSM_XML,
-        AmxmlRunner,
-        "realworld/osm/amxml",
-        OSM_QUERIES_TIER1
-    );
+    let sxd_runner = SxdXPathRunner::new(OSM_XML);
+    let xee_runner = XeeXPathRunner::new(OSM_XML);
+    let xrust_runner = XrustRunner::new(OSM_XML);
+    let amxml_runner = AmxmlRunner::new(OSM_XML);
+
+    for (query_name, xpath) in OSM_QUERIES_TIER1 {
+        let mut group = c.benchmark_group(format!("realworld/osm/{query_name}"));
+        bench_one!(group, &sxd_runner, "sxd-xpath", xpath);
+        bench_one!(group, &xee_runner, "xee-xpath", xpath);
+        bench_one!(group, &xrust_runner, "xrust", xpath);
+        bench_one!(group, &amxml_runner, "amxml", xpath);
+        group.finish();
+    }
 }
 
 criterion_group!(benches, bench_rss, bench_maven, bench_osm);
