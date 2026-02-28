@@ -383,11 +383,15 @@ fn main() {
         svg
     };
 
-    // Insert markers and legend before closing </svg>
+    // Annotation below x-axis label: "← Lower is better"
+    let annotation = r##"<text x="528" y="715" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##;
+
+    // Insert markers, legend, and annotation before closing </svg>
     let insert = format!(
-        "\n{marker_begin}\n{}\n{}\n{marker_end}\n",
+        "\n{marker_begin}\n{}\n{}\n{}\n{marker_end}\n",
         markers.join("\n"),
-        legend
+        legend,
+        annotation
     );
 
     let new_svg = svg.replace("</svg>", &format!("{insert}</svg>"));
