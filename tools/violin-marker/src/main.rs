@@ -295,6 +295,33 @@ fn render_legend(x: f64, y: f64, libraries: &[&str]) -> String {
 // Helpers
 // ---------------------------------------------------------------------------
 
+/// Find the X-axis label ("Average time (...)") and return its (x, y)
+/// pixel position so that we can place annotations relative to it.
+fn find_x_axis_label_position(svg: &str) -> Option<(f64, f64)> {
+    // The label element looks like:
+    //   <text x="528" y="691" ...>
+    //   Average time (ms)
+    //   </text>
+    // We search for the <text> element whose body contains "Average time".
+    for text_start in svg.match_indices("<text ") {
+        let start = text_start.0;
+        let Some(end) = svg[start..].find("</text>") else {
+            continue;
+        };
+        let element = &svg[start..start + end + "</text>".len()];
+        let Some(gt) = element.find('>') else {
+            continue;
+        };
+        let body = &element[gt + 1..element.len() - "</text>".len()];
+        if body.contains("Average time") {
+            let x = extract_attr(element, "x")?;
+            let y = extract_attr(element, "y")?;
+            return Some((x, y));
+        }
+    }
+    None
+}
+
 /// Strip the group prefix from a Y-axis label, returning the
 /// `<query>/<library>` suffix.
 ///
@@ -419,7 +446,15 @@ fn main() {
     };
 
     // Annotation below x-axis label: "← Lower is better"
-    let annotation = r##"<text x="528" y="715" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##;
+    // Position it at the same x as the "Average time (...)" label, shifted
+    // down by a fixed offset so it sits just below the axis title.
+    let (ann_x, ann_y) = match find_x_axis_label_position(&svg) {
+        Some((x, y)) => (x, y + 24.0),
+        None => (528.0, 715.0), // fallback
+    };
+    let annotation = format!(
+        r##"<text x="{ann_x:.0}" y="{ann_y:.0}" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##
+    );
 
     // Insert markers, legend, and annotation before closing </svg>
     let insert = format!(
