@@ -20,7 +20,7 @@ use std::path::{Path, PathBuf};
 use serde::Deserialize;
 
 // ---------------------------------------------------------------------------
-// Criterion data structures (only what we need)
+// Data structures
 // ---------------------------------------------------------------------------
 
 #[derive(Deserialize)]
@@ -31,6 +31,16 @@ struct Estimates {
 #[derive(Deserialize)]
 struct Statistic {
     point_estimate: f64, // nanoseconds
+}
+
+/// A benchmark case that was skipped (matches benchmarks::SkippedEntry).
+#[derive(Deserialize)]
+struct SkippedEntry {
+    query: String,
+    library: String,
+    reason: String,
+    #[allow(dead_code)]
+    detail: String,
 }
 
 // ---------------------------------------------------------------------------
@@ -322,6 +332,145 @@ fn find_x_axis_label_position(svg: &str) -> Option<(f64, f64)> {
     None
 }
 
+/// Read `skipped.json` for the given group directory.
+/// Returns an empty Vec if the file doesn't exist or can't be parsed.
+fn read_skipped(base_dir: &Path, group_name: &str) -> Vec<SkippedEntry> {
+    let path = base_dir.join(group_name).join("skipped.json");
+    let Ok(data) = fs::read_to_string(&path) else {
+        return Vec::new();
+    };
+    serde_json::from_str(&data).unwrap_or_default()
+}
+
+/// Display text for a skip reason.
+fn skip_reason_text(reason: &str) -> &str {
+    match reason {
+        "timeout" => "TIMEOUT",
+        "unsupported" => "UNSUPPORTED",
+        _ => "SKIPPED",
+    }
+}
+
+/// Fill color for a skip reason.
+fn skip_reason_color(reason: &str) -> &str {
+    match reason {
+        "timeout" => "#CC0000",
+        "unsupported" => "#999999",
+        _ => "#666666",
+    }
+}
+
+/// Render SVG elements for skipped benchmark rows appended below existing rows.
+///
+/// Returns (svg_elements, extra_height) where extra_height is how much the
+/// SVG viewBox needs to grow.
+fn render_skipped_rows(
+    skipped: &[SkippedEntry],
+    group_name_svg: &str,
+    last_y: f64,
+    row_spacing: f64,
+    label_x: f64,
+    label_font_size: f64,
+    plot_left_x: f64,
+) -> (String, f64) {
+    if skipped.is_empty() {
+        return (String::new(), 0.0);
+    }
+
+    let mut parts = Vec::new();
+    let mut y = last_y + row_spacing;
+
+    for entry in skipped {
+        let label = format!("{}/{}/{}", group_name_svg, entry.query, entry.library);
+        let reason_text = skip_reason_text(&entry.reason);
+        let reason_color = skip_reason_color(&entry.reason);
+
+        // Y-axis label (same style as Criterion's labels)
+        parts.push(format!(
+            "<text x=\"{:.0}\" y=\"{y:.0}\" dy=\"0.5ex\" text-anchor=\"end\" \
+             font-family=\"sans-serif\" font-size=\"{label_font_size}\" \
+             opacity=\"1\" fill=\"#000000\">\n{label}\n</text>",
+            label_x
+        ));
+
+        // Tick mark
+        parts.push(format!(
+            "<polyline fill=\"none\" opacity=\"1\" stroke=\"#000000\" stroke-width=\"1\" \
+             points=\"{:.0},{y:.0} {:.0},{y:.0} \"/>",
+            label_x + 4.0,
+            label_x + 9.0,
+        ));
+
+        // Reason text in the plot area
+        parts.push(format!(
+            "<text x=\"{:.0}\" y=\"{y:.0}\" dy=\"0.35em\" \
+             font-family=\"sans-serif\" font-size=\"9\" font-style=\"italic\" \
+             fill=\"{reason_color}\">{reason_text}</text>",
+            plot_left_x + 15.0,
+        ));
+
+        y += row_spacing;
+    }
+
+    let extra_height = row_spacing * skipped.len() as f64;
+    (parts.join("\n"), extra_height)
+}
+
+/// Expand the SVG's width/height attributes and viewBox by `extra_height`.
+fn expand_svg_height(svg: &str, extra_height: f64) -> String {
+    // Match: <svg width="960" height="726" viewBox="0 0 960 726" ...>
+    // We need to update both `height="..."` and the viewBox height.
+    let mut result = svg.to_string();
+
+    // Update height="NNN" (first occurrence, in the <svg> tag)
+    if let Some(pos) = result.find("height=\"") {
+        let start = pos + "height=\"".len();
+        if let Some(end) = result[start..].find('"') {
+            let end = start + end;
+            if let Ok(h) = result[start..end].parse::<f64>() {
+                let new_h = h + extra_height;
+                result = format!("{}{:.0}{}", &result[..start], new_h, &result[end..]);
+            }
+        }
+    }
+
+    // Update viewBox="0 0 960 NNN"
+    if let Some(pos) = result.find("viewBox=\"") {
+        let start = pos + "viewBox=\"".len();
+        if let Some(end) = result[start..].find('"') {
+            let end = start + end;
+            let parts: Vec<&str> = result[start..end].split_whitespace().collect();
+            if parts.len() == 4 {
+                if let Ok(h) = parts[3].parse::<f64>() {
+                    let new_vb = format!(
+                        "{} {} {} {:.0}",
+                        parts[0],
+                        parts[1],
+                        parts[2],
+                        h + extra_height
+                    );
+                    result = format!("{}{}{}", &result[..start], new_vb, &result[end..]);
+                }
+            }
+        }
+    }
+
+    result
+}
+
+/// Extract the current height from the SVG's `height="..."` attribute.
+fn current_svg_height(svg: &str) -> f64 {
+    if let Some(pos) = svg.find("height=\"") {
+        let start = pos + "height=\"".len();
+        if let Some(end) = svg[start..].find('"') {
+            if let Ok(h) = svg[start..start + end].parse::<f64>() {
+                return h;
+            }
+        }
+    }
+    0.0
+}
+
 /// Strip the group prefix from a Y-axis label, returning the
 /// `<query>/<library>` suffix.
 ///
@@ -362,6 +511,9 @@ fn main() {
     let svg_path = base_dir.join(group_name).join("report/violin.svg");
     let svg = fs::read_to_string(&svg_path)
         .unwrap_or_else(|e| panic!("Cannot read {}: {e}", svg_path.display()));
+
+    // Read skipped benchmarks (if any)
+    let skipped = read_skipped(&base_dir, group_name);
 
     // Parse SVG structure
     let (x_origin, px_per_unit) = extract_x_axis(&svg);
@@ -420,7 +572,7 @@ fn main() {
         );
     }
 
-    if markers.is_empty() {
+    if markers.is_empty() && skipped.is_empty() {
         eprintln!("No markers to add.");
         return;
     }
@@ -437,10 +589,87 @@ fn main() {
     let marker_end = "<!-- /median markers -->";
     let svg = if let Some(start) = svg.find(marker_begin) {
         if let Some(end) = svg.find(marker_end) {
-            format!("{}{}", &svg[..start], &svg[end + marker_end.len()..])
+            let mut cleaned = format!("{}{}", &svg[..start], &svg[end + marker_end.len()..]);
+
+            // Restore original SVG height if it was expanded.
+            // The original height is stored in a comment like:
+            //   <!-- original-svg-height: 726 -->
+            let height_prefix = "<!-- original-svg-height: ";
+            if let Some(hp) = svg[start..end].find(height_prefix) {
+                let hp = start + hp + height_prefix.len();
+                if let Some(he) = svg[hp..].find(" -->") {
+                    if let Ok(orig_h) = svg[hp..hp + he].parse::<f64>() {
+                        cleaned =
+                            expand_svg_height(&cleaned, -(current_svg_height(&cleaned) - orig_h));
+                    }
+                }
+            }
+
+            cleaned
         } else {
             svg
         }
+    } else {
+        svg
+    };
+
+    // Render skipped rows below existing violin rows
+    let skipped_svg;
+    let extra_height;
+    if !skipped.is_empty() {
+        // Determine the SVG group name from existing Y-axis labels.
+        // If there are labels, strip the last two segments (query/library)
+        // from the first one.  Otherwise, fall back to the filesystem group
+        // name (not ideal but workable).
+        let svg_group_name: String = if let Some((first_label, _)) = y_labels.first() {
+            let suffix = strip_group_prefix(first_label);
+            first_label[..first_label.len() - suffix.len() - 1].to_string()
+        } else {
+            group_name.replace('_', "/")
+        };
+
+        // Derive layout parameters from existing labels.
+        let row_spacing = if y_labels.len() >= 2 {
+            (y_labels[1].1 - y_labels[0].1).abs()
+        } else {
+            18.0
+        };
+        let last_y = y_labels.last().map(|(_, y)| *y).unwrap_or(60.0);
+        // Y-axis label x position and font size (from Criterion's defaults)
+        let label_x = 121.0;
+        let label_font_size = 8.065;
+        // Plot area left edge (the Y-axis line)
+        let plot_left_x = 130.0;
+
+        let (s, h) = render_skipped_rows(
+            &skipped,
+            &svg_group_name,
+            last_y,
+            row_spacing,
+            label_x,
+            label_font_size,
+            plot_left_x,
+        );
+        skipped_svg = s;
+        extra_height = h;
+
+        eprintln!(
+            "  Adding {} skipped row(s), expanding SVG by {extra_height:.0}px",
+            skipped.len()
+        );
+    } else {
+        skipped_svg = String::new();
+        extra_height = 0.0;
+    }
+
+    // Record the original SVG height before expansion so we can restore it
+    // on re-runs (idempotency).
+    let orig_height = current_svg_height(&svg);
+    let orig_height_comment = format!("<!-- original-svg-height: {orig_height:.0} -->");
+
+    // Expand SVG if we added skipped rows
+    let svg = if extra_height > 0.0 {
+        expand_svg_height(&svg, extra_height)
     } else {
         svg
     };
@@ -456,11 +685,12 @@ fn main() {
         r##"<text x="{ann_x:.0}" y="{ann_y:.0}" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##
     );
 
-    // Insert markers, legend, and annotation before closing </svg>
+    // Insert markers, legend, skipped rows, and annotation before closing </svg>
     let insert = format!(
-        "\n{marker_begin}\n{}\n{}\n{}\n{marker_end}\n",
+        "\n{marker_begin}\n{orig_height_comment}\n{}\n{}\n{}\n{}\n{marker_end}\n",
         markers.join("\n"),
         legend,
+        skipped_svg,
         annotation
     );
 
