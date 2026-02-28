@@ -30,8 +30,8 @@ const QUERIES_TIER2: &[(&str, &str)] =
 const QUERIES_TIER3: &[(&str, &str)] = &[("simple_map", "//book ! string(title)")];
 
 macro_rules! bench_one {
-    ($group:expr, $runner:expr, $name:literal, $xpath:expr) => {
-        $group.bench_with_input(BenchmarkId::from_parameter($name), $xpath, |b, xpath| {
+    ($group:expr, $runner:expr, $name:literal, $query_name:expr, $xpath:expr) => {
+        $group.bench_with_input(BenchmarkId::new($query_name, $name), $xpath, |b, xpath| {
             b.iter(|| {
                 let result = $runner.evaluate(black_box(xpath));
                 black_box(result)
@@ -46,31 +46,29 @@ fn bench_small(c: &mut Criterion) {
     let xrust_runner = XrustRunner::new(XML);
     let amxml_runner = AmxmlRunner::new(XML);
 
+    let mut group = c.benchmark_group("small");
+
     // TIER1: all runners support XPath 1.0
     for (query_name, xpath) in QUERIES_TIER1 {
-        let mut group = c.benchmark_group(format!("small/{query_name}"));
-        bench_one!(group, &sxd_runner, "sxd-xpath", xpath);
-        bench_one!(group, &xee_runner, "xee-xpath", xpath);
-        bench_one!(group, &xrust_runner, "xrust", xpath);
-        bench_one!(group, &amxml_runner, "amxml", xpath);
-        group.finish();
+        bench_one!(group, &sxd_runner, "sxd-xpath", *query_name, xpath);
+        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath);
+        bench_one!(group, &xrust_runner, "xrust", *query_name, xpath);
+        bench_one!(group, &amxml_runner, "amxml", *query_name, xpath);
     }
 
     // TIER2: XPath 2.0+ (xee, xrust, amxml)
     for (query_name, xpath) in QUERIES_TIER2 {
-        let mut group = c.benchmark_group(format!("small/{query_name}"));
-        bench_one!(group, &xee_runner, "xee-xpath", xpath);
-        bench_one!(group, &xrust_runner, "xrust", xpath);
-        bench_one!(group, &amxml_runner, "amxml", xpath);
-        group.finish();
+        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath);
+        bench_one!(group, &xrust_runner, "xrust", *query_name, xpath);
+        bench_one!(group, &amxml_runner, "amxml", *query_name, xpath);
     }
 
     // TIER3: XPath 3.1 (xee only)
     for (query_name, xpath) in QUERIES_TIER3 {
-        let mut group = c.benchmark_group(format!("small/{query_name}"));
-        bench_one!(group, &xee_runner, "xee-xpath", xpath);
-        group.finish();
+        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath);
     }
+
+    group.finish();
 }
 
 criterion_group!(benches, bench_small);
