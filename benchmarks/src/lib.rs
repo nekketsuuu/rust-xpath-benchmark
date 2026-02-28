@@ -21,18 +21,62 @@ pub struct SkippedEntry {
     pub detail: String,
 }
 
-/// Run a single iteration of `evaluate()` and return its duration if the
-/// estimated total time for [`SAMPLE_COUNT`] samples would exceed
+/// Run a single probe iteration of `evaluate()` and return its duration if
+/// the estimated total time for [`SAMPLE_COUNT`] samples would exceed
 /// [`TIMEOUT_BUDGET`].  Returns `None` if the benchmark is fast enough.
+///
+/// # Panics
+///
+/// Panics if `evaluate()` returns `Err`.  All benchmark cases are expected to
+/// succeed; unsupported library/query combinations should be recorded via
+/// [`skip_unsupported`] *before* calling this function.
 pub fn check_timeout<R: XPathRunner>(runner: &R, xpath: &str) -> Option<Duration> {
     let start = Instant::now();
-    let _ = black_box(runner.evaluate(black_box(xpath)));
+    let result = black_box(runner.evaluate(black_box(xpath)));
     let elapsed = start.elapsed();
+    result.unwrap_or_else(|e| panic!("Unexpected evaluate() error: {e}"));
     if elapsed * SAMPLE_COUNT > TIMEOUT_BUDGET {
         Some(elapsed)
     } else {
         None
     }
+}
+
+/// Record a benchmark case as skipped because the library does not support
+/// the query's XPath version.
+pub fn skip_unsupported(
+    skipped: &mut Vec<SkippedEntry>,
+    query_name: &str,
+    library: &str,
+    detail: &str,
+) {
+    skipped.push(SkippedEntry {
+        query: query_name.to_string(),
+        library: library.to_string(),
+        reason: "unsupported".to_string(),
+        detail: detail.to_string(),
+    });
+}
+
+/// Locate the Criterion output directory.
+///
+/// Criterion resolves the target directory via `cargo metadata`, which for
+/// workspace builds returns the workspace-root `target/`.  We approximate
+/// this by walking up from `CARGO_MANIFEST_DIR` (the benchmarks crate root)
+/// until we find a `Cargo.toml` that contains `[workspace]`.
+fn criterion_output_dir() -> std::path::PathBuf {
+    let manifest_dir = Path::new(env!("CARGO_MANIFEST_DIR"));
+    // In a workspace the parent of the member crate is typically the
+    // workspace root.  Fall back to `./target/criterion` if not found.
+    for ancestor in manifest_dir.ancestors().skip(1) {
+        let toml = ancestor.join("Cargo.toml");
+        if let Ok(contents) = std::fs::read_to_string(&toml) {
+            if contents.contains("[workspace]") {
+                return ancestor.join("target/criterion");
+            }
+        }
+    }
+    Path::new("target/criterion").to_path_buf()
 }
 
 /// Write `skipped.json` into the Criterion output directory for `group_name`.
@@ -42,7 +86,7 @@ pub fn check_timeout<R: XPathRunner>(runner: &R, xpath: &str) -> Option<Duration
 /// Criterion uses.
 pub fn write_skipped(group_name: &str, entries: &[SkippedEntry]) {
     let fs_name = group_name.replace('/', "_");
-    let dir = Path::new("target/criterion").join(fs_name);
+    let dir = criterion_output_dir().join(fs_name);
     std::fs::create_dir_all(&dir).ok();
     let path = dir.join("skipped.json");
     let json = serde_json::to_string_pretty(entries).expect("failed to serialize skipped.json");

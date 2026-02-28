@@ -33,19 +33,19 @@ impl XPathRunner for XeeXPathRunner {
             .execute(&mut *documents, self.doc_handle)
             .map_err(|e| format!("XPath evaluation error: {e}"))?;
 
-        // Convert each item to a string representation.
-        // For atomic values: Atomic::to_string() returns Result<String, ErrorValue>.
-        // For nodes: Xot::string_value() returns String directly.
+        // Convert each item to its XPath string value.
+        // Item::string_value() handles all cases correctly:
+        //   - Atomic values: canonical lexical representation (integers, doubles, etc.)
+        //   - Nodes: string value via Xot::string_value()
+        //   - Functions: returns FOTY0014 error
         let xot = documents.xot();
         let results: Vec<String> = sequence
             .iter()
-            .map(|item| match item {
-                xee_xpath::Item::Atomic(a) => a.to_string().map_err(|e| format!("{e:?}")),
-                xee_xpath::Item::Node(n) => Ok(xot.string_value(n)),
-                xee_xpath::Item::Function(_) => Ok("<function>".to_string()),
+            .map(|item| {
+                item.string_value(xot)
+                    .map_err(|e| format!("XPath result conversion error: {e}"))
             })
-            .collect::<Result<Vec<_>, _>>()
-            .map_err(|e| format!("XPath result conversion error: {e}"))?;
+            .collect::<Result<Vec<_>, _>>()?;
         Ok(results)
     }
 }

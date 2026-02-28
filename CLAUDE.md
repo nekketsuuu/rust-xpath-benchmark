@@ -26,9 +26,11 @@ It also reads `skipped.json` (if present) and appends labelled rows for skipped 
 
 - Before each benchmark case, a single probe iteration is run. If `iteration_time * 100 > 300s`, the case is skipped (not registered with Criterion at all).
 - Skipped cases are recorded in `target/criterion/<group>/skipped.json` with fields: `query`, `library`, `reason`, `detail`.
-- `reason` is currently `"timeout"` but is designed to support future values like `"unsupported"`.
+- `reason` is `"timeout"` or `"unsupported"` (designed to support future values too).
+- Unsupported cases are declared statically via `skip_unsupported()` based on TIER classification, not by parsing error messages from `evaluate()`. If `evaluate()` returns `Err`, `check_timeout` panics — all benchmark cases are expected to succeed.
+- Each bench file has a `SKIP` constant listing library-specific query failures (bugs, not tier limitations). The `bench_one!` macro checks `SKIP` before calling `check_timeout`, so skipped cases never run a probe. When adding a new query, run `cargo bench --bench <name> -- 'NOMATCH'` to quickly verify all probes pass without measuring anything.
 - The `skipped.json` file is overwritten on each benchmark run (not appended).
-- Common timeout logic lives in `benchmarks/src/lib.rs` (`check_timeout`, `write_skipped`, `SkippedEntry`).
+- Common skip/timeout logic lives in `benchmarks/src/lib.rs` (`check_timeout`, `skip_unsupported`, `write_skipped`, `SkippedEntry`).
 - violin-marker reads `skipped.json` and appends labelled rows below the existing violin plot (with SVG height expansion). This is idempotent.
 
 ## Criterion quirks

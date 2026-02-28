@@ -360,25 +360,28 @@ fn skip_reason_color(reason: &str) -> &str {
     }
 }
 
-/// Render SVG elements for skipped benchmark rows appended below existing rows.
+/// Render SVG elements for skipped benchmark rows below the axis area.
 ///
-/// Returns (svg_elements, extra_height) where extra_height is how much the
-/// SVG viewBox needs to grow.
+/// `start_y` is the Y position for the first skipped row (caller computes
+/// this so that rows appear below the "Lower is better" annotation).
+///
+/// Returns (svg_elements, last_row_y) where last_row_y is the Y position
+/// of the last rendered row (the caller uses this to compute extra_height).
 fn render_skipped_rows(
     skipped: &[SkippedEntry],
     group_name_svg: &str,
-    last_y: f64,
+    start_y: f64,
     row_spacing: f64,
     label_x: f64,
     label_font_size: f64,
     plot_left_x: f64,
 ) -> (String, f64) {
     if skipped.is_empty() {
-        return (String::new(), 0.0);
+        return (String::new(), start_y);
     }
 
     let mut parts = Vec::new();
-    let mut y = last_y + row_spacing;
+    let mut y = start_y;
 
     for entry in skipped {
         let label = format!("{}/{}/{}", group_name_svg, entry.query, entry.library);
@@ -412,8 +415,9 @@ fn render_skipped_rows(
         y += row_spacing;
     }
 
-    let extra_height = row_spacing * skipped.len() as f64;
-    (parts.join("\n"), extra_height)
+    // last_row_y is the Y of the last rendered row (one row_spacing back from y)
+    let last_row_y = y - row_spacing;
+    (parts.join("\n"), last_row_y)
 }
 
 /// Expand the SVG's width/height attributes and viewBox by `extra_height`.
@@ -613,7 +617,26 @@ fn main() {
         svg
     };
 
-    // Render skipped rows below existing violin rows
+    // Record the original SVG height before expansion so we can restore it
+    // on re-runs (idempotency).
+    let orig_height = current_svg_height(&svg);
+    let orig_height_comment = format!("<!-- original-svg-height: {orig_height:.0} -->");
+
+    // Annotation below x-axis label: "← Lower is better"
+    // Position it at the same x as the "Average time (...)" label, shifted
+    // down by a fixed offset so it sits just below the axis title.
+    let (ann_x, ann_y) = match find_x_axis_label_position(&svg) {
+        Some((x, y)) => (x, y + 24.0),
+        None => (528.0, 715.0), // fallback
+    };
+    let annotation = format!(
+        r##"<text x="{ann_x:.0}" y="{ann_y:.0}" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##
+    );
+
+    // Render skipped rows below the "Lower is better" annotation.
+    // Visual order (top to bottom):
+    //   violins → X-axis line → tick labels → "Average time" →
+    //   "Lower is better" → [gap] → skipped rows → bottom
     let skipped_svg;
     let extra_height;
     if !skipped.is_empty() {
@@ -634,24 +657,31 @@ fn main() {
         } else {
             18.0
         };
-        let last_y = y_labels.last().map(|(_, y)| *y).unwrap_or(60.0);
         // Y-axis label x position and font size (from Criterion's defaults)
         let label_x = 121.0;
         let label_font_size = 8.065;
         // Plot area left edge (the Y-axis line)
         let plot_left_x = 130.0;
 
-        let (s, h) = render_skipped_rows(
+        // Start skipped rows one row_spacing below the "Lower is better"
+        // annotation so they don't overlap any axis elements.
+        let skipped_start_y = ann_y + row_spacing;
+
+        let (s, last_row_y) = render_skipped_rows(
             &skipped,
             &svg_group_name,
-            last_y,
+            skipped_start_y,
             row_spacing,
             label_x,
             label_font_size,
             plot_left_x,
         );
         skipped_svg = s;
-        extra_height = h;
+
+        // Expand the SVG height so the last skipped row + bottom padding fits.
+        let bottom_padding = 10.0;
+        let needed_height = last_row_y + bottom_padding;
+        extra_height = (needed_height - orig_height).max(0.0);
 
         eprintln!(
             "  Adding {} skipped row(s), expanding SVG by {extra_height:.0}px",
@@ -662,11 +692,6 @@ fn main() {
         extra_height = 0.0;
     }
 
-    // Record the original SVG height before expansion so we can restore it
-    // on re-runs (idempotency).
-    let orig_height = current_svg_height(&svg);
-    let orig_height_comment = format!("<!-- original-svg-height: {orig_height:.0} -->");
-
     // Expand SVG if we added skipped rows
     let svg = if extra_height > 0.0 {
         expand_svg_height(&svg, extra_height)
@@ -674,24 +699,13 @@ fn main() {
         svg
     };
 
-    // Annotation below x-axis label: "← Lower is better"
-    // Position it at the same x as the "Average time (...)" label, shifted
-    // down by a fixed offset so it sits just below the axis title.
-    let (ann_x, ann_y) = match find_x_axis_label_position(&svg) {
-        Some((x, y)) => (x, y + 24.0),
-        None => (528.0, 715.0), // fallback
-    };
-    let annotation = format!(
-        r##"<text x="{ann_x:.0}" y="{ann_y:.0}" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666666" font-style="italic">&#x2190; Lower is better</text>"##
-    );
-
-    // Insert markers, legend, skipped rows, and annotation before closing </svg>
+    // Insert markers, legend, annotation, and skipped rows before closing </svg>
     let insert = format!(
         "\n{marker_begin}\n{orig_height_comment}\n{}\n{}\n{}\n{}\n{marker_end}\n",
         markers.join("\n"),
         legend,
+        annotation,
         skipped_svg,
-        annotation
     );
 
     let new_svg = svg.replace("</svg>", &format!("{insert}</svg>"));

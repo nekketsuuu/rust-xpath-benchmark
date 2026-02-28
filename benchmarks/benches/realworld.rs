@@ -1,6 +1,6 @@
 use std::hint::black_box;
 
-use benchmarks::{check_timeout, write_skipped, SkippedEntry};
+use benchmarks::{check_timeout, skip_unsupported, write_skipped, SkippedEntry};
 use common::XPathRunner;
 use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
 use runner_amxml::AmxmlRunner;
@@ -68,9 +68,22 @@ const OSM_QUERIES_TIER1: &[(&str, &str)] = &[
 // Benchmark helpers
 // ---------------------------------------------------------------------------
 
+/// Library-specific queries that fail due to bugs, not tier limitations.
+/// Each entry: (query_name, library_name, reason).
+const SKIP: &[(&str, &str, &str)] = &[(
+    "tagged_nodes",
+    "xee-xpath",
+    "XPTY0004 on //node[tag] predicate",
+)];
+
 macro_rules! bench_one {
     ($group:expr, $runner:expr, $name:literal, $query_name:expr, $xpath:expr, $skipped:expr) => {
-        if let Some(single_run) = check_timeout($runner, $xpath) {
+        if let Some((_, _, reason)) = SKIP
+            .iter()
+            .find(|(q, l, _)| *q == $query_name && *l == $name)
+        {
+            skip_unsupported(&mut $skipped, $query_name, $name, reason);
+        } else if let Some(single_run) = check_timeout($runner, $xpath) {
             eprintln!(
                 "TIMEOUT: {}/{} — single iteration took {:.2?}, skipping",
                 $query_name, $name, single_run
