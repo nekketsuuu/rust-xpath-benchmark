@@ -292,6 +292,32 @@ fn render_legend(x: f64, y: f64, libraries: &[&str]) -> String {
 }
 
 // ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+/// Strip the group prefix from a Y-axis label, returning the
+/// `<query>/<library>` suffix.
+///
+/// Labels have the form `<group>/<query>/<library>` where `<group>` itself
+/// may contain slashes (e.g. `realworld/rss`).  The last two `/`-separated
+/// segments are always query and library, so we strip everything before them.
+fn strip_group_prefix(label: &str) -> &str {
+    // Find the second-to-last '/'
+    let bytes = label.as_bytes();
+    let mut slash_count = 0;
+    for i in (0..bytes.len()).rev() {
+        if bytes[i] == b'/' {
+            slash_count += 1;
+            if slash_count == 2 {
+                return &label[i + 1..];
+            }
+        }
+    }
+    // Fallback: if fewer than 2 slashes, return as-is
+    label
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
@@ -325,12 +351,21 @@ fn main() {
     let mut seen_libraries: Vec<String> = Vec::new();
 
     for (label, y_px) in &y_labels {
-        // label is like "small/all_books/sxd-xpath"
-        // The benchmark data directory is <base>/<label>/new/estimates.json
-        // But the directory structure uses function/parameter, which is:
-        //   <base>/<group>/<function>/<parameter>/new/estimates.json
-        // where label = "<group>/<function>/<parameter>"
-        let estimates_path = base_dir.join(label).join("new/estimates.json");
+        // label is like "small/all_books/sxd-xpath" or
+        // "realworld/rss/item_titles/xrust".
+        //
+        // The filesystem layout is:
+        //   <base>/<fs_group>/<function>/<parameter>/new/estimates.json
+        // where <fs_group> is the directory name passed on the command line
+        // (e.g. "realworld_rss") and the label's group prefix may differ
+        // (Criterion replaces "/" in group names with "_" on disk).
+        //
+        // The label always ends with "/<query>/<library>", so strip those
+        // two trailing segments to get the SVG group prefix, then replace
+        // it with the filesystem group name.
+        let suffix = strip_group_prefix(label);
+        let fs_label = format!("{group_name}/{suffix}");
+        let estimates_path = base_dir.join(&fs_label).join("new/estimates.json");
 
         let median_ns = match read_median(&estimates_path) {
             Some(v) => v,
