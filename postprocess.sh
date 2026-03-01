@@ -29,6 +29,15 @@ done
 find "$CRITERION_DIR" -name 'index.html' -exec \
     sed -i 's/ - Criterion\.rs<\/title>/ - Rust XPath Benchmark (Feb 2026)<\/title>/g' {} +
 
+# Add repo link to footer on all report pages. Idempotent.
+find "$CRITERION_DIR" -name 'index.html' -exec \
+    sed -i '/<!-- FOOTER-REPO -->/d' {} +
+find "$CRITERION_DIR" -name 'index.html' -exec \
+    sed -i 's|library in Rust\.</p>|library in Rust.</p>\n        <!-- FOOTER-REPO --><p><a href="https://github.com/nekketsuuu/rust-xpath-benchmark">https://github.com/nekketsuuu/rust-xpath-benchmark</a></p>|' {} +
+# Expand footer height to fit the extra line. Idempotent.
+find "$CRITERION_DIR" -name 'index.html' -exec \
+    sed -i 's/height: 40px;/height: auto; padding: 8px 0;/' {} +
+
 # Customize the top-level report index
 index_html="${CRITERION_DIR}/report/index.html"
 if [ -f "$index_html" ]; then
