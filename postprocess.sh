@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Post-process Criterion violin plot SVGs to add median markers.
-# Run this after `cargo bench` to annotate the generated plots.
+# Post-process Criterion benchmark results.
+# Run this after `cargo bench` to:
+#   1. Add per-library median markers to violin plot SVGs
+#   2. Rename the report title
+#   3. Copy the report to docs/ for GitHub Pages
 #
 # Usage:
 #   ./postprocess.sh
-#
-# Each benchmark group's violin.svg will be updated in-place with
-# per-library median markers (distinct shapes and colors).
 
 set -euo pipefail
 
@@ -31,5 +31,10 @@ if [ -f "$index_html" ]; then
     sed -i 's/Criterion\.rs Benchmark Index/Rust XPath Benchmark Index/g' "$index_html"
     echo "Updated report title."
 fi
+
+# Copy to docs/ for GitHub Pages
+rm -rf docs
+cp -r "$CRITERION_DIR" docs
+echo "Copied report to docs/."
 
 echo "Done."
