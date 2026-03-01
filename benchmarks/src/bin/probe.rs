@@ -14,6 +14,7 @@
 
 use common::XPathRunner;
 use runner_amxml::AmxmlRunner;
+use runner_libxml::LibxmlRunner;
 use runner_sxd_xpath::SxdXPathRunner;
 use runner_xee_xpath::XeeXPathRunner;
 use runner_xrust::XrustRunner;
@@ -59,6 +60,10 @@ fn run_evaluate(library: &str, xml: &str, xpath: &str) -> Result<Vec<String>, St
         }
         "amxml" => {
             let runner = AmxmlRunner::new(xml);
+            runner.evaluate(xpath)
+        }
+        "libxml" => {
+            let runner = LibxmlRunner::new(xml);
             runner.evaluate(xpath)
         }
         _ => Err(format!("unknown library: {library}")),

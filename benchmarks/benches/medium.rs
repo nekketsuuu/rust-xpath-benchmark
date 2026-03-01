@@ -4,6 +4,7 @@ use benchmarks::{check_timeout, skip_unsupported, write_skipped, SkippedEntry};
 use common::XPathRunner;
 use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
 use runner_amxml::AmxmlRunner;
+use runner_libxml::LibxmlRunner;
 use runner_sxd_xpath::SxdXPathRunner;
 use runner_xee_xpath::XeeXPathRunner;
 use runner_xrust::XrustRunner;
@@ -74,6 +75,7 @@ fn bench_medium(c: &mut Criterion) {
     let xee_runner = XeeXPathRunner::new(XML);
     let xrust_runner = XrustRunner::new(XML);
     let amxml_runner = AmxmlRunner::new(XML);
+    let libxml_runner = LibxmlRunner::new(XML);
 
     let mut group = c.benchmark_group("medium");
     let mut skipped = Vec::new();
@@ -84,11 +86,13 @@ fn bench_medium(c: &mut Criterion) {
         bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath, skipped);
         bench_one!(group, &xrust_runner, "xrust", *query_name, xpath, skipped);
         bench_one!(group, &amxml_runner, "amxml", *query_name, xpath, skipped);
+        bench_one!(group, &libxml_runner, "libxml", *query_name, xpath, skipped);
     }
 
     // TIER2: XPath 2.0+ (xee, xrust, amxml)
     for (query_name, xpath) in QUERIES_TIER2 {
         skip_unsupported(&mut skipped, query_name, "sxd-xpath", "XPath 1.0 only");
+        skip_unsupported(&mut skipped, query_name, "libxml", "XPath 1.0 only");
         bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath, skipped);
         bench_one!(group, &xrust_runner, "xrust", *query_name, xpath, skipped);
         bench_one!(group, &amxml_runner, "amxml", *query_name, xpath, skipped);

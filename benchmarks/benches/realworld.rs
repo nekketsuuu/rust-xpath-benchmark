@@ -4,6 +4,7 @@ use benchmarks::{check_timeout, skip_unsupported, write_skipped, SkippedEntry};
 use common::XPathRunner;
 use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
 use runner_amxml::AmxmlRunner;
+use runner_libxml::LibxmlRunner;
 use runner_sxd_xpath::SxdXPathRunner;
 use runner_xee_xpath::XeeXPathRunner;
 use runner_xrust::XrustRunner;
@@ -110,6 +111,7 @@ fn bench_rss(c: &mut Criterion) {
     let xee_runner = XeeXPathRunner::new(RSS_XML);
     let xrust_runner = XrustRunner::new(RSS_XML);
     let amxml_runner = AmxmlRunner::new(RSS_XML);
+    let libxml_runner = LibxmlRunner::new(RSS_XML);
 
     let mut group = c.benchmark_group("realworld/rss");
     let mut skipped = Vec::new();
@@ -151,6 +153,15 @@ fn bench_rss(c: &mut Criterion) {
             skipped,
             "rss2-sample"
         );
+        bench_one!(
+            group,
+            &libxml_runner,
+            "libxml",
+            *query_name,
+            xpath,
+            skipped,
+            "rss2-sample"
+        );
     }
 
     group.finish();
@@ -162,6 +173,7 @@ fn bench_maven(c: &mut Criterion) {
     let xee_runner = XeeXPathRunner::new(MAVEN_XML);
     let xrust_runner = XrustRunner::new(MAVEN_XML);
     let amxml_runner = AmxmlRunner::new(MAVEN_XML);
+    let libxml_runner = LibxmlRunner::new(MAVEN_XML);
 
     let mut group = c.benchmark_group("realworld/maven");
     let mut skipped = Vec::new();
@@ -203,6 +215,15 @@ fn bench_maven(c: &mut Criterion) {
             skipped,
             "maven-pom"
         );
+        bench_one!(
+            group,
+            &libxml_runner,
+            "libxml",
+            *query_name,
+            xpath,
+            skipped,
+            "maven-pom"
+        );
     }
 
     group.finish();
@@ -214,6 +235,7 @@ fn bench_osm(c: &mut Criterion) {
     let xee_runner = XeeXPathRunner::new(OSM_XML);
     let xrust_runner = XrustRunner::new(OSM_XML);
     let amxml_runner = AmxmlRunner::new(OSM_XML);
+    let libxml_runner = LibxmlRunner::new(OSM_XML);
 
     let mut group = c.benchmark_group("realworld/osm");
     let mut skipped = Vec::new();
@@ -250,6 +272,15 @@ fn bench_osm(c: &mut Criterion) {
             group,
             &amxml_runner,
             "amxml",
+            *query_name,
+            xpath,
+            skipped,
+            "osm-map"
+        );
+        bench_one!(
+            group,
+            &libxml_runner,
+            "libxml",
             *query_name,
             xpath,
             skipped,

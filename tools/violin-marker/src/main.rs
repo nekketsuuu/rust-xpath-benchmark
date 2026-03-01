@@ -215,6 +215,7 @@ enum MarkerShape {
     Diamond,
     Triangle,
     Square,
+    InvertedTriangle,
 }
 
 fn marker_for_library(lib: &str) -> MarkerStyle {
@@ -234,6 +235,10 @@ fn marker_for_library(lib: &str) -> MarkerStyle {
         "amxml" => MarkerStyle {
             color: "#FF7F00", // orange
             shape: MarkerShape::Square,
+        },
+        "libxml" => MarkerStyle {
+            color: "#6A3D9A", // purple
+            shape: MarkerShape::InvertedTriangle,
         },
         _ => MarkerStyle {
             color: "#000000",
@@ -278,6 +283,16 @@ fn render_marker(x: f64, y: f64, style: &MarkerStyle) -> String {
                 y - half,
                 half * 2.0,
                 half * 2.0,
+            )
+        }
+        MarkerShape::InvertedTriangle => {
+            // Downward pointing triangle
+            let h = r * 1.15;
+            format!(
+                "<polygon points=\"{:.1},{:.1} {:.1},{:.1} {:.1},{:.1}\" fill=\"{fill}\" {stroke}/>",
+                x, y + h,            // bottom
+                x + r, y - h * 0.6,  // top right
+                x - r, y - h * 0.6,  // top left
             )
         }
     }

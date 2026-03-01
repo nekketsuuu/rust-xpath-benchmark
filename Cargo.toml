@@ -5,6 +5,7 @@ members = [
     "runner-xee-xpath",
     "runner-xrust",
     "runner-amxml",
+    "runner-libxml",
     "benchmarks",
     "fixtures/generate",
     "tools/violin-marker",
@@ -20,6 +21,7 @@ runner-sxd-xpath = { path = "runner-sxd-xpath" }
 runner-xee-xpath = { path = "runner-xee-xpath" }
 runner-xrust = { path = "runner-xrust" }
 runner-amxml = { path = "runner-amxml" }
+runner-libxml = { path = "runner-libxml" }
 criterion = { version = "0.5", features = ["html_reports"] }
 
 # xpath libraries
@@ -28,3 +30,4 @@ sxd-xpath = "0.4.2"
 xee-xpath = "0.1.5"
 xrust = "2.0.3"
 amxml = "0.5.3"
+libxml = "0.3.8"
