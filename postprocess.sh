@@ -25,10 +25,17 @@ for group in 01_small 02_medium 03_large 04_deep 05_wide 06_realworld_rss 07_rea
     fi
 done
 
-# Rename report title and inject environment info
+# Rename titles across all report pages. Idempotent (no-op if already applied).
+find "$CRITERION_DIR" -name 'index.html' -exec \
+    sed -i 's/ - Criterion\.rs<\/title>/ - Rust XPath Benchmark (Feb 2026)<\/title>/g' {} +
+
+# Customize the top-level report index
 index_html="${CRITERION_DIR}/report/index.html"
 if [ -f "$index_html" ]; then
     sed -i 's/Criterion\.rs Benchmark Index/Rust XPath Benchmark Index/g' "$index_html"
+    # Add date subtitle under the h2 title. Idempotent.
+    sed -i '/<!-- DATE-SUBTITLE -->/d' "$index_html"
+    sed -i 's|<h2>Rust XPath Benchmark Index</h2>|<h2>Rust XPath Benchmark Index</h2>\n        <!-- DATE-SUBTITLE --><p style="font-size:20px;font-weight:300;color:#666;margin-top:-16px">Feb 2026</p>|' "$index_html"
 
     # Inject library comparison table (static, matching README.md). Idempotent.
     sed -i '/<!-- LIB-BEGIN -->/,/<!-- LIB-END -->/d' "$index_html"
