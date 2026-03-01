@@ -16,6 +16,10 @@
   - Tier 2 (XPath 2.0+): xee-xpath, xrust, amxml (not sxd-xpath, libxml)
   - Tier 3 (XPath 3.1): xee-xpath only
 
+## postprocess.sh
+
+`postprocess.sh` must be idempotent — running it multiple times must produce the same result. Each transformation it applies (title rename, environment/library table injection, violin markers, layout fixes) should strip or skip previous output before inserting new content. Use HTML comment markers (e.g. `<!-- ENV-BEGIN -->` / `<!-- ENV-END -->`) for injected blocks and ensure sed patterns do not match when the change is already applied.
+
 ## violin-marker tool
 
 `tools/violin-marker` post-processes Criterion violin SVGs to add median markers. It is idempotent — re-running strips previous markers before inserting new ones. Run via `./postprocess.sh`, which skips groups without results.
