@@ -1,6 +1,6 @@
 # rust-xpath-benchmark
 
-Benchmarks comparing four Rust XPath libraries side by side.
+Benchmarks comparing five Rust XPath libraries side by side.
 
 | Library | XPath version | Crate |
 |---|---|---|
@@ -8,6 +8,7 @@ Benchmarks comparing four Rust XPath libraries side by side.
 | xee-xpath | 3.1 | [xee-xpath](https://crates.io/crates/xee-xpath) |
 | xrust | 2.0+ | [xrust](https://crates.io/crates/xrust) |
 | amxml | 2.0+ | [amxml](https://crates.io/crates/amxml) |
+| libxml | 1.0 | [libxml](https://crates.io/crates/libxml) (libxml2 wrapper) |
 
 ## Usage
 
@@ -16,7 +17,7 @@ Benchmarks comparing four Rust XPath libraries side by side.
 cargo bench
 
 # Run a single fixture
-cargo bench --bench small
+cargo bench --bench 01_small
 
 # Add per-library markers to violin plots
 ./postprocess.sh
