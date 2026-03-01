@@ -77,22 +77,22 @@ const SKIP: &[(&str, &str, &str)] = &[(
 )];
 
 macro_rules! bench_one {
-    ($group:expr, $runner:expr, $name:literal, $query_name:expr, $xpath:expr, $skipped:expr) => {
+    ($group:expr, $runner:expr, $name:literal, $query_name:expr, $xpath:expr, $skipped:expr, $fixture:expr) => {
         if let Some((_, _, reason)) = SKIP
             .iter()
             .find(|(q, l, _)| *q == $query_name && *l == $name)
         {
             skip_unsupported(&mut $skipped, $query_name, $name, reason);
-        } else if let Some(single_run) = check_timeout($runner, $xpath) {
+        } else if let Some(probe_dur) = check_timeout($name, $fixture, $xpath) {
             eprintln!(
-                "TIMEOUT: {}/{} — single iteration took {:.2?}, skipping",
-                $query_name, $name, single_run
+                "TIMEOUT: {}/{} — probe exceeded {:.2?}, skipping",
+                $query_name, $name, probe_dur
             );
             $skipped.push(SkippedEntry {
                 query: $query_name.to_string(),
                 library: $name.to_string(),
                 reason: "timeout".to_string(),
-                detail: format!("single iteration took {:?}", single_run),
+                detail: format!("probe exceeded {:?}", probe_dur),
             });
         } else {
             $group.bench_with_input(BenchmarkId::new($query_name, $name), $xpath, |b, xpath| {
@@ -115,10 +115,42 @@ fn bench_rss(c: &mut Criterion) {
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in RSS_QUERIES_TIER1 {
-        bench_one!(group, &sxd_runner, "sxd-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xrust_runner, "xrust", *query_name, xpath, skipped);
-        bench_one!(group, &amxml_runner, "amxml", *query_name, xpath, skipped);
+        bench_one!(
+            group,
+            &sxd_runner,
+            "sxd-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "rss2-sample"
+        );
+        bench_one!(
+            group,
+            &xee_runner,
+            "xee-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "rss2-sample"
+        );
+        bench_one!(
+            group,
+            &xrust_runner,
+            "xrust",
+            *query_name,
+            xpath,
+            skipped,
+            "rss2-sample"
+        );
+        bench_one!(
+            group,
+            &amxml_runner,
+            "amxml",
+            *query_name,
+            xpath,
+            skipped,
+            "rss2-sample"
+        );
     }
 
     group.finish();
@@ -135,10 +167,42 @@ fn bench_maven(c: &mut Criterion) {
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in MAVEN_QUERIES_TIER1 {
-        bench_one!(group, &sxd_runner, "sxd-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xrust_runner, "xrust", *query_name, xpath, skipped);
-        bench_one!(group, &amxml_runner, "amxml", *query_name, xpath, skipped);
+        bench_one!(
+            group,
+            &sxd_runner,
+            "sxd-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "maven-pom"
+        );
+        bench_one!(
+            group,
+            &xee_runner,
+            "xee-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "maven-pom"
+        );
+        bench_one!(
+            group,
+            &xrust_runner,
+            "xrust",
+            *query_name,
+            xpath,
+            skipped,
+            "maven-pom"
+        );
+        bench_one!(
+            group,
+            &amxml_runner,
+            "amxml",
+            *query_name,
+            xpath,
+            skipped,
+            "maven-pom"
+        );
     }
 
     group.finish();
@@ -155,10 +219,42 @@ fn bench_osm(c: &mut Criterion) {
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in OSM_QUERIES_TIER1 {
-        bench_one!(group, &sxd_runner, "sxd-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xee_runner, "xee-xpath", *query_name, xpath, skipped);
-        bench_one!(group, &xrust_runner, "xrust", *query_name, xpath, skipped);
-        bench_one!(group, &amxml_runner, "amxml", *query_name, xpath, skipped);
+        bench_one!(
+            group,
+            &sxd_runner,
+            "sxd-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "osm-map"
+        );
+        bench_one!(
+            group,
+            &xee_runner,
+            "xee-xpath",
+            *query_name,
+            xpath,
+            skipped,
+            "osm-map"
+        );
+        bench_one!(
+            group,
+            &xrust_runner,
+            "xrust",
+            *query_name,
+            xpath,
+            skipped,
+            "osm-map"
+        );
+        bench_one!(
+            group,
+            &amxml_runner,
+            "amxml",
+            *query_name,
+            xpath,
+            skipped,
+            "osm-map"
+        );
     }
 
     group.finish();

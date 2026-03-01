@@ -41,6 +41,8 @@ const SKIP: &[(&str, &str, &str)] = &[
     ),
 ];
 
+const FIXTURE: &str = "small";
+
 macro_rules! bench_one {
     ($group:expr, $runner:expr, $name:literal, $query_name:expr, $xpath:expr, $skipped:expr) => {
         if let Some((_, _, reason)) = SKIP
@@ -48,16 +50,16 @@ macro_rules! bench_one {
             .find(|(q, l, _)| *q == $query_name && *l == $name)
         {
             skip_unsupported(&mut $skipped, $query_name, $name, reason);
-        } else if let Some(single_run) = check_timeout($runner, $xpath) {
+        } else if let Some(probe_dur) = check_timeout($name, FIXTURE, $xpath) {
             eprintln!(
-                "TIMEOUT: {}/{} — single iteration took {:.2?}, skipping",
-                $query_name, $name, single_run
+                "TIMEOUT: {}/{} — probe exceeded {:.2?}, skipping",
+                $query_name, $name, probe_dur
             );
             $skipped.push(SkippedEntry {
                 query: $query_name.to_string(),
                 library: $name.to_string(),
                 reason: "timeout".to_string(),
-                detail: format!("single iteration took {:?}", single_run),
+                detail: format!("probe exceeded {:?}", probe_dur),
             });
         } else {
             $group.bench_with_input(BenchmarkId::new($query_name, $name), $xpath, |b, xpath| {

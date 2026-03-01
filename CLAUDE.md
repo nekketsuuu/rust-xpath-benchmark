@@ -24,10 +24,14 @@ It also reads `skipped.json` (if present) and appends labelled rows for skipped 
 
 ## Timeout / skipped benchmarks
 
-- Before each benchmark case, a single probe iteration is run. If `iteration_time * 100 > 300s`, the case is skipped (not registered with Criterion at all).
+- Before each benchmark case, a probe binary (`benchmarks/src/bin/probe.rs`) is spawned in a separate process. If the probe (XML parse + `evaluate()`) does not finish within 3 seconds (`PROBE_TIMEOUT`), the process is killed and the case is skipped.
+- The probe binary embeds all fixture XML via `include_str!` and is self-contained. It accepts `<library> <fixture> <xpath>` arguments.
+- Because the probe runs in a separate process, slow cases are truly terminated (SIGKILL) rather than blocking the benchmark binary. This is necessary because some runners use `Rc` (`!Send`) and cannot be moved to a background thread.
+- The timeout includes XML parse time, not just `evaluate()`. This is intentionally coarse — the goal is to skip cases that would take too long, not to measure precisely.
+- If the probe exits with a non-zero status (evaluate error), `check_timeout` panics — this indicates a SKIP list omission.
 - Skipped cases are recorded in `target/criterion/<group>/skipped.json` with fields: `query`, `library`, `reason`, `detail`.
 - `reason` is `"timeout"` or `"unsupported"` (designed to support future values too).
-- Unsupported cases are declared statically via `skip_unsupported()` based on TIER classification, not by parsing error messages from `evaluate()`. If `evaluate()` returns `Err`, `check_timeout` panics — all benchmark cases are expected to succeed.
+- Unsupported cases are declared statically via `skip_unsupported()` based on TIER classification, not by parsing error messages from `evaluate()`.
 - Each bench file has a `SKIP` constant listing library-specific query failures (bugs, not tier limitations). The `bench_one!` macro checks `SKIP` before calling `check_timeout`, so skipped cases never run a probe. When adding a new query, run `cargo bench --bench <name> -- 'NOMATCH'` to quickly verify all probes pass without measuring anything.
 - The `skipped.json` file is overwritten on each benchmark run (not appended).
 - Common skip/timeout logic lives in `benchmarks/src/lib.rs` (`check_timeout`, `skip_unsupported`, `write_skipped`, `SkippedEntry`).

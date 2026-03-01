@@ -1,16 +1,13 @@
-use std::hint::black_box;
 use std::path::Path;
-use std::time::{Duration, Instant};
+use std::process::Command;
+use std::time::Duration;
 
-use common::XPathRunner;
 use serde::{Deserialize, Serialize};
+use wait_timeout::ChildExt;
 
-/// Budget for a single benchmark case: if `single_iteration_time * SAMPLE_COUNT`
-/// exceeds this, the case is skipped as a timeout.
-pub const TIMEOUT_BUDGET: Duration = Duration::from_secs(300);
-
-/// Expected number of samples Criterion will collect (the default).
-pub const SAMPLE_COUNT: u32 = 100;
+/// Wall-clock timeout for the probe process.  If the probe (XML parse +
+/// evaluate) does not finish within this duration, the case is skipped.
+pub const PROBE_TIMEOUT: Duration = Duration::from_secs(3);
 
 /// A benchmark case that was skipped rather than measured.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -21,24 +18,94 @@ pub struct SkippedEntry {
     pub detail: String,
 }
 
-/// Run a single probe iteration of `evaluate()` and return its duration if
-/// the estimated total time for [`SAMPLE_COUNT`] samples would exceed
-/// [`TIMEOUT_BUDGET`].  Returns `None` if the benchmark is fast enough.
+/// Locate the probe binary.
+///
+/// The probe binary is built as part of the `benchmarks` crate.  When
+/// benchmarks run via `cargo bench`, the binary is in the same target
+/// directory.  We walk up from `CARGO_MANIFEST_DIR` to find the workspace
+/// root, then look for the binary under `target/release/probe` or
+/// `target/debug/probe`.
+fn probe_bin_path() -> std::path::PathBuf {
+    let manifest_dir = Path::new(env!("CARGO_MANIFEST_DIR"));
+
+    // Find the workspace root by looking for a Cargo.toml with [workspace].
+    let workspace_root = manifest_dir
+        .ancestors()
+        .skip(1)
+        .find(|ancestor| {
+            let toml = ancestor.join("Cargo.toml");
+            std::fs::read_to_string(&toml)
+                .map(|c| c.contains("[workspace]"))
+                .unwrap_or(false)
+        })
+        .unwrap_or(manifest_dir);
+
+    // Prefer release build (cargo bench uses release by default).
+    let release = workspace_root.join("target/release/probe");
+    if release.exists() {
+        return release;
+    }
+    let debug = workspace_root.join("target/debug/probe");
+    if debug.exists() {
+        return debug;
+    }
+
+    // Fallback: assume it is on PATH.
+    "probe".into()
+}
+
+/// Spawn the probe binary and wait with a timeout.
+///
+/// Returns `None` if the probe completes successfully within
+/// [`PROBE_TIMEOUT`].  Returns `Some(PROBE_TIMEOUT)` if it times out.
 ///
 /// # Panics
 ///
-/// Panics if `evaluate()` returns `Err`.  All benchmark cases are expected to
-/// succeed; unsupported library/query combinations should be recorded via
-/// [`skip_unsupported`] *before* calling this function.
-pub fn check_timeout<R: XPathRunner>(runner: &R, xpath: &str) -> Option<Duration> {
-    let start = Instant::now();
-    let result = black_box(runner.evaluate(black_box(xpath)));
-    let elapsed = start.elapsed();
-    result.unwrap_or_else(|e| panic!("Unexpected evaluate() error: {e}"));
-    if elapsed * SAMPLE_COUNT > TIMEOUT_BUDGET {
-        Some(elapsed)
-    } else {
-        None
+/// Panics if the probe exits with a non-zero status (evaluate error),
+/// which indicates a SKIP list omission.
+pub fn check_timeout(library: &str, fixture: &str, xpath: &str) -> Option<Duration> {
+    let probe = probe_bin_path();
+    let mut child = Command::new(&probe)
+        .args([library, fixture, xpath])
+        .stdin(std::process::Stdio::null())
+        .stdout(std::process::Stdio::null())
+        .stderr(std::process::Stdio::piped())
+        .spawn()
+        .unwrap_or_else(|e| panic!("Failed to spawn probe binary {}: {e}", probe.display()));
+
+    match child.wait_timeout(PROBE_TIMEOUT) {
+        Ok(Some(status)) => {
+            if status.success() {
+                // Probe finished in time and evaluate() succeeded.
+                None
+            } else {
+                // Probe finished but evaluate() returned an error.
+                // Read stderr for details.
+                let stderr = child
+                    .stderr
+                    .take()
+                    .and_then(|mut s| {
+                        use std::io::Read;
+                        let mut buf = String::new();
+                        s.read_to_string(&mut buf).ok()?;
+                        Some(buf)
+                    })
+                    .unwrap_or_default();
+                panic!(
+                    "Probe {library}/{fixture} failed (exit {}):\n  xpath: {xpath}\n  {stderr}",
+                    status.code().unwrap_or(-1),
+                );
+            }
+        }
+        Ok(None) => {
+            // Timeout: the probe did not finish in time.  Kill it.
+            child.kill().ok();
+            child.wait().ok();
+            Some(PROBE_TIMEOUT)
+        }
+        Err(e) => {
+            panic!("Failed to wait on probe process: {e}");
+        }
     }
 }
 
