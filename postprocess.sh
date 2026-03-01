@@ -92,6 +92,22 @@ ENVHTML
     echo "Updated report title and injected environment info."
 fi
 
+# Add "Index" navigation link to all sub-pages. Idempotent.
+while IFS= read -r -d '' page; do
+    # Skip the top-level report index itself
+    [ "$page" = "${CRITERION_DIR}/report/index.html" ] && continue
+    # Strip marker from previous runs
+    sed -i '/<!-- NAV-INDEX -->/d' "$page"
+    # Compute relative path: from <subdir>/report/index.html back to report/index.html
+    rel="${page#"${CRITERION_DIR}/"}"          # e.g. 01_small/report/index.html
+    dir="$(dirname "$rel")"                     # e.g. 01_small/report
+    depth="$(echo "$dir" | tr '/' '\n' | wc -l)" # e.g. 2
+    prefix="$(printf '../%.0s' $(seq 1 "$depth"))" # e.g. ../../
+    link="${prefix}report/index.html"
+    sed -i "s|<div class=\"body\">|<div class=\"body\">\n        <!-- NAV-INDEX --><p><a href=\"${link}\">Rust XPath Benchmark Index</a></p>|" "$page"
+done < <(find "$CRITERION_DIR" -name 'index.html' -print0)
+echo "Added index links to sub-pages."
+
 # Copy to docs/ for GitHub Pages
 rm -rf docs
 cp -r "$CRITERION_DIR" docs
