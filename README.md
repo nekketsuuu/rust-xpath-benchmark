@@ -27,3 +27,25 @@ Results are written to `target/criterion/`. Open `report/index.html` under each 
 ## Fixtures
 
 Synthetic data (`small`, `medium`, `large`, `deep`, `wide`) and real-world data (`rss`, `maven`, `osm`). See [fixtures/README.md](fixtures/README.md) for details.
+
+## Notes on benchmark output
+
+### Flat vs Linear sampling
+
+Criterion uses a default measurement window of 5 seconds. For each case it runs increasing numbers of iterations to fit a linear regression (Linear sampling mode). When a single iteration is slow enough that Criterion cannot collect enough distinct sample points within 5 seconds, it falls back to **Flat sampling** — running a constant number of iterations per sample and reporting the mean directly, without fitting a slope.
+
+xrust is 100–300× slower than the other libraries on most queries. As a result, many xrust cases use Flat sampling. This is visible in two ways:
+
+- The **"Average Iteration Time" regression plot** shows a vertical cluster of points instead of a diagonal line.
+- The `slope` field is `null` in the corresponding `estimates.json`.
+
+**Violin plots and median/mean values are unaffected.** Cross-library comparisons remain valid.
+
+### Skipped cases
+
+Some benchmark cases are skipped for one of two reasons:
+
+- **Timeout** — A probe binary runs `evaluate()` in a separate process with a 3-second deadline. If the probe does not finish in time, the case is skipped.
+- **Unsupported** — The library does not support the required XPath version tier, or a known library bug prevents the query from succeeding.
+
+Skipped cases are recorded in `target/criterion/<group>/skipped.json` and appear as labelled rows below the violin plot after running `./postprocess.sh`.
