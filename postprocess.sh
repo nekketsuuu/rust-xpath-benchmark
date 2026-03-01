@@ -25,4 +25,11 @@ for group in 01_small 02_medium 03_large 04_deep 05_wide 06_realworld_rss 07_rea
     fi
 done
 
+# Rename report title
+index_html="${CRITERION_DIR}/report/index.html"
+if [ -f "$index_html" ]; then
+    sed -i 's/Criterion\.rs Benchmark Index/Rust XPath Benchmark Index/g' "$index_html"
+    echo "Updated report title."
+fi
+
 echo "Done."
