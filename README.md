@@ -4,11 +4,11 @@ Benchmarks comparing five Rust XPath libraries side by side.
 
 | Library | Supported XPath Version |
 |---|---|
+| [amxml](https://crates.io/crates/amxml) 0.5.3 | 1.0 + partial 2.0/3.0/3.1 |
+| [libxml](https://crates.io/crates/libxml) 0.3.8 | 1.0 |
 | [sxd-xpath](https://crates.io/crates/sxd-xpath) 0.4.2 | 1.0 |
 | [xee-xpath](https://crates.io/crates/xee-xpath) 0.1.5 | 3.1 |
 | [xrust](https://crates.io/crates/xrust) 2.0.3 | 1.0 + partial 2.0/3.0 |
-| [amxml](https://crates.io/crates/amxml) 0.5.3 | 1.0 + partial 2.0/3.0/3.1 |
-| [libxml](https://crates.io/crates/libxml) 0.3.8 | 1.0 |
 
 https://nekketsuuu.github.io/rust-xpath-benchmark/report/
 
