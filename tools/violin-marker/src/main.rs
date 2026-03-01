@@ -608,7 +608,20 @@ fn main() {
     let marker_end = "<!-- /median markers -->";
     let svg = if let Some(start) = svg.find(marker_begin) {
         if let Some(end) = svg.find(marker_end) {
-            let mut cleaned = format!("{}{}", &svg[..start], &svg[end + marker_end.len()..]);
+            // Strip the newline before the begin marker and the newline
+            // after the end marker (one each) so re-runs are idempotent.
+            let strip_start = if start > 0 && svg.as_bytes()[start - 1] == b'\n' {
+                start - 1
+            } else {
+                start
+            };
+            let strip_end = end + marker_end.len();
+            let strip_end = if strip_end < svg.len() && svg.as_bytes()[strip_end] == b'\n' {
+                strip_end + 1
+            } else {
+                strip_end
+            };
+            let mut cleaned = format!("{}{}", &svg[..strip_start], &svg[strip_end..]);
 
             // Restore original SVG height if it was expanded.
             // The original height is stored in a comment like:
