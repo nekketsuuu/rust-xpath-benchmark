@@ -37,4 +37,19 @@ rm -rf docs
 cp -r "$CRITERION_DIR" docs
 echo "Copied report to docs/."
 
+# Create docs/index.html as a redirect to report/
+cat > docs/index.html <<'HTML'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rust XPath Benchmark</title>
+</head>
+<body>
+  <p><a href="./report/">Rust XPath Benchmark Report</a></p>
+</body>
+</html>
+HTML
+echo "Created docs/index.html."
+
 echo "Done."
