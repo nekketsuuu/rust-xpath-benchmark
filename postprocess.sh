@@ -30,6 +30,25 @@ index_html="${CRITERION_DIR}/report/index.html"
 if [ -f "$index_html" ]; then
     sed -i 's/Criterion\.rs Benchmark Index/Rust XPath Benchmark Index/g' "$index_html"
 
+    # Inject library comparison table (static, matching README.md). Idempotent.
+    sed -i '/<!-- LIB-BEGIN -->/,/<!-- LIB-END -->/d' "$index_html"
+    lib_tmp="$(mktemp)"
+    cat > "$lib_tmp" <<'LIBHTML'
+        <!-- LIB-BEGIN -->
+        <h3>Libraries</h3>
+        <table>
+            <tr><th>Library</th><th>Supported XPath Version</th></tr>
+            <tr><td><a href="https://crates.io/crates/amxml">amxml</a> 0.5.3</td><td>1.0 + partial 2.0/3.0/3.1</td></tr>
+            <tr><td><a href="https://crates.io/crates/libxml">libxml</a> 0.3.8</td><td>1.0</td></tr>
+            <tr><td><a href="https://crates.io/crates/sxd-xpath">sxd-xpath</a> 0.4.2</td><td>1.0</td></tr>
+            <tr><td><a href="https://crates.io/crates/xee-xpath">xee-xpath</a> 0.1.5</td><td>3.1</td></tr>
+            <tr><td><a href="https://crates.io/crates/xrust">xrust</a> 2.0.3</td><td>1.0 + partial 2.0/3.0</td></tr>
+        </table>
+        <!-- LIB-END -->
+LIBHTML
+    sed -i '/See individual benchmark pages below for more details\./r '"$lib_tmp" "$index_html"
+    rm -f "$lib_tmp"
+
     # Inject environment info (static, matching README.md). Idempotent:
     # strip previous insertion (with or without markers) before inserting.
     sed -i '/<!-- ENV-BEGIN -->/,/<!-- ENV-END -->/d' "$index_html"
@@ -48,27 +67,8 @@ if [ -f "$index_html" ]; then
         </table>
         <!-- ENV-END -->
 ENVHTML
-    sed -i '/See individual benchmark pages below for more details\./r '"$env_tmp" "$index_html"
+    sed -i '/<!-- LIB-END -->/r '"$env_tmp" "$index_html"
     rm -f "$env_tmp"
-
-    # Inject library comparison table (static, matching README.md). Idempotent.
-    sed -i '/<!-- LIB-BEGIN -->/,/<!-- LIB-END -->/d' "$index_html"
-    lib_tmp="$(mktemp)"
-    cat > "$lib_tmp" <<'LIBHTML'
-        <!-- LIB-BEGIN -->
-        <h3>Libraries</h3>
-        <table>
-            <tr><th>Library</th><th>Supported XPath Version</th></tr>
-            <tr><td><a href="https://crates.io/crates/amxml">amxml</a> 0.5.3</td><td>1.0 + partial 2.0/3.0/3.1</td></tr>
-            <tr><td><a href="https://crates.io/crates/libxml">libxml</a> 0.3.8</td><td>1.0</td></tr>
-            <tr><td><a href="https://crates.io/crates/sxd-xpath">sxd-xpath</a> 0.4.2</td><td>1.0</td></tr>
-            <tr><td><a href="https://crates.io/crates/xee-xpath">xee-xpath</a> 0.1.5</td><td>3.1</td></tr>
-            <tr><td><a href="https://crates.io/crates/xrust">xrust</a> 2.0.3</td><td>1.0 + partial 2.0/3.0</td></tr>
-        </table>
-        <!-- LIB-END -->
-LIBHTML
-    sed -i '/<!-- ENV-END -->/r '"$lib_tmp" "$index_html"
-    rm -f "$lib_tmp"
 
     # Fix layout: widen .body and make result tables horizontally scrollable.
     # Idempotent: the CSS replacement is a no-op if already applied, and the
