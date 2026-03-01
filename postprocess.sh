@@ -70,6 +70,10 @@ ENVHTML
     sed -i '/<!-- LIB-END -->/r '"$env_tmp" "$index_html"
     rm -f "$env_tmp"
 
+    # Inject "Results" heading between info tables and benchmark results. Idempotent.
+    sed -i '/<!-- RESULTS-HEADING -->/d' "$index_html"
+    sed -i '/<!-- ENV-END -->/a\        <!-- RESULTS-HEADING --><h3>Results</h3>' "$index_html"
+
     # Fix layout: widen .body and make result tables horizontally scrollable.
     # Idempotent: the CSS replacement is a no-op if already applied, and the
     # table wrapping uses N (read next line) so the substitution pattern won't
