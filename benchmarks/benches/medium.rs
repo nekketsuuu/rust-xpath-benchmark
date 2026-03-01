@@ -77,7 +77,7 @@ fn bench_medium(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(XML);
     let libxml_runner = LibxmlRunner::new(XML);
 
-    let mut group = c.benchmark_group("medium");
+    let mut group = c.benchmark_group("02_medium");
     let mut skipped = Vec::new();
 
     // TIER1: all runners support XPath 1.0
@@ -99,7 +99,7 @@ fn bench_medium(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("medium", &skipped);
+    write_skipped("02_medium", &skipped);
 }
 
 criterion_group!(benches, bench_medium);

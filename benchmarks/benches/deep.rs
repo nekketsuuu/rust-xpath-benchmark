@@ -67,7 +67,7 @@ fn bench_deep(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(XML);
     let libxml_runner = LibxmlRunner::new(XML);
 
-    let mut group = c.benchmark_group("deep");
+    let mut group = c.benchmark_group("04_deep");
     let mut skipped = Vec::new();
 
     // TIER1: all runners support XPath 1.0
@@ -89,7 +89,7 @@ fn bench_deep(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("deep", &skipped);
+    write_skipped("04_deep", &skipped);
 }
 
 criterion_group!(benches, bench_deep);

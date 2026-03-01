@@ -76,7 +76,7 @@ fn bench_large(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(XML);
     let libxml_runner = LibxmlRunner::new(XML);
 
-    let mut group = c.benchmark_group("large");
+    let mut group = c.benchmark_group("03_large");
     let mut skipped = Vec::new();
 
     // TIER1: all runners support XPath 1.0
@@ -98,7 +98,7 @@ fn bench_large(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("large", &skipped);
+    write_skipped("03_large", &skipped);
 }
 
 criterion_group!(benches, bench_large);

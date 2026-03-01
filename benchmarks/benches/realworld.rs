@@ -113,7 +113,7 @@ fn bench_rss(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(RSS_XML);
     let libxml_runner = LibxmlRunner::new(RSS_XML);
 
-    let mut group = c.benchmark_group("realworld/rss");
+    let mut group = c.benchmark_group("06_realworld/rss");
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in RSS_QUERIES_TIER1 {
@@ -165,7 +165,7 @@ fn bench_rss(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("realworld/rss", &skipped);
+    write_skipped("06_realworld/rss", &skipped);
 }
 
 fn bench_maven(c: &mut Criterion) {
@@ -175,7 +175,7 @@ fn bench_maven(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(MAVEN_XML);
     let libxml_runner = LibxmlRunner::new(MAVEN_XML);
 
-    let mut group = c.benchmark_group("realworld/maven");
+    let mut group = c.benchmark_group("07_realworld/maven");
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in MAVEN_QUERIES_TIER1 {
@@ -227,7 +227,7 @@ fn bench_maven(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("realworld/maven", &skipped);
+    write_skipped("07_realworld/maven", &skipped);
 }
 
 fn bench_osm(c: &mut Criterion) {
@@ -237,7 +237,7 @@ fn bench_osm(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(OSM_XML);
     let libxml_runner = LibxmlRunner::new(OSM_XML);
 
-    let mut group = c.benchmark_group("realworld/osm");
+    let mut group = c.benchmark_group("08_realworld/osm");
     let mut skipped = Vec::new();
 
     for (query_name, xpath) in OSM_QUERIES_TIER1 {
@@ -289,7 +289,7 @@ fn bench_osm(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("realworld/osm", &skipped);
+    write_skipped("08_realworld/osm", &skipped);
 }
 
 criterion_group!(benches, bench_rss, bench_maven, bench_osm);

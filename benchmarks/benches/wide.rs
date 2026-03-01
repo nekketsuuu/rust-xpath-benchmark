@@ -68,7 +68,7 @@ fn bench_wide(c: &mut Criterion) {
     let amxml_runner = AmxmlRunner::new(XML);
     let libxml_runner = LibxmlRunner::new(XML);
 
-    let mut group = c.benchmark_group("wide");
+    let mut group = c.benchmark_group("05_wide");
     let mut skipped = Vec::new();
 
     // TIER1: all runners support XPath 1.0
@@ -90,7 +90,7 @@ fn bench_wide(c: &mut Criterion) {
     }
 
     group.finish();
-    write_skipped("wide", &skipped);
+    write_skipped("05_wide", &skipped);
 }
 
 criterion_group!(benches, bench_wide);

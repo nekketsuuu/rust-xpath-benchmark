@@ -15,7 +15,7 @@ CRITERION_DIR="target/criterion"
 # Build the tool once
 cargo build -p violin-marker --release --quiet
 
-for group in small medium large deep wide realworld_rss realworld_maven realworld_osm; do
+for group in 01_small 02_medium 03_large 04_deep 05_wide 06_realworld_rss 07_realworld_maven 08_realworld_osm; do
     svg="${CRITERION_DIR}/${group}/report/violin.svg"
     if [ -f "$svg" ]; then
         echo "Processing ${group} ..."
