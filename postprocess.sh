@@ -25,11 +25,33 @@ for group in 01_small 02_medium 03_large 04_deep 05_wide 06_realworld_rss 07_rea
     fi
 done
 
-# Rename report title
+# Rename report title and inject environment info
 index_html="${CRITERION_DIR}/report/index.html"
 if [ -f "$index_html" ]; then
     sed -i 's/Criterion\.rs Benchmark Index/Rust XPath Benchmark Index/g' "$index_html"
-    echo "Updated report title."
+
+    # Inject environment info (static, matching README.md). Idempotent:
+    # strip previous insertion (with or without markers) before inserting.
+    sed -i '/<!-- ENV-BEGIN -->/,/<!-- ENV-END -->/d' "$index_html"
+    sed -i '/<h3>Environment<\/h3>/,/<\/table>/d' "$index_html"
+    env_tmp="$(mktemp)"
+    cat > "$env_tmp" <<'ENVHTML'
+        <!-- ENV-BEGIN -->
+        <h3>Environment</h3>
+        <table>
+            <tr><td><b>CPU</b></td><td>Intel Core i7-8700 @ 3.20GHz, 6 cores / 12 threads</td></tr>
+            <tr><td><b>RAM</b></td><td>64 GiB host, 31 GiB available in WSL 2</td></tr>
+            <tr><td><b>OS</b></td><td>Windows 11 Home 25H2, WSL 2 + Ubuntu 24.04.3 LTS</td></tr>
+            <tr><td><b>Rust</b></td><td>rustc 1.93.1 (01f6ddf75 2026-02-11)</td></tr>
+            <tr><td><b>libxml2</b></td><td>2.9.14</td></tr>
+            <tr><td><b>Criterion</b></td><td>0.5.1</td></tr>
+        </table>
+        <!-- ENV-END -->
+ENVHTML
+    sed -i '/See individual benchmark pages below for more details\./r '"$env_tmp" "$index_html"
+    rm -f "$env_tmp"
+
+    echo "Updated report title and injected environment info."
 fi
 
 # Copy to docs/ for GitHub Pages
