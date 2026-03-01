@@ -10,6 +10,8 @@ Benchmarks comparing five Rust XPath libraries side by side.
 | amxml | 2.0+ | [amxml](https://crates.io/crates/amxml) |
 | libxml | 1.0 | [libxml](https://crates.io/crates/libxml) (libxml2 wrapper) |
 
+https://nekketsuuu.github.io/rust-xpath-benchmark/report/
+
 ## Usage
 
 ```bash
