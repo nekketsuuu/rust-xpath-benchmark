@@ -25,6 +25,19 @@ cargo bench --bench 01_small
 
 Results are written to `target/criterion/`. Open `report/index.html` under each group to view violin plots and other reports. The benchmark harness is [Criterion](https://bheisler.github.io/criterion.rs/book/).
 
+## Environment
+
+Benchmarks were run in the following environment:
+
+| Item | Detail |
+|---|---|
+| CPU | Intel Core i7-8700 @ 3.20GHz, 6 cores / 12 threads |
+| RAM | 64 GiB host, 31 GiB available in WSL 2 |
+| OS | Windows 11 Home 25H2, WSL 2 + Ubuntu 24.04.3 LTS |
+| Rust | rustc 1.93.1 (01f6ddf75 2026-02-11) |
+| libxml2 | 2.9.14 |
+| Criterion | 0.5.1 |
+
 ## Fixtures
 
 Synthetic data (`small`, `medium`, `large`, `deep`, `wide`) and real-world data (`rss`, `maven`, `osm`). See [fixtures/README.md](fixtures/README.md) for details.
