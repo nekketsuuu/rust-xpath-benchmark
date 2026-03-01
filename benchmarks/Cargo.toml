@@ -22,25 +22,31 @@ name = "probe"
 path = "src/bin/probe.rs"
 
 [[bench]]
-name = "small"
+name = "01_small"
+path = "benches/small.rs"
 harness = false
 
 [[bench]]
-name = "medium"
+name = "02_medium"
+path = "benches/medium.rs"
 harness = false
 
 [[bench]]
-name = "large"
+name = "03_large"
+path = "benches/large.rs"
 harness = false
 
 [[bench]]
-name = "deep"
+name = "04_deep"
+path = "benches/deep.rs"
 harness = false
 
 [[bench]]
-name = "wide"
+name = "05_wide"
+path = "benches/wide.rs"
 harness = false
 
 [[bench]]
-name = "realworld"
+name = "06_realworld"
+path = "benches/realworld.rs"
 harness = false
