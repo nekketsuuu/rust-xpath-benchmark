@@ -51,6 +51,14 @@ ENVHTML
     sed -i '/See individual benchmark pages below for more details\./r '"$env_tmp" "$index_html"
     rm -f "$env_tmp"
 
+    # Fix layout: widen .body and make result tables horizontally scrollable.
+    # Idempotent: the CSS replacement is a no-op if already applied, and the
+    # table wrapping uses N (read next line) so the substitution pattern won't
+    # match once the <div> is already present.
+    sed -i 's/width: 960px;/max-width: 95%;/' "$index_html"
+    sed -i '/<li>/{N;s|<li>\n\(\s*<table>\)|<li><div style="overflow-x:auto">\n\1|;}' "$index_html"
+    sed -i '/<\/table>/{N;s|</table>\n\(\s*</li>\)|</table></div>\n\1|;}' "$index_html"
+
     echo "Updated report title and injected environment info."
 fi
 
