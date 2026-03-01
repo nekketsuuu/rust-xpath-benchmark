@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Rust XPath Benchmark Index</h2>
+        See individual benchmark pages below for more details.
+        <ul>
+            <li><a href="../01_small/report/index.html">01_small</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../01_small/all_books/report/index.html">all_books</a></th>
+                            <th><a href="../01_small/contains_title/report/index.html">contains_title</a></th>
+                            <th><a href="../01_small/count_books/report/index.html">count_books</a></th>
+                            <th><a href="../01_small/fiction/report/index.html">fiction</a></th>
+                            <th><a href="../01_small/first_book/report/index.html">first_book</a></th>
+                            <th><a href="../01_small/flwr_titles/report/index.html">flwr_titles</a></th>
+                            <th><a href="../01_small/price_gt_12/report/index.html">price_gt_12</a></th>
+                            <th>simple_map</th>
+                            <th><a href="../01_small/titles/report/index.html">titles</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../01_small/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../01_small/all_books/amxml/report/index.html">01_small/all_books/amxml</a></td>
+                            <td><a href="../01_small/count_books/amxml/report/index.html">01_small/count_books/amxml</a></td>
+                            <td><a href="../01_small/fiction/amxml/report/index.html">01_small/fiction/amxml</a></td>
+                            <td><a href="../01_small/first_book/amxml/report/index.html">01_small/first_book/amxml</a></td>
+                            <td><a href="../01_small/flwr_titles/amxml/report/index.html">01_small/flwr_titles/amxml</a></td>
+                            <td><a href="../01_small/price_gt_12/amxml/report/index.html">01_small/price_gt_12/amxml</a></td>
+                            <td><a href="../01_small/titles/amxml/report/index.html">01_small/titles/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../01_small/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../01_small/all_books/libxml/report/index.html">01_small/all_books/libxml</a></td>
+                            <td><a href="../01_small/contains_title/libxml/report/index.html">01_small/contains_title/libxml</a></td>
+                            <td><a href="../01_small/count_books/libxml/report/index.html">01_small/count_books/libxml</a></td>
+                            <td><a href="../01_small/fiction/libxml/report/index.html">01_small/fiction/libxml</a></td>
+                            <td><a href="../01_small/first_book/libxml/report/index.html">01_small/first_book/libxml</a></td>
+                            <td><a href="../01_small/price_gt_12/libxml/report/index.html">01_small/price_gt_12/libxml</a></td>
+                            <td><a href="../01_small/titles/libxml/report/index.html">01_small/titles/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../01_small/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../01_small/all_books/sxd-xpath/report/index.html">01_small/all_books/sxd-xpath</a></td>
+                            <td><a href="../01_small/contains_title/sxd-xpath/report/index.html">01_small/contains_title/sxd-xpath</a></td>
+                            <td><a href="../01_small/count_books/sxd-xpath/report/index.html">01_small/count_books/sxd-xpath</a></td>
+                            <td><a href="../01_small/fiction/sxd-xpath/report/index.html">01_small/fiction/sxd-xpath</a></td>
+                            <td><a href="../01_small/first_book/sxd-xpath/report/index.html">01_small/first_book/sxd-xpath</a></td>
+                            <td><a href="../01_small/price_gt_12/sxd-xpath/report/index.html">01_small/price_gt_12/sxd-xpath</a></td>
+                            <td><a href="../01_small/titles/sxd-xpath/report/index.html">01_small/titles/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../01_small/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../01_small/all_books/xee-xpath/report/index.html">01_small/all_books/xee-xpath</a></td>
+                            <td><a href="../01_small/contains_title/xee-xpath/report/index.html">01_small/contains_title/xee-xpath</a></td>
+                            <td><a href="../01_small/count_books/xee-xpath/report/index.html">01_small/count_books/xee-xpath</a></td>
+                            <td><a href="../01_small/fiction/xee-xpath/report/index.html">01_small/fiction/xee-xpath</a></td>
+                            <td><a href="../01_small/first_book/xee-xpath/report/index.html">01_small/first_book/xee-xpath</a></td>
+                            <td><a href="../01_small/flwr_titles/xee-xpath/report/index.html">01_small/flwr_titles/xee-xpath</a></td>
+                            <td><a href="../01_small/price_gt_12/xee-xpath/report/index.html">01_small/price_gt_12/xee-xpath</a></td>
+                            <td><a href="../01_small/simple_map/xee-xpath/report/index.html">01_small/simple_map/xee-xpath</a></td>
+                            <td><a href="../01_small/titles/xee-xpath/report/index.html">01_small/titles/xee-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../01_small/xrust/report/index.html">xrust</a></th>
+                            <td><a href="../01_small/all_books/xrust/report/index.html">01_small/all_books/xrust</a></td>
+                            <td><a href="../01_small/contains_title/xrust/report/index.html">01_small/contains_title/xrust</a></td>
+                            <td><a href="../01_small/count_books/xrust/report/index.html">01_small/count_books/xrust</a></td>
+                            <td><a href="../01_small/fiction/xrust/report/index.html">01_small/fiction/xrust</a></td>
+                            <td><a href="../01_small/first_book/xrust/report/index.html">01_small/first_book/xrust</a></td>
+                            <td><a href="../01_small/flwr_titles/xrust/report/index.html">01_small/flwr_titles/xrust</a></td>
+                            <td><a href="../01_small/titles/xrust/report/index.html">01_small/titles/xrust</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../02_medium/report/index.html">02_medium</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../02_medium/all_books/report/index.html">all_books</a></th>
+                            <th><a href="../02_medium/contains_title/report/index.html">contains_title</a></th>
+                            <th><a href="../02_medium/count_books/report/index.html">count_books</a></th>
+                            <th><a href="../02_medium/fiction/report/index.html">fiction</a></th>
+                            <th><a href="../02_medium/first_book/report/index.html">first_book</a></th>
+                            <th><a href="../02_medium/flwr_titles/report/index.html">flwr_titles</a></th>
+                            <th><a href="../02_medium/last_book/report/index.html">last_book</a></th>
+                            <th><a href="../02_medium/price_gt_30/report/index.html">price_gt_30</a></th>
+                            <th><a href="../02_medium/titles/report/index.html">titles</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../02_medium/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../02_medium/all_books/amxml/report/index.html">02_medium/all_books/amxml</a></td>
+                            <td><a href="../02_medium/count_books/amxml/report/index.html">02_medium/count_books/amxml</a></td>
+                            <td><a href="../02_medium/fiction/amxml/report/index.html">02_medium/fiction/amxml</a></td>
+                            <td><a href="../02_medium/first_book/amxml/report/index.html">02_medium/first_book/amxml</a></td>
+                            <td><a href="../02_medium/flwr_titles/amxml/report/index.html">02_medium/flwr_titles/amxml</a></td>
+                            <td><a href="../02_medium/last_book/amxml/report/index.html">02_medium/last_book/amxml</a></td>
+                            <td><a href="../02_medium/price_gt_30/amxml/report/index.html">02_medium/price_gt_30/amxml</a></td>
+                            <td><a href="../02_medium/titles/amxml/report/index.html">02_medium/titles/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../02_medium/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../02_medium/all_books/libxml/report/index.html">02_medium/all_books/libxml</a></td>
+                            <td><a href="../02_medium/contains_title/libxml/report/index.html">02_medium/contains_title/libxml</a></td>
+                            <td><a href="../02_medium/count_books/libxml/report/index.html">02_medium/count_books/libxml</a></td>
+                            <td><a href="../02_medium/fiction/libxml/report/index.html">02_medium/fiction/libxml</a></td>
+                            <td><a href="../02_medium/first_book/libxml/report/index.html">02_medium/first_book/libxml</a></td>
+                            <td><a href="../02_medium/last_book/libxml/report/index.html">02_medium/last_book/libxml</a></td>
+                            <td><a href="../02_medium/price_gt_30/libxml/report/index.html">02_medium/price_gt_30/libxml</a></td>
+                            <td><a href="../02_medium/titles/libxml/report/index.html">02_medium/titles/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../02_medium/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../02_medium/all_books/sxd-xpath/report/index.html">02_medium/all_books/sxd-xpath</a></td>
+                            <td><a href="../02_medium/contains_title/sxd-xpath/report/index.html">02_medium/contains_title/sxd-xpath</a></td>
+                            <td><a href="../02_medium/count_books/sxd-xpath/report/index.html">02_medium/count_books/sxd-xpath</a></td>
+                            <td><a href="../02_medium/fiction/sxd-xpath/report/index.html">02_medium/fiction/sxd-xpath</a></td>
+                            <td><a href="../02_medium/first_book/sxd-xpath/report/index.html">02_medium/first_book/sxd-xpath</a></td>
+                            <td><a href="../02_medium/last_book/sxd-xpath/report/index.html">02_medium/last_book/sxd-xpath</a></td>
+                            <td><a href="../02_medium/price_gt_30/sxd-xpath/report/index.html">02_medium/price_gt_30/sxd-xpath</a></td>
+                            <td><a href="../02_medium/titles/sxd-xpath/report/index.html">02_medium/titles/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../02_medium/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../02_medium/all_books/xee-xpath/report/index.html">02_medium/all_books/xee-xpath</a></td>
+                            <td><a href="../02_medium/contains_title/xee-xpath/report/index.html">02_medium/contains_title/xee-xpath</a></td>
+                            <td><a href="../02_medium/count_books/xee-xpath/report/index.html">02_medium/count_books/xee-xpath</a></td>
+                            <td><a href="../02_medium/fiction/xee-xpath/report/index.html">02_medium/fiction/xee-xpath</a></td>
+                            <td><a href="../02_medium/first_book/xee-xpath/report/index.html">02_medium/first_book/xee-xpath</a></td>
+                            <td><a href="../02_medium/flwr_titles/xee-xpath/report/index.html">02_medium/flwr_titles/xee-xpath</a></td>
+                            <td><a href="../02_medium/last_book/xee-xpath/report/index.html">02_medium/last_book/xee-xpath</a></td>
+                            <td><a href="../02_medium/price_gt_30/xee-xpath/report/index.html">02_medium/price_gt_30/xee-xpath</a></td>
+                            <td><a href="../02_medium/titles/xee-xpath/report/index.html">02_medium/titles/xee-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../02_medium/xrust/report/index.html">xrust</a></th>
+                            <td><a href="../02_medium/all_books/xrust/report/index.html">02_medium/all_books/xrust</a></td>
+                            <td><a href="../02_medium/contains_title/xrust/report/index.html">02_medium/contains_title/xrust</a></td>
+                            <td><a href="../02_medium/count_books/xrust/report/index.html">02_medium/count_books/xrust</a></td>
+                            <td><a href="../02_medium/fiction/xrust/report/index.html">02_medium/fiction/xrust</a></td>
+                            <td><a href="../02_medium/first_book/xrust/report/index.html">02_medium/first_book/xrust</a></td>
+                            <td><a href="../02_medium/flwr_titles/xrust/report/index.html">02_medium/flwr_titles/xrust</a></td>
+                            <td><a href="../02_medium/last_book/xrust/report/index.html">02_medium/last_book/xrust</a></td>
+                            <td><a href="../02_medium/titles/xrust/report/index.html">02_medium/titles/xrust</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../03_large/report/index.html">03_large</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../03_large/book_1000/report/index.html">book_1000</a></th>
+                            <th><a href="../03_large/contains_title/report/index.html">contains_title</a></th>
+                            <th><a href="../03_large/count_books/report/index.html">count_books</a></th>
+                            <th><a href="../03_large/fiction/report/index.html">fiction</a></th>
+                            <th><a href="../03_large/first_book/report/index.html">first_book</a></th>
+                            <th><a href="../03_large/flwr_count/report/index.html">flwr_count</a></th>
+                            <th><a href="../03_large/last_book/report/index.html">last_book</a></th>
+                            <th><a href="../03_large/price_gt_40/report/index.html">price_gt_40</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../03_large/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../03_large/book_1000/amxml/report/index.html">03_large/book_1000/amxml</a></td>
+                            <td><a href="../03_large/count_books/amxml/report/index.html">03_large/count_books/amxml</a></td>
+                            <td><a href="../03_large/fiction/amxml/report/index.html">03_large/fiction/amxml</a></td>
+                            <td><a href="../03_large/first_book/amxml/report/index.html">03_large/first_book/amxml</a></td>
+                            <td><a href="../03_large/flwr_count/amxml/report/index.html">03_large/flwr_count/amxml</a></td>
+                            <td><a href="../03_large/last_book/amxml/report/index.html">03_large/last_book/amxml</a></td>
+                            <td><a href="../03_large/price_gt_40/amxml/report/index.html">03_large/price_gt_40/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../03_large/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../03_large/book_1000/libxml/report/index.html">03_large/book_1000/libxml</a></td>
+                            <td><a href="../03_large/contains_title/libxml/report/index.html">03_large/contains_title/libxml</a></td>
+                            <td><a href="../03_large/count_books/libxml/report/index.html">03_large/count_books/libxml</a></td>
+                            <td><a href="../03_large/fiction/libxml/report/index.html">03_large/fiction/libxml</a></td>
+                            <td><a href="../03_large/first_book/libxml/report/index.html">03_large/first_book/libxml</a></td>
+                            <td><a href="../03_large/last_book/libxml/report/index.html">03_large/last_book/libxml</a></td>
+                            <td><a href="../03_large/price_gt_40/libxml/report/index.html">03_large/price_gt_40/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../03_large/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../03_large/book_1000/sxd-xpath/report/index.html">03_large/book_1000/sxd-xpath</a></td>
+                            <td><a href="../03_large/contains_title/sxd-xpath/report/index.html">03_large/contains_title/sxd-xpath</a></td>
+                            <td><a href="../03_large/count_books/sxd-xpath/report/index.html">03_large/count_books/sxd-xpath</a></td>
+                            <td><a href="../03_large/fiction/sxd-xpath/report/index.html">03_large/fiction/sxd-xpath</a></td>
+                            <td><a href="../03_large/first_book/sxd-xpath/report/index.html">03_large/first_book/sxd-xpath</a></td>
+                            <td><a href="../03_large/last_book/sxd-xpath/report/index.html">03_large/last_book/sxd-xpath</a></td>
+                            <td><a href="../03_large/price_gt_40/sxd-xpath/report/index.html">03_large/price_gt_40/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../03_large/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../03_large/book_1000/xee-xpath/report/index.html">03_large/book_1000/xee-xpath</a></td>
+                            <td><a href="../03_large/contains_title/xee-xpath/report/index.html">03_large/contains_title/xee-xpath</a></td>
+                            <td><a href="../03_large/count_books/xee-xpath/report/index.html">03_large/count_books/xee-xpath</a></td>
+                            <td><a href="../03_large/fiction/xee-xpath/report/index.html">03_large/fiction/xee-xpath</a></td>
+                            <td><a href="../03_large/first_book/xee-xpath/report/index.html">03_large/first_book/xee-xpath</a></td>
+                            <td><a href="../03_large/flwr_count/xee-xpath/report/index.html">03_large/flwr_count/xee-xpath</a></td>
+                            <td><a href="../03_large/last_book/xee-xpath/report/index.html">03_large/last_book/xee-xpath</a></td>
+                            <td><a href="../03_large/price_gt_40/xee-xpath/report/index.html">03_large/price_gt_40/xee-xpath</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../04_deep/report/index.html">04_deep</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../04_deep/ancestor_count/report/index.html">ancestor_count</a></th>
+                            <th><a href="../04_deep/book_price/report/index.html">book_price</a></th>
+                            <th><a href="../04_deep/deep_level_100/report/index.html">deep_level_100</a></th>
+                            <th><a href="../04_deep/deep_level_200/report/index.html">deep_level_200</a></th>
+                            <th><a href="../04_deep/descendant_book/report/index.html">descendant_book</a></th>
+                            <th><a href="../04_deep/descendant_title/report/index.html">descendant_title</a></th>
+                            <th><a href="../04_deep/flwr_deep/report/index.html">flwr_deep</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../04_deep/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../04_deep/ancestor_count/amxml/report/index.html">04_deep/ancestor_count/amxml</a></td>
+                            <td><a href="../04_deep/book_price/amxml/report/index.html">04_deep/book_price/amxml</a></td>
+                            <td><a href="../04_deep/deep_level_100/amxml/report/index.html">04_deep/deep_level_100/amxml</a></td>
+                            <td><a href="../04_deep/deep_level_200/amxml/report/index.html">04_deep/deep_level_200/amxml</a></td>
+                            <td><a href="../04_deep/descendant_book/amxml/report/index.html">04_deep/descendant_book/amxml</a></td>
+                            <td><a href="../04_deep/descendant_title/amxml/report/index.html">04_deep/descendant_title/amxml</a></td>
+                            <td><a href="../04_deep/flwr_deep/amxml/report/index.html">04_deep/flwr_deep/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../04_deep/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../04_deep/ancestor_count/libxml/report/index.html">04_deep/ancestor_count/libxml</a></td>
+                            <td><a href="../04_deep/book_price/libxml/report/index.html">04_deep/book_price/libxml</a></td>
+                            <td><a href="../04_deep/deep_level_100/libxml/report/index.html">04_deep/deep_level_100/libxml</a></td>
+                            <td><a href="../04_deep/deep_level_200/libxml/report/index.html">04_deep/deep_level_200/libxml</a></td>
+                            <td><a href="../04_deep/descendant_book/libxml/report/index.html">04_deep/descendant_book/libxml</a></td>
+                            <td><a href="../04_deep/descendant_title/libxml/report/index.html">04_deep/descendant_title/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../04_deep/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../04_deep/ancestor_count/sxd-xpath/report/index.html">04_deep/ancestor_count/sxd-xpath</a></td>
+                            <td><a href="../04_deep/book_price/sxd-xpath/report/index.html">04_deep/book_price/sxd-xpath</a></td>
+                            <td><a href="../04_deep/deep_level_100/sxd-xpath/report/index.html">04_deep/deep_level_100/sxd-xpath</a></td>
+                            <td><a href="../04_deep/deep_level_200/sxd-xpath/report/index.html">04_deep/deep_level_200/sxd-xpath</a></td>
+                            <td><a href="../04_deep/descendant_book/sxd-xpath/report/index.html">04_deep/descendant_book/sxd-xpath</a></td>
+                            <td><a href="../04_deep/descendant_title/sxd-xpath/report/index.html">04_deep/descendant_title/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../04_deep/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../04_deep/ancestor_count/xee-xpath/report/index.html">04_deep/ancestor_count/xee-xpath</a></td>
+                            <td><a href="../04_deep/book_price/xee-xpath/report/index.html">04_deep/book_price/xee-xpath</a></td>
+                            <td><a href="../04_deep/deep_level_100/xee-xpath/report/index.html">04_deep/deep_level_100/xee-xpath</a></td>
+                            <td><a href="../04_deep/deep_level_200/xee-xpath/report/index.html">04_deep/deep_level_200/xee-xpath</a></td>
+                            <td><a href="../04_deep/descendant_book/xee-xpath/report/index.html">04_deep/descendant_book/xee-xpath</a></td>
+                            <td><a href="../04_deep/descendant_title/xee-xpath/report/index.html">04_deep/descendant_title/xee-xpath</a></td>
+                            <td><a href="../04_deep/flwr_deep/xee-xpath/report/index.html">04_deep/flwr_deep/xee-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../04_deep/xrust/report/index.html">xrust</a></th>
+                            <td><a href="../04_deep/ancestor_count/xrust/report/index.html">04_deep/ancestor_count/xrust</a></td>
+                            <td><a href="../04_deep/book_price/xrust/report/index.html">04_deep/book_price/xrust</a></td>
+                            <td><a href="../04_deep/deep_level_100/xrust/report/index.html">04_deep/deep_level_100/xrust</a></td>
+                            <td><a href="../04_deep/deep_level_200/xrust/report/index.html">04_deep/deep_level_200/xrust</a></td>
+                            <td><a href="../04_deep/descendant_book/xrust/report/index.html">04_deep/descendant_book/xrust</a></td>
+                            <td><a href="../04_deep/descendant_title/xrust/report/index.html">04_deep/descendant_title/xrust</a></td>
+                            <td><a href="../04_deep/flwr_deep/xrust/report/index.html">04_deep/flwr_deep/xrust</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../05_wide/report/index.html">05_wide</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../05_wide/book_by_id_50000/report/index.html">book_by_id_50000</a></th>
+                            <th><a href="../05_wide/book_by_id_99999/report/index.html">book_by_id_99999</a></th>
+                            <th><a href="../05_wide/count_books/report/index.html">count_books</a></th>
+                            <th><a href="../05_wide/fiction/report/index.html">fiction</a></th>
+                            <th><a href="../05_wide/flwr_count/report/index.html">flwr_count</a></th>
+                            <th><a href="../05_wide/last_book/report/index.html">last_book</a></th>
+                            <th><a href="../05_wide/title_lang_ja/report/index.html">title_lang_ja</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../05_wide/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../05_wide/book_by_id_50000/amxml/report/index.html">05_wide/book_by_id_50000/amxml</a></td>
+                            <td><a href="../05_wide/book_by_id_99999/amxml/report/index.html">05_wide/book_by_id_99999/amxml</a></td>
+                            <td><a href="../05_wide/count_books/amxml/report/index.html">05_wide/count_books/amxml</a></td>
+                            <td><a href="../05_wide/fiction/amxml/report/index.html">05_wide/fiction/amxml</a></td>
+                            <td><a href="../05_wide/flwr_count/amxml/report/index.html">05_wide/flwr_count/amxml</a></td>
+                            <td><a href="../05_wide/last_book/amxml/report/index.html">05_wide/last_book/amxml</a></td>
+                            <td><a href="../05_wide/title_lang_ja/amxml/report/index.html">05_wide/title_lang_ja/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../05_wide/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../05_wide/book_by_id_50000/libxml/report/index.html">05_wide/book_by_id_50000/libxml</a></td>
+                            <td><a href="../05_wide/book_by_id_99999/libxml/report/index.html">05_wide/book_by_id_99999/libxml</a></td>
+                            <td><a href="../05_wide/count_books/libxml/report/index.html">05_wide/count_books/libxml</a></td>
+                            <td><a href="../05_wide/fiction/libxml/report/index.html">05_wide/fiction/libxml</a></td>
+                            <td><a href="../05_wide/last_book/libxml/report/index.html">05_wide/last_book/libxml</a></td>
+                            <td><a href="../05_wide/title_lang_ja/libxml/report/index.html">05_wide/title_lang_ja/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../05_wide/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../05_wide/book_by_id_50000/sxd-xpath/report/index.html">05_wide/book_by_id_50000/sxd-xpath</a></td>
+                            <td><a href="../05_wide/book_by_id_99999/sxd-xpath/report/index.html">05_wide/book_by_id_99999/sxd-xpath</a></td>
+                            <td><a href="../05_wide/count_books/sxd-xpath/report/index.html">05_wide/count_books/sxd-xpath</a></td>
+                            <td><a href="../05_wide/fiction/sxd-xpath/report/index.html">05_wide/fiction/sxd-xpath</a></td>
+                            <td><a href="../05_wide/last_book/sxd-xpath/report/index.html">05_wide/last_book/sxd-xpath</a></td>
+                            <td><a href="../05_wide/title_lang_ja/sxd-xpath/report/index.html">05_wide/title_lang_ja/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../05_wide/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../05_wide/book_by_id_50000/xee-xpath/report/index.html">05_wide/book_by_id_50000/xee-xpath</a></td>
+                            <td><a href="../05_wide/book_by_id_99999/xee-xpath/report/index.html">05_wide/book_by_id_99999/xee-xpath</a></td>
+                            <td><a href="../05_wide/count_books/xee-xpath/report/index.html">05_wide/count_books/xee-xpath</a></td>
+                            <td><a href="../05_wide/fiction/xee-xpath/report/index.html">05_wide/fiction/xee-xpath</a></td>
+                            <td><a href="../05_wide/flwr_count/xee-xpath/report/index.html">05_wide/flwr_count/xee-xpath</a></td>
+                            <td><a href="../05_wide/last_book/xee-xpath/report/index.html">05_wide/last_book/xee-xpath</a></td>
+                            <td><a href="../05_wide/title_lang_ja/xee-xpath/report/index.html">05_wide/title_lang_ja/xee-xpath</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../06_realworld_rss/report/index.html">06_realworld/rss</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../06_realworld_rss/all_items/report/index.html">all_items</a></th>
+                            <th><a href="../06_realworld_rss/channel_title/report/index.html">channel_title</a></th>
+                            <th><a href="../06_realworld_rss/count_items/report/index.html">count_items</a></th>
+                            <th><a href="../06_realworld_rss/first_item/report/index.html">first_item</a></th>
+                            <th><a href="../06_realworld_rss/item_links/report/index.html">item_links</a></th>
+                            <th><a href="../06_realworld_rss/item_titles/report/index.html">item_titles</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../06_realworld_rss/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../06_realworld_rss/all_items/amxml/report/index.html">06_realworld/rss/all_items/amxml</a></td>
+                            <td><a href="../06_realworld_rss/channel_title/amxml/report/index.html">06_realworld/rss/channel_title/amxml</a></td>
+                            <td><a href="../06_realworld_rss/count_items/amxml/report/index.html">06_realworld/rss/count_items/amxml</a></td>
+                            <td><a href="../06_realworld_rss/first_item/amxml/report/index.html">06_realworld/rss/first_item/amxml</a></td>
+                            <td><a href="../06_realworld_rss/item_links/amxml/report/index.html">06_realworld/rss/item_links/amxml</a></td>
+                            <td><a href="../06_realworld_rss/item_titles/amxml/report/index.html">06_realworld/rss/item_titles/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../06_realworld_rss/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../06_realworld_rss/all_items/libxml/report/index.html">06_realworld/rss/all_items/libxml</a></td>
+                            <td><a href="../06_realworld_rss/channel_title/libxml/report/index.html">06_realworld/rss/channel_title/libxml</a></td>
+                            <td><a href="../06_realworld_rss/count_items/libxml/report/index.html">06_realworld/rss/count_items/libxml</a></td>
+                            <td><a href="../06_realworld_rss/first_item/libxml/report/index.html">06_realworld/rss/first_item/libxml</a></td>
+                            <td><a href="../06_realworld_rss/item_links/libxml/report/index.html">06_realworld/rss/item_links/libxml</a></td>
+                            <td><a href="../06_realworld_rss/item_titles/libxml/report/index.html">06_realworld/rss/item_titles/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../06_realworld_rss/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../06_realworld_rss/all_items/sxd-xpath/report/index.html">06_realworld/rss/all_items/sxd-xpath</a></td>
+                            <td><a href="../06_realworld_rss/channel_title/sxd-xpath/report/index.html">06_realworld/rss/channel_title/sxd-xpath</a></td>
+                            <td><a href="../06_realworld_rss/count_items/sxd-xpath/report/index.html">06_realworld/rss/count_items/sxd-xpath</a></td>
+                            <td><a href="../06_realworld_rss/first_item/sxd-xpath/report/index.html">06_realworld/rss/first_item/sxd-xpath</a></td>
+                            <td><a href="../06_realworld_rss/item_links/sxd-xpath/report/index.html">06_realworld/rss/item_links/sxd-xpath</a></td>
+                            <td><a href="../06_realworld_rss/item_titles/sxd-xpath/report/index.html">06_realworld/rss/item_titles/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../06_realworld_rss/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../06_realworld_rss/all_items/xee-xpath/report/index.html">06_realworld/rss/all_items/xee-xpath</a></td>
+                            <td><a href="../06_realworld_rss/channel_title/xee-xpath/report/index.html">06_realworld/rss/channel_title/xee-xpath</a></td>
+                            <td><a href="../06_realworld_rss/count_items/xee-xpath/report/index.html">06_realworld/rss/count_items/xee-xpath</a></td>
+                            <td><a href="../06_realworld_rss/first_item/xee-xpath/report/index.html">06_realworld/rss/first_item/xee-xpath</a></td>
+                            <td><a href="../06_realworld_rss/item_links/xee-xpath/report/index.html">06_realworld/rss/item_links/xee-xpath</a></td>
+                            <td><a href="../06_realworld_rss/item_titles/xee-xpath/report/index.html">06_realworld/rss/item_titles/xee-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../06_realworld_rss/xrust/report/index.html">xrust</a></th>
+                            <td><a href="../06_realworld_rss/all_items/xrust/report/index.html">06_realworld/rss/all_items/xrust</a></td>
+                            <td><a href="../06_realworld_rss/channel_title/xrust/report/index.html">06_realworld/rss/channel_title/xrust</a></td>
+                            <td><a href="../06_realworld_rss/count_items/xrust/report/index.html">06_realworld/rss/count_items/xrust</a></td>
+                            <td><a href="../06_realworld_rss/first_item/xrust/report/index.html">06_realworld/rss/first_item/xrust</a></td>
+                            <td><a href="../06_realworld_rss/item_links/xrust/report/index.html">06_realworld/rss/item_links/xrust</a></td>
+                            <td><a href="../06_realworld_rss/item_titles/xrust/report/index.html">06_realworld/rss/item_titles/xrust</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../07_realworld_maven/report/index.html">07_realworld/maven</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../07_realworld_maven/all_dependencies/report/index.html">all_dependencies</a></th>
+                            <th><a href="../07_realworld_maven/artifact_ids/report/index.html">artifact_ids</a></th>
+                            <th><a href="../07_realworld_maven/count_deps/report/index.html">count_deps</a></th>
+                            <th><a href="../07_realworld_maven/group_id/report/index.html">group_id</a></th>
+                            <th><a href="../07_realworld_maven/plugins/report/index.html">plugins</a></th>
+                            <th><a href="../07_realworld_maven/project_version/report/index.html">project_version</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../07_realworld_maven/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../07_realworld_maven/all_dependencies/amxml/report/index.html">07_realworld/maven/all_dependencies/amxml</a></td>
+                            <td><a href="../07_realworld_maven/artifact_ids/amxml/report/index.html">07_realworld/maven/artifact_ids/amxml</a></td>
+                            <td><a href="../07_realworld_maven/count_deps/amxml/report/index.html">07_realworld/maven/count_deps/amxml</a></td>
+                            <td><a href="../07_realworld_maven/group_id/amxml/report/index.html">07_realworld/maven/group_id/amxml</a></td>
+                            <td><a href="../07_realworld_maven/plugins/amxml/report/index.html">07_realworld/maven/plugins/amxml</a></td>
+                            <td><a href="../07_realworld_maven/project_version/amxml/report/index.html">07_realworld/maven/project_version/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../07_realworld_maven/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../07_realworld_maven/all_dependencies/libxml/report/index.html">07_realworld/maven/all_dependencies/libxml</a></td>
+                            <td><a href="../07_realworld_maven/artifact_ids/libxml/report/index.html">07_realworld/maven/artifact_ids/libxml</a></td>
+                            <td><a href="../07_realworld_maven/count_deps/libxml/report/index.html">07_realworld/maven/count_deps/libxml</a></td>
+                            <td><a href="../07_realworld_maven/group_id/libxml/report/index.html">07_realworld/maven/group_id/libxml</a></td>
+                            <td><a href="../07_realworld_maven/plugins/libxml/report/index.html">07_realworld/maven/plugins/libxml</a></td>
+                            <td><a href="../07_realworld_maven/project_version/libxml/report/index.html">07_realworld/maven/project_version/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../07_realworld_maven/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../07_realworld_maven/all_dependencies/sxd-xpath/report/index.html">07_realworld/maven/all_dependencies/sxd-xpath</a></td>
+                            <td><a href="../07_realworld_maven/artifact_ids/sxd-xpath/report/index.html">07_realworld/maven/artifact_ids/sxd-xpath</a></td>
+                            <td><a href="../07_realworld_maven/count_deps/sxd-xpath/report/index.html">07_realworld/maven/count_deps/sxd-xpath</a></td>
+                            <td><a href="../07_realworld_maven/group_id/sxd-xpath/report/index.html">07_realworld/maven/group_id/sxd-xpath</a></td>
+                            <td><a href="../07_realworld_maven/plugins/sxd-xpath/report/index.html">07_realworld/maven/plugins/sxd-xpath</a></td>
+                            <td><a href="../07_realworld_maven/project_version/sxd-xpath/report/index.html">07_realworld/maven/project_version/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../07_realworld_maven/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../07_realworld_maven/all_dependencies/xee-xpath/report/index.html">07_realworld/maven/all_dependencies/xee-xpath</a></td>
+                            <td><a href="../07_realworld_maven/artifact_ids/xee-xpath/report/index.html">07_realworld/maven/artifact_ids/xee-xpath</a></td>
+                            <td><a href="../07_realworld_maven/count_deps/xee-xpath/report/index.html">07_realworld/maven/count_deps/xee-xpath</a></td>
+                            <td><a href="../07_realworld_maven/group_id/xee-xpath/report/index.html">07_realworld/maven/group_id/xee-xpath</a></td>
+                            <td><a href="../07_realworld_maven/plugins/xee-xpath/report/index.html">07_realworld/maven/plugins/xee-xpath</a></td>
+                            <td><a href="../07_realworld_maven/project_version/xee-xpath/report/index.html">07_realworld/maven/project_version/xee-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../07_realworld_maven/xrust/report/index.html">xrust</a></th>
+                            <td><a href="../07_realworld_maven/all_dependencies/xrust/report/index.html">07_realworld/maven/all_dependencies/xrust</a></td>
+                            <td><a href="../07_realworld_maven/artifact_ids/xrust/report/index.html">07_realworld/maven/artifact_ids/xrust</a></td>
+                            <td><a href="../07_realworld_maven/count_deps/xrust/report/index.html">07_realworld/maven/count_deps/xrust</a></td>
+                            <td><a href="../07_realworld_maven/group_id/xrust/report/index.html">07_realworld/maven/group_id/xrust</a></td>
+                            <td><a href="../07_realworld_maven/plugins/xrust/report/index.html">07_realworld/maven/plugins/xrust</a></td>
+                            <td><a href="../07_realworld_maven/project_version/xrust/report/index.html">07_realworld/maven/project_version/xrust</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../08_realworld_osm/report/index.html">08_realworld/osm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../08_realworld_osm/bus_stops/report/index.html">bus_stops</a></th>
+                            <th><a href="../08_realworld_osm/count_nodes/report/index.html">count_nodes</a></th>
+                            <th><a href="../08_realworld_osm/count_ways/report/index.html">count_ways</a></th>
+                            <th><a href="../08_realworld_osm/highway_nodes/report/index.html">highway_nodes</a></th>
+                            <th><a href="../08_realworld_osm/named_ways/report/index.html">named_ways</a></th>
+                            <th><a href="../08_realworld_osm/primary_roads/report/index.html">primary_roads</a></th>
+                            <th><a href="../08_realworld_osm/tagged_nodes/report/index.html">tagged_nodes</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../08_realworld_osm/amxml/report/index.html">amxml</a></th>
+                            <td><a href="../08_realworld_osm/bus_stops/amxml/report/index.html">08_realworld/osm/bus_stops/amxml</a></td>
+                            <td><a href="../08_realworld_osm/count_nodes/amxml/report/index.html">08_realworld/osm/count_nodes/amxml</a></td>
+                            <td><a href="../08_realworld_osm/count_ways/amxml/report/index.html">08_realworld/osm/count_ways/amxml</a></td>
+                            <td><a href="../08_realworld_osm/highway_nodes/amxml/report/index.html">08_realworld/osm/highway_nodes/amxml</a></td>
+                            <td><a href="../08_realworld_osm/named_ways/amxml/report/index.html">08_realworld/osm/named_ways/amxml</a></td>
+                            <td><a href="../08_realworld_osm/primary_roads/amxml/report/index.html">08_realworld/osm/primary_roads/amxml</a></td>
+                            <td><a href="../08_realworld_osm/tagged_nodes/amxml/report/index.html">08_realworld/osm/tagged_nodes/amxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../08_realworld_osm/libxml/report/index.html">libxml</a></th>
+                            <td><a href="../08_realworld_osm/bus_stops/libxml/report/index.html">08_realworld/osm/bus_stops/libxml</a></td>
+                            <td><a href="../08_realworld_osm/count_nodes/libxml/report/index.html">08_realworld/osm/count_nodes/libxml</a></td>
+                            <td><a href="../08_realworld_osm/count_ways/libxml/report/index.html">08_realworld/osm/count_ways/libxml</a></td>
+                            <td><a href="../08_realworld_osm/highway_nodes/libxml/report/index.html">08_realworld/osm/highway_nodes/libxml</a></td>
+                            <td><a href="../08_realworld_osm/named_ways/libxml/report/index.html">08_realworld/osm/named_ways/libxml</a></td>
+                            <td><a href="../08_realworld_osm/primary_roads/libxml/report/index.html">08_realworld/osm/primary_roads/libxml</a></td>
+                            <td><a href="../08_realworld_osm/tagged_nodes/libxml/report/index.html">08_realworld/osm/tagged_nodes/libxml</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../08_realworld_osm/sxd-xpath/report/index.html">sxd-xpath</a></th>
+                            <td><a href="../08_realworld_osm/bus_stops/sxd-xpath/report/index.html">08_realworld/osm/bus_stops/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/count_nodes/sxd-xpath/report/index.html">08_realworld/osm/count_nodes/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/count_ways/sxd-xpath/report/index.html">08_realworld/osm/count_ways/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/highway_nodes/sxd-xpath/report/index.html">08_realworld/osm/highway_nodes/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/named_ways/sxd-xpath/report/index.html">08_realworld/osm/named_ways/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/primary_roads/sxd-xpath/report/index.html">08_realworld/osm/primary_roads/sxd-xpath</a></td>
+                            <td><a href="../08_realworld_osm/tagged_nodes/sxd-xpath/report/index.html">08_realworld/osm/tagged_nodes/sxd-xpath</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../08_realworld_osm/xee-xpath/report/index.html">xee-xpath</a></th>
+                            <td><a href="../08_realworld_osm/bus_stops/xee-xpath/report/index.html">08_realworld/osm/bus_stops/xee-xpath</a></td>
+                            <td><a href="../08_realworld_osm/count_nodes/xee-xpath/report/index.html">08_realworld/osm/count_nodes/xee-xpath</a></td>
+                            <td><a href="../08_realworld_osm/count_ways/xee-xpath/report/index.html">08_realworld/osm/count_ways/xee-xpath</a></td>
+                            <td><a href="../08_realworld_osm/highway_nodes/xee-xpath/report/index.html">08_realworld/osm/highway_nodes/xee-xpath</a></td>
+                            <td><a href="../08_realworld_osm/named_ways/xee-xpath/report/index.html">08_realworld/osm/named_ways/xee-xpath</a></td>
+                            <td><a href="../08_realworld_osm/primary_roads/xee-xpath/report/index.html">08_realworld/osm/primary_roads/xee-xpath</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "query": "price_gt_12",
+    "library": "xrust",
+    "reason": "unsupported",
+    "detail": "decimal number comparison bug"
+  },
+  {
+    "query": "contains_title",
+    "library": "amxml",
+    "reason": "unsupported",
+    "detail": "singleton string type error on contains()"
+  },
+  {
+    "query": "flwr_titles",
+    "library": "sxd-xpath",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "flwr_titles",
+    "library": "libxml",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "simple_map",
+    "library": "sxd-xpath",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "simple_map",
+    "library": "libxml",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "simple_map",
+    "library": "xrust",
+    "reason": "unsupported",
+    "detail": "no XPath 3.1 simple map operator"
+  },
+  {
+    "query": "simple_map",
+    "library": "amxml",
+    "reason": "unsupported",
+    "detail": "no XPath 3.1 simple map operator"
+  }
+]

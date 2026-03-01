@@ -1,0 +1,50 @@
+[
+  {
+    "query": "count_nodes",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "count_ways",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "tagged_nodes",
+    "library": "xee-xpath",
+    "reason": "unsupported",
+    "detail": "XPTY0004 on //node[tag] predicate"
+  },
+  {
+    "query": "tagged_nodes",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "highway_nodes",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "bus_stops",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "primary_roads",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "named_ways",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  }
+]

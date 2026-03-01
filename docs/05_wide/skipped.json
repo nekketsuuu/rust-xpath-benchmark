@@ -1,0 +1,56 @@
+[
+  {
+    "query": "count_books",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "fiction",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "last_book",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "book_by_id_50000",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "book_by_id_99999",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "title_lang_ja",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  },
+  {
+    "query": "flwr_count",
+    "library": "sxd-xpath",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "flwr_count",
+    "library": "libxml",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "flwr_count",
+    "library": "xrust",
+    "reason": "timeout",
+    "detail": "probe exceeded 3s"
+  }
+]

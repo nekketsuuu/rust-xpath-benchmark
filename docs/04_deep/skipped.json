@@ -1,0 +1,14 @@
+[
+  {
+    "query": "flwr_deep",
+    "library": "sxd-xpath",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  },
+  {
+    "query": "flwr_deep",
+    "library": "libxml",
+    "reason": "unsupported",
+    "detail": "XPath 1.0 only"
+  }
+]
